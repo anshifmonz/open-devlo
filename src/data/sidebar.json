@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Basic",
+        "childrens": [
+            {
+                "title": "h1",
+                "path": "/h1"
+            },
+            {
+                "title": "div",
+                "path": "/div"
+            },
+            {
+                "title": "section",
+                "path": "/section"
+            },
+            {
+                "title": "nav",
+                "path": "/nav"
+            }
+        ]
+    },
+    {
+        "title": "Moderate",
+        "childrens": [
+            {
+                "title": "h1",
+                "path": "/h1"
+            },
+            {
+                "title": "div",
+                "path": "/div"
+            },
+            {
+                "title": "section",
+                "path": "/section"
+            },
+            {
+                "title": "nav",
+                "path": "/nav"
+            }
+        ]
+    },
+    {
+        "title": "Advanced",
+        "childrens": [
+            {
+                "title": "h1",
+                "path": "/h1"
+            },
+            {
+                "title": "div",
+                "path": "/div"
+            },
+            {
+                "title": "section",
+                "path": "/section"
+            },
+            {
+                "title": "nav",
+                "path": "/nav"
+            }
+        ]
+    }
+]

@@ -1,0 +1,87 @@
+@import url('./app.css');
+
+aside.sidebar{
+    background-color: #333333; /* 262626  */
+    width: 17vw;
+    height: 100vh;
+    color: var(--pt);
+    overflow-y: scroll;
+}
+aside::-webkit-scrollbar {
+    width: 8px;
+}
+aside::-webkit-scrollbar-track {
+    background: #333333; 
+}
+aside::-webkit-scrollbar-thumb {
+    background-color: #555; 
+    border-radius: 10px; 
+    border: 2px solid #262626;
+}
+aside::-webkit-scrollbar-thumb:hover {
+    background-color: #888; 
+}
+
+.side-bar-item{
+    display: block;
+    padding: .3rem 2rem;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+.side-bar-item:hover{
+    background-color: #2c2c2c;
+}
+.side-bar-item img{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+.side-bar-item.open img{
+    transform: rotate(180deg);
+    transition: transform .3s ease;
+}
+
+.side-bar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 17px;
+}
+.side-bar-title a{
+    text-decoration: none;
+    color: var(--pt);
+}
+
+.side-bar-item .side-bar-content{
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .5s ease, opacity .5s ease;
+}
+.side-bar-item.open .side-bar-content{
+    max-height: 100vh;
+    opacity: 1;
+}
+
+.side-bar-content .side-bar-item:first-child{
+    margin-top: 4px;
+}
+.side-bar-content .side-bar-item{
+    padding: 3px 1.5rem;
+    border-radius: 4px;
+    transition: background-color .3s;
+}
+.side-bar-content .side-bar-item:hover{
+    background-color: #333333;
+    cursor: pointer;
+}
+.side-bar-content a{
+    text-decoration: none;
+    color: var(--pt);
+}
+.side-bar-content a.side-bar-item{
+    text-align: left;
+    font-size: 15px;
+}
