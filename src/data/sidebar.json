@@ -1,64 +1,410 @@
 [
     {
-        "title": "Basic",
+        "title": "Introduction to HTML",
         "childrens": [
             {
-                "title": "h1",
-                "path": "/h1"
+                "title": "What is HTML?",
+                "path": "/what-is-html"
             },
             {
-                "title": "div",
-                "path": "/div"
+                "title": "Structure of an HTML document",
+                "path": "/html-structure"
             },
             {
-                "title": "section",
-                "path": "/section"
-            },
-            {
-                "title": "nav",
-                "path": "/nav"
+                "title": "Basic tags",
+                "childrens": [
+                    {
+                        "title": "DOCTYPE",
+                        "path": "/doctype"
+                    },
+                    {
+                        "title": "html",
+                        "path": "/html-tag"
+                    },
+                    {
+                        "title": "head",
+                        "path": "/head"
+                    },
+                    {
+                        "title": "title",
+                        "path": "/title"
+                    },
+                    {
+                        "title": "title (Page Title)",
+                        "path": "/title"
+                    },
+                    {
+                        "title": "body",
+                        "path": "/body"
+                    }
+                ]
             }
         ]
     },
     {
-        "title": "Moderate",
+        "title": "HTML Elements",
         "childrens": [
             {
-                "title": "h1",
-                "path": "/h1"
+                "title": "Headings",
+                "path": "/headings"
             },
             {
-                "title": "div",
+                "title": "Paragraphs",
+                "path": "/paragraphs"
+            },
+            {
+                "title": "Div",
                 "path": "/div"
             },
             {
-                "title": "section",
-                "path": "/section"
+                "title": "Line Breaks",
+                "path": "/line-breaks"
             },
             {
-                "title": "nav",
-                "path": "/nav"
+                "title": "Horizontal Rules",
+                "path": "/horizontal-rules"
             }
         ]
     },
     {
-        "title": "Advanced",
+        "title": "HTML Attributes",
         "childrens": [
             {
-                "title": "h1",
-                "path": "/h1"
+                "title": "Global attributes",
+                "path": "/global-attributes"
             },
             {
-                "title": "div",
-                "path": "/div"
+                "title": "Specific attributes for elements",
+                "path": "/specific-attributes"
             },
             {
-                "title": "section",
-                "path": "/section"
+                "title": "Class",
+                "path": "/class"
             },
             {
-                "title": "nav",
-                "path": "/nav"
+                "title": "Id",
+                "path": "/id"
+            }
+        ]
+    },
+    {
+        "title": "Formatting Text",
+        "childrens": [
+            {
+                "title": "Bold",
+                "path": "#bold"
+            },
+            {
+                "title": "Italic",
+                "path": "#italic"
+            },
+            {
+                "title": "Strong",
+                "path": "#strong"
+            },
+            {
+                "title": "Mark",
+                "path": "#mark"
+            },
+            {
+                "title": "Underline",
+                "path": "#underline"
+            },
+            {
+                "title": "Strikethrough",
+                "path": "#strikethrough"
+            },
+            {
+                "title": "Superscript",
+                "path": "#superscript"
+            },
+            {
+                "title": "Subscript",
+                "path": "#subscript"
+            },
+            {
+                "title": "Preformatted Text",
+                "path": "#preformatted-text"
+            }
+            
+        ]
+    },
+    {
+        "title": "HTML Comments",
+        "path": "/html-comments"
+    },
+    {
+        "title": "HTML Links",
+        "childrens": [
+            {
+                "title": "Anchor Tag",
+                "path": "/anchor-tag"
+            },
+            {
+                "title": "Href Attribute",
+                "path": "/href-attribute"
+            },
+            {
+                "title": "Target Attribute",
+                "path": "/target-attribute"
+            }
+        ]
+    },
+    {
+        "title": "HTML Images",
+        "childrens": [
+            {
+                "title": "Image Tag",
+                "path": "/image-tag"
+            }
+        ]
+    },
+    {
+        "title": "HTML Lists",
+        "childrens": [
+            {
+                "title": "Unordered Lists",
+                "path": "/unordered-lists"
+            },
+            {
+                "title": "Ordered Lists",
+                "path": "/ordered-lists"
+            },
+            {
+                "title": "Description Lists",
+                "path": "/description-lists"
+            }
+        ]
+    },
+    {
+        "title": "HTML Tables",
+        "path": "/table",
+        "childrens": [
+            {
+                "title": "Table Tags",
+                "childrens": [
+                    {
+                        "title": "Table",
+                        "path": "#table"
+                    },
+                    {
+                        "title": "Table Row",
+                        "path": "#table-row"
+                    },
+                    {
+                        "title": "Table Header",
+                        "path": "#table-header"
+                    },
+                    {
+                        "title": "Table Data",
+                        "path": "#table-data"
+                    }
+                ]
+            },
+            {
+                "title": "Table Attributes",
+                "childrens": [
+                    {
+                        "title": "Border",
+                        "path": "/border"
+                    },
+                    {
+                        "title": "Colspan",
+                        "path": "/colspan"
+                    },
+                    {
+                        "title": "Rowspan",
+                        "path": "/rowspan"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "HTML Forms",
+        "childrens": [
+            {
+                "title": "Form Tag",
+                "path": "/form-tag"
+            },
+            {
+                "title": "Form Elements",
+                "childrens": [
+                    {
+                        "title": "Input",
+                        "path": "/input"
+                    },
+                    {
+                        "title": "Textarea",
+                        "path": "/textarea"
+                    },
+                    {
+                        "title": "Button",
+                        "path": "/button"
+                    },
+                    {
+                        "title": "Select",
+                        "path": "/select"
+                    },
+                    {
+                        "title": "Label",
+                        "path": "/label"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Semantic HTML",
+        "childrens": [
+            {
+                "title": "Semantic Tags",
+                "childrens": [
+                    {
+                        "title": "Header",
+                        "path": "/header"
+                    },
+                    {
+                        "title": "Nav",
+                        "path": "/nav"
+                    },
+                    {
+                        "title": "Main",
+                        "path": "/main"
+                    },
+                    {
+                        "title": "Section",
+                        "path": "/section"
+                    },
+                    {
+                        "title": "Article",
+                        "path": "/article"
+                    },
+                    {
+                        "title": "Aside",
+                        "path": "/aside"
+                    },
+                    {
+                        "title": "Footer",
+                        "path": "/footer"
+                    }
+                ]
+            },
+            {
+                "title": "Importance of Semantics",
+                "path": "/importance-of-semantics"
+            }
+        ]
+    },
+    {
+        "title": "HTML Multimedia",
+        "childrens": [
+            {
+                "title": "Embedding Media",
+                "childrens": [
+                    {
+                        "title": "Audio",
+                        "path": "/audio"
+                    },
+                    {
+                        "title": "Video",
+                        "path": "/video"
+                    }
+                ]
+            },
+            {
+                "title": "Other Embeds",
+                "childrens": [
+                    {
+                        "title": "Iframe",
+                        "path": "/iframe"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "HTML5 APIs",
+        "childrens": [
+            {
+                "title": "New Input Types",
+                "path": "/new-input-types"
+            },
+            {
+                "title": "Canvas",
+                "path": "/canvas"
+            },
+            {
+                "title": "Geolocation API",
+                "path": "/geolocation-api"
+            },
+            {
+                "title": "Drag and Drop API",
+                "path": "/drag-and-drop-api"
+            }
+        ]
+    },
+    {
+        "title": "Advanced Topics",
+        "childrens": [
+            {
+                "title": "Meta Tags",
+                "path": "/meta-tags"
+            },
+            {
+                "title": "Link Tags",
+                "path": "/link-tags"
+            },
+            {
+                "title": "Script Tags",
+                "path": "/script-tags"
+            },
+            {
+                "title": "SEO Best Practices",
+                "path": "/seo-best-practices"
+            }
+        ]
+    },
+    {
+        "title": "Practice and Projects",
+        "childrens": [
+            {
+                "title": "Mini Projects",
+                "childrens": [
+                    {
+                        "title": "Personal Webpage",
+                        "path": "/personal-webpage"
+                    },
+                    {
+                        "title": "Portfolio Site",
+                        "path": "/portfolio-site"
+                    },
+                    {
+                        "title": "Blog Layout",
+                        "path": "/blog-layout"
+                    },
+                    {
+                        "title": "Simple Form Submission Page",
+                        "path": "/form-submission"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Further Learning",
+        "childrens": [
+            {
+                "title": "HTML and CSS Integration",
+                "path": "/html-css-integration"
+            },
+            {
+                "title": "Responsive Design",
+                "path": "/responsive-design"
+            },
+            {
+                "title": "Accessibility Best Practices",
+                "path": "/accessibility-best-practices"
             }
         ]
     }

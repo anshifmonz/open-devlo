@@ -32,11 +32,11 @@ aside::-webkit-scrollbar-thumb:hover {
     background-color: #2c2c2c;
 }
 .side-bar-item img{
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 8px;
     cursor: pointer;
 }
-.side-bar-item.open img{
+.side-bar-item.open > img{
     transform: rotate(180deg);
     transition: transform .3s ease;
 }
@@ -46,7 +46,7 @@ aside::-webkit-scrollbar-thumb:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    font-size: 17px;
+    font-size: 14px;
 }
 .side-bar-title a{
     text-decoration: none;
@@ -60,11 +60,17 @@ aside::-webkit-scrollbar-thumb:hover {
     overflow: hidden;
     transition: max-height .5s ease, opacity .5s ease;
 }
-.side-bar-item.open .side-bar-content{
+.side-bar-item.open > .side-bar-content{
     max-height: 100vh;
     opacity: 1;
 }
-
+.side-bar-item > .side-bar-content p, .side-bar-item > .side-bar-content a{
+    font-size: 13px;
+}
+.dropdown.open{
+    transform: rotate(180deg);
+    transition: transform .3s ease;
+}
 .side-bar-content .side-bar-item:first-child{
     margin-top: 4px;
 }
@@ -76,6 +82,9 @@ aside::-webkit-scrollbar-thumb:hover {
 .side-bar-content .side-bar-item:hover{
     background-color: #333333;
     cursor: pointer;
+}
+.side-bar-item.open > .side-bar-content .side-bar-item .side-bar-content .side-bar-item:hover{
+    background-color: hsl(0, 0%, 23%);
 }
 .side-bar-content a{
     text-decoration: none;
