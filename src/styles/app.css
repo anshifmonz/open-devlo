@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Outfit:wght@100..900&display=swap');
 
-:root{
-    --bc: #1e1e1e;
-    --pt: #e0e0e0;
-    --HD: #ffffff;
-    --accent: #00bfae;
-    --BL: #007acc;
+ :root[data-theme="light"] {
+  --text: #01162d;
+  --background: #f0f7ff;
+  --backgroundO: #00070f;
+  --card-background: #e5edf8;
+  --primary: #044081;
+  --secondary: #616bfa;
+  --accent: #2d07da;
+  --accent-hover: #2908b8;
+  --input-text: #d2e7fe;
+  --border: 1.7px solid rgba(0, 0, 0, 0.1);
+}
+:root[data-theme="dark"] {
+    --text: #d2e7fe;
+    --background: #000000 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%232c0072' fill-opacity='0.19'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+    --backgroundO: #f0f7ff;
+    --card-background: #0b131b;
+    --primary: #7ebbfb;
+    --secondary: #050f9e;
+    --accent: #4c25f8;
+    --accent-hover: #3710e5;
+    --input-text: #01162d;
+    --border: 1.7px solid rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -16,11 +33,32 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 }
-html, body{
-    overflow: hidden;
-    background-color: #1e1e1e ;
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: var(--background) ;
 }
 #main {
     display: flex;
     max-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background: #333333; 
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #555; 
+    border-radius: 10px; 
+    border: 2px solid #262626;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #888; 
 }
