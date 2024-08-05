@@ -1,12 +1,13 @@
 import '../styles/app.css'
-import NavBar from "./NavBar";
+import NavBar from "./Navbar/NavBar";
 import SideBar from "./SideBar/SideBar" 
+import Home from './Home/Home';
 
 function App() {
     return (
         <>
             <NavBar />
-            <SideBar />
+            <Home />
         </>
     );
 }
