@@ -1,0 +1,82 @@
+@import url('https://unicons.iconscout.com/release/v4.0.8/css/line.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron&family=Outfit&display=swap');
+@import url('./app.css');
+
+nav{
+    position: fixed;
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background) ;
+    padding: 10px 20px 10px 30px;
+    z-index: 100;
+}
+
+nav >a{
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    color: var(--accent);
+}
+nav >a{
+    letter-spacing: 3px;
+}
+nav input{
+    flex-grow: .5;
+    height: 30px;
+    border: none;
+    border-radius: 40px;
+    padding-left: 20px;
+    color: var(--input-text);
+    font-weight: 600;
+    background-color: var(--backgroundO);
+}
+nav input:focus{
+    border: black solid 1px;
+    outline: none;
+}
+nav input::placeholder{
+    color: var(--input-text);
+    font-weight: 500;
+}
+nav .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -50px;
+}
+nav .navigation div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+nav .navigation a{
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: var(--text) ;
+    font-weight: 500;
+}
+nav .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+nav .navigation a.anchor:hover{
+    border-bottom: 2px solid var(--text);
+}
+nav .navigation div{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+nav .navigation div img{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.uil-user-circle{
+    height: 100px;
+}

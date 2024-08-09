@@ -1,0 +1,22 @@
+@import url('./app.css');
+
+
+#root{
+  display: flex;
+  flex-direction: column;  
+}
+
+#course-page{
+  display: flex;
+  padding-top: 9vh;
+  width: 100vw;
+  min-height: calc(100vh);
+  background-color: var(--background1);
+}
+
+main#main{
+  padding: 1.5rem 1rem;
+  padding-left: 19vw;
+  flex-grow: 1;
+  color: var(--text);
+}

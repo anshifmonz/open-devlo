@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "title": "HTML",
+        "img": "assets/home/html.png",
+        "alt": "HTML",
+        "path": "courses/html",
+        "desc": "The foundation of web page creation"
+    },
+    {
+        "id": 1,
+        "title": "CSS",
+        "img": "assets/home/html.png",
+        "alt": "CSS",
+        "path": "courses/css",
+        "desc": "The art of styling web content"
+    },
+    {
+        "id": 2,
+        "title": "Javascript",
+        "img": "assets/home/html.png",
+        "alt": "Javascript",
+        "path": "courses/javascript",
+        "desc": "Bring your website to life with dynamic features"
+    },
+    {
+        "id": 3,
+        "title": "React",
+        "img": "assets/home/html.png",
+        "alt": "React",
+        "path": "courses/react",
+        "desc": "Create modern, responsive web applications"
+    },
+    {
+        "id": 4,
+        "title": "Git",
+        "img": "assets/home/html.png",
+        "alt": "Git",
+        "path": "courses/git",
+        "desc": "Enhance your workflow with GitHub's"
+    },
+    {
+        "id": 5,
+        "title": "Node",
+        "img": "assets/home/html.png",
+        "alt": "Node",
+        "path": "courses/node",
+        "desc": "Create powerful server-side solutions with Node.js"
+    },
+    {
+        "id": 6,
+        "title": "Express",
+        "img": "assets/home/html.png",
+        "alt": "Express",
+        "path": "courses/express",
+        "desc": "Simplify server-side development with Express"
+    },
+    {
+        "id": 7,
+        "title": "EJS",
+        "img": "assets/home/html.png",
+        "alt": "EJS",
+        "path": "courses/ejs",
+        "desc": "Seamlessly integrate server-side data into your HTML."
+    },
+    {
+        "id": 8,
+        "title": "Postgre SQL",
+        "img": "assets/home/html.png",
+        "alt": "Postgre SQL",
+        "path": "courses/posgre-sql",
+        "desc": "Harness the power of SQL for sophisticated data management"
+    }
+]

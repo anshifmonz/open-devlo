@@ -1,0 +1,21 @@
+@import url(./app.css);
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  margin: 10vh 25px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--card-background);
+}
+
+.social-links{
+  display: flex;
+  gap: 25px;
+}
+.social-links a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}

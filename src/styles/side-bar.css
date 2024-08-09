@@ -1,0 +1,97 @@
+@import url('./app.css');
+
+aside.sidebar{
+    position: fixed;
+    background-color: var(--aside); /* 262626  */
+    width: 17vw;
+    height: 91vh;
+    color: var(--text);
+    overflow-y: scroll;
+    padding-top: 10px;
+}
+aside::-webkit-scrollbar {
+    width: 4px;
+}
+aside::-webkit-scrollbar-track {
+    background: var(--aside-scroll-background); 
+}
+aside::-webkit-scrollbar-thumb {
+    background-color: var(--aside-scroll-bar); 
+    border-radius: 10px; 
+}
+aside::-webkit-scrollbar-thumb:hover {
+    background-color: #888; 
+}
+
+.side-bar-item{
+    display: block;
+    padding: .3rem 1.5rem;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+.side-bar-item:hover{
+    background-color: var(--aside-hover);
+}
+.side-bar-item img{
+    width: 10px;
+    height: 8px;
+    cursor: pointer;
+}
+.side-bar-item.open > img{
+    transform: rotate(180deg);
+    transition: transform .3s ease;
+}
+
+.side-bar-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+.side-bar-title a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+.side-bar-item .side-bar-content{
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .5s ease, opacity .5s ease;
+}
+.side-bar-item.open > .side-bar-content{
+    max-height: 100vh;
+    opacity: 1;
+}
+.side-bar-item > .side-bar-content p, .side-bar-item > .side-bar-content a{
+    font-size: 13px;
+}
+.dropdown.open{
+    transform: rotate(180deg);
+    transition: transform .3s ease;
+}
+.side-bar-content .side-bar-item:first-child{
+    margin-top: 4px;
+}
+.side-bar-content .side-bar-item{
+    border-radius: 4px;
+    transition: background-color .3s;
+}
+.side-bar-content .side-bar-item:hover{
+    background-color: var(--aside-item-hover);
+    cursor: pointer;
+}
+.side-bar-item.open > .side-bar-content .side-bar-item .side-bar-content .side-bar-item:hover{
+    background-color: var(--aside-item2-hover);
+}
+.side-bar-content a{
+    text-decoration: none;
+    color: var(--text);
+}
+.side-bar-content a.side-bar-item{
+    text-align: left;
+    font-size: 15px;
+}
