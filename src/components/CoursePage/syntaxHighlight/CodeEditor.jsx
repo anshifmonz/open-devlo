@@ -22,7 +22,7 @@ function CodeEditor({codeRef, edit, setResultCode, code}) {
   }
 
   return (
-    <code className="language-html" 
+    <code className="language-html scroll-bar" 
     ref={codeRef} 
     contentEditable={edit} 
     onInput={codeChange}>

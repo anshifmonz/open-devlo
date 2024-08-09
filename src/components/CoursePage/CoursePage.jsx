@@ -1,6 +1,7 @@
 import Content from "./Content";
 import NavBar from "../Navbar/NavBar";
 import SideBar from "../SideBar/SideBar";
+import Footer from "../Footer/Footer";
 
 function CoursePage() {
   return (
@@ -10,6 +11,7 @@ function CoursePage() {
           <SideBar />
           <Content />
       </div>
+
     </>
   )
 }

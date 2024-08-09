@@ -1,7 +1,7 @@
 import React from 'react';
-import { Intro } from '../../../../data/Courses/html';
-import SyntaxHighlight from '../syntaxHighlight/SyntaxHighlight';
-import InlineHighlight from '../syntaxHighlight/InlineSyntax';
+import { Intro } from './data/html';
+import SyntaxHighlight from '../../syntaxHighlight/SyntaxHighlight';
+import InlineHighlight from '../../syntaxHighlight/InlineSyntax';
 
 function Introduction() {
   
@@ -10,7 +10,7 @@ function Introduction() {
       <h1>HTML Introduction</h1>
       <hr />
       <h2 id='what-is-html' className='scroll-top'>What is HTML?</h2>
-      <ul>
+      <ul className='points'>
         <li>HTML stands for <strong>HyperText Markup Language</strong>.</li>
         <li>HTML is the standard language for creating web pages. It uses tags to define headings, paragraphs and images.</li>
         <li>Each element tells the browser how to display content on the page.  </li>
@@ -20,12 +20,12 @@ function Introduction() {
       <h2 id='html-structure' className='scroll-top'>Structure of an HTML document</h2>
       <p>The structure of an HTML document is like a basic blueprint for a web page.</p>
 
-      <ul>
-        <li>&lt; !DOCTYPE html &gt; : Tells the browser that this is an HTML file.</li>
-        <li>&lt; html&gt; : The root element of an HTML file that contains all the other elements on the page.</li>
-        <li>&lt; head &gt; : Contains meta-information about the page, like the title, links to stylesheets, and scripts.</li>
-        <li>&lt; title &gt; : Sets the title of the page, which appears in the browser tab.</li>
-        <li>&lt; body &gt; : Contains the main content of the page, like text, images, and links.</li>
+      <ul className='points'>
+        <li><InlineHighlight code={"<!DOCTYPE html>"} />: Tells the browser that this is an HTML file.</li>
+        <li><InlineHighlight code={"<html>"} />: The root element of an HTML file that contains all the other elements on the page.</li>
+        <li><InlineHighlight code={"<head>"} />: Contains meta-information about the page, like the title, links to stylesheets, and scripts.</li>
+        <li><InlineHighlight code={"<title>"} />: Sets the title of the page, which appears in the browser tab.</li>
+        <li><InlineHighlight code={"<body>"} />: Contains the main content of the page, like text, images, and links.</li>
       </ul>
 
       <h3>Example of an HTML File:</h3>
@@ -33,15 +33,15 @@ function Introduction() {
 
       <h2>Tags and Elements in HTML</h2>
       <div className="inside-explaination">
-        <h3>HTML Tags</h3>
-        <p>The building blocks of HTML, written in angle brackets like &lt;tag&gt;. They come in pairs: an opening tag &lt;tag&gt; and a closing tag &lt;/tag&gt;, but some are self-closing like &lt;img /&gt;.</p>
-        <h3>HTML Tags</h3>
-        <p>An HTML element contains three parts: a start tag, some content, and an end tag.</p>
-        <p>Example: <InlineHighlight code={Intro.tagName} /></p>
+        <h3>HTML Tag</h3>
+        <p className='inside-ex'>The building blocks of HTML, written in angle brackets like &lt;tag&gt;. They come in pairs: an opening tag &lt;tag&gt; and a closing tag &lt;/tag&gt;, but some are self-closing like &lt;img /&gt;.</p>
+        <h3>HTML Element</h3>
+        <p className='inside-ex'>An HTML element contains three parts: a start tag, some content, and an end tag.</p>
+        <p className='inside-ex'>Example: <InlineHighlight code={Intro.tagName} /></p>
       </div>
 
       <h2 id='basic-tags'>Basic Tags</h2>
-      <ul>
+      <ul className='points'>
         <li><InlineHighlight code={"<!DOCTYPE html>"}/> : Declares the document type and version of HTML.</li>
         <li><InlineHighlight code={"<html>"}/> : The root element that wraps all the content on the page.</li>
         <li><InlineHighlight code={"<head>"}/> : Contains meta-information about the document, like its title and links to stylesheets.</li>
@@ -58,6 +58,9 @@ function Introduction() {
         <li><InlineHighlight code={"<br>"}/> : Inserts a line break.</li>
         <li><InlineHighlight code={"<hr>"}/> : Inserts a horizontal rule (line).</li>
       </ul>
+
+      <h3>Example of putting all these together</h3>
+      <SyntaxHighlight code={Intro.allTogether}/>
     </>
   )
 }

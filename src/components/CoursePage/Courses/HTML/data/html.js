@@ -29,22 +29,22 @@ const Intro = {
     <p>This is a line breaked <br> text</p>
     <a href="https://www.example.com">Visit Example</a>
     <div>
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+      </ol>
       <ul>
         <li>Item one</li>
         <li>Item two</li>
       </ul>
       <hr>
-      <ol>
-        <li>First item</li>
-        <li>Second item</li>
-      </ol>
     </div>
-    <img src="image.jpg" alt="Description of the image" />
+    <img src="/assets/image.png" alt="Description of the image" />
   </body>
 </html>`
 };
 
-const attribute = {
+const Attr = {
   attr:
   `<tagname attribute="value">Content</tagname>`,
 
@@ -76,9 +76,42 @@ const attribute = {
   `<input type="text" value="Default text">`,
 
   allTogether:
-  `<a href="https://www.example.com" target="_blank" title="Visit Example Site">Click Here</a>
-  <img src="logo.png" alt="Company Logo" width="100" height="100">
-  `
+  `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attribute Example</title>
+    <style>
+        .highlight {
+            color: #007acc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title" title="This is the main heading">Welcome to HTML Attributes Tutorial</h1>
+
+    <p class="highlight" style="font-size: 16px;">
+        This paragraph is styled using the "class" and "style" attributes. 
+        The class "highlight" changes the text color, and the style attribute modifies the font size.
+    </p>
+
+    <a href="https://www.example.com" title="Go to example.com">
+        Visit Example.com
+    </a>
+
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image" title="This is an image" />
+
+    <button id="click-me-btn" class="highlight" title="Click me to see an alert" style="margin-top: 20px;">
+        Click Me!
+    </button>
+
+    <input type="text" id="username" class="highlight" value="Enter your username" style="margin-top: 20px;" title="Type your username here" />
+
+</body>
+</html>`
 
 };
 
@@ -621,7 +654,7 @@ const Semantic = {
 
 export {
   Intro,
-  attribute,
+  Attr,
   Text,
   Links,
   List,

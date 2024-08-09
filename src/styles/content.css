@@ -1,5 +1,37 @@
 @import url('./app.css');
 
+:root{
+  --heading-l: 2.7rem;
+  --heading-m: 2.2rem;
+  --heading-s: 1.8rem;
+  --heading-xs: 1.4rem;
+  --heading-xxs: 1.2rem;
+
+  --padding-l: 2rem;
+  --padding-m: 1.5rem;
+  --padding-s: 1rem;
+  --padding-xs: 0.5rem;
+  --padding-xxs: 0.25rem;
+
+  --margin-l: 2rem;
+  --margin-m: 1.5rem;
+  --margin-s: 1rem;
+  --margin-xs: 0.5rem;
+  --margin-xxs: 0.25rem;
+
+  --paragraph-l: 1.2rem;
+  --paragraph-m: 1rem;
+  --paragraph-s: 0.875rem;
+
+  --line-height-l: 1.6;
+  --line-height-m: 1.5;
+  --line-height-s: 1.4;
+
+  --fw-r: 400;
+  --fw-m: 500;
+  --fw-sb: 600;
+  --fw-b: 700;
+}
 
 #root{
   display: flex;
@@ -15,8 +47,44 @@
 }
 
 main#main{
+  width: 100%;
   padding: 1.5rem 1rem;
   padding-left: 19vw;
   flex-grow: 1;
   color: var(--text);
+}
+
+section.tutorial{
+  width: 100%;
+}
+.tutorial h1{
+  font-size: var(--heading-l);
+  margin-bottom: var(--margin-l);
+}
+.tutorial h2{
+  font-size: var(--heading-s);
+  margin: var(--margin-l) 0 var(--margin-s);
+}
+.tutorial h3{
+  margin: var(--margin-l) 0 var(--margin-xs);
+}
+.tutorial ul.points{
+  margin-left: var(--margin-l);
+}
+.tutorial .points li{
+  margin-top: var(--margin-xs);
+  font-weight: var(--fw-m);
+  line-height: var(--line-height-m);
+}
+.tutorial p{
+  font-weight: var(--fw-m);
+  margin-bottom: var(--margin-xxs);
+  line-height: var(--line-height-m);
+}
+
+.tutorial .inside-ex{
+  margin-left: var(--margin-m);
+}
+.tutorial .inside-ex p{
+  margin-left: var(--margin-s);
 }
