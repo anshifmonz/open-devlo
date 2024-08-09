@@ -4,129 +4,48 @@
         "childrens": [
             {
                 "title": "What is HTML?",
-                "path": "/what-is-html"
+                "path": "#what-is-html"
             },
             {
                 "title": "Structure of an HTML document",
-                "path": "/html-structure"
+                "path": "#html-structure"
             },
             {
                 "title": "Basic tags",
-                "childrens": [
-                    {
-                        "title": "DOCTYPE",
-                        "path": "/doctype"
-                    },
-                    {
-                        "title": "html",
-                        "path": "/html-tag"
-                    },
-                    {
-                        "title": "head",
-                        "path": "/head"
-                    },
-                    {
-                        "title": "title",
-                        "path": "/title"
-                    },
-                    {
-                        "title": "title (Page Title)",
-                        "path": "/title"
-                    },
-                    {
-                        "title": "body",
-                        "path": "/body"
-                    }
-                ]
+                "path": "#basic-tags"                
             }
         ]
     },
     {
-        "title": "HTML Elements",
-        "childrens": [
-            {
-                "title": "Headings",
-                "path": "/headings"
-            },
-            {
-                "title": "Paragraphs",
-                "path": "/paragraphs"
-            },
-            {
-                "title": "Div",
-                "path": "/div"
-            },
-            {
-                "title": "Line Breaks",
-                "path": "/line-breaks"
-            },
-            {
-                "title": "Horizontal Rules",
-                "path": "/horizontal-rules"
-            }
-        ]
+        "title": "HTML Tags and Elements",
+        "path": "/tags-and-elements"
     },
     {
         "title": "HTML Attributes",
+        "path": "/html-attributes",
         "childrens": [
             {
                 "title": "Global attributes",
-                "path": "/global-attributes"
+                "path": "/html-attributes#global-attributes"
             },
             {
                 "title": "Specific attributes for elements",
-                "path": "/specific-attributes"
-            },
-            {
-                "title": "Class",
-                "path": "/class"
-            },
-            {
-                "title": "Id",
-                "path": "/id"
+                "path": "/html-attributes#specific-attributes"
             }
         ]
     },
     {
-        "title": "Formatting Text",
+        "title": "HTML Text",
+        "path": "/html-text/",
         "childrens": [
             {
-                "title": "Bold",
-                "path": "#bold"
+                "title": "Formatting Text",
+                "path": "/formatting-text"
             },
             {
-                "title": "Italic",
-                "path": "#italic"
-            },
-            {
-                "title": "Strong",
-                "path": "#strong"
-            },
-            {
-                "title": "Mark",
-                "path": "#mark"
-            },
-            {
-                "title": "Underline",
-                "path": "#underline"
-            },
-            {
-                "title": "Strikethrough",
-                "path": "#strikethrough"
-            },
-            {
-                "title": "Superscript",
-                "path": "#superscript"
-            },
-            {
-                "title": "Subscript",
-                "path": "#subscript"
-            },
-            {
-                "title": "Preformatted Text",
-                "path": "#preformatted-text"
+                "title": "Aligning Text",
+                "path": "/aligning-text/"
             }
-            
         ]
     },
     {
@@ -135,86 +54,71 @@
     },
     {
         "title": "HTML Links",
-        "childrens": [
-            {
-                "title": "Anchor Tag",
-                "path": "/anchor-tag"
-            },
-            {
-                "title": "Href Attribute",
-                "path": "/href-attribute"
-            },
-            {
-                "title": "Target Attribute",
-                "path": "/target-attribute"
-            }
-        ]
+        "path": "/html-links"
     },
     {
         "title": "HTML Images",
-        "childrens": [
-            {
-                "title": "Image Tag",
-                "path": "/image-tag"
-            }
-        ]
+        "path": "/html-images"
     },
     {
         "title": "HTML Lists",
+        "path": "/html-lists",
         "childrens": [
             {
                 "title": "Unordered Lists",
-                "path": "/unordered-lists"
+                "path": "/html-lists#unordered-lists"
             },
             {
                 "title": "Ordered Lists",
-                "path": "/ordered-lists"
+                "path": "/html-lists#ordered-lists"
             },
             {
                 "title": "Description Lists",
-                "path": "/description-lists"
+                "path": "/html-lists#description-lists"
             }
         ]
     },
     {
         "title": "HTML Tables",
-        "path": "/table",
+        "path": "/html-table",
         "childrens": [
             {
                 "title": "Table Tags",
+                "path": "/html-table#tags",
                 "childrens": [
                     {
                         "title": "Table",
-                        "path": "#table"
+                        "path": "/html-table#table"
                     },
                     {
                         "title": "Table Row",
-                        "path": "#table-row"
+                        "path": "/html-table#table-row"
                     },
                     {
                         "title": "Table Header",
-                        "path": "#table-header"
+                        "path": "/html-table#table-header"
                     },
                     {
                         "title": "Table Data",
-                        "path": "#table-data"
+                        "path": "/html-table#table-data"
                     }
                 ]
             },
             {
                 "title": "Table Attributes",
+                "path": "/html-table#attributes",
                 "childrens": [
                     {
                         "title": "Border",
-                        "path": "/border"
+                        "path": "/html-table#border"
                     },
                     {
                         "title": "Colspan",
-                        "path": "/colspan"
+                        "path": "/html-table#colspan"
                     },
                     {
                         "title": "Rowspan",
-                        "path": "/rowspan"
+                        "path": "/html-table#rowspan"
                     }
                 ]
             }
@@ -255,7 +159,8 @@
         ]
     },
     {
-        "title": "Semantic HTML",
+        "title": "HTML Semantic",
+        "path": "/html-semantic",
         "childrens": [
             {
                 "title": "Semantic Tags",
@@ -287,12 +192,16 @@
                     {
                         "title": "Footer",
                         "path": "/footer"
+                    },
+                    {
+                        "title": "Figure and Figcaption",
+                        "path": "/figure-and-figcaption"
                     }
                 ]
             },
             {
-                "title": "Importance of Semantics",
-                "path": "/importance-of-semantics"
+                "title": "Why Use Semantic Tags?",
+                "path": "/html-semantic#why-use-semantic-tags?"
             }
         ]
     },
@@ -388,23 +297,6 @@
                         "path": "/form-submission"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "title": "Further Learning",
-        "childrens": [
-            {
-                "title": "HTML and CSS Integration",
-                "path": "/html-css-integration"
-            },
-            {
-                "title": "Responsive Design",
-                "path": "/responsive-design"
-            },
-            {
-                "title": "Accessibility Best Practices",
-                "path": "/accessibility-best-practices"
             }
         ]
     }

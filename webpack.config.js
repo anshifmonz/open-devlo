@@ -30,7 +30,7 @@ module.exports = new Promise((resolve, reject) => {
             }
           },
           {
-            test: /\.css$/,
+            test: /\.css$/i,
             use: ['style-loader', 'css-loader'],
           },
         ],
@@ -40,6 +40,7 @@ module.exports = new Promise((resolve, reject) => {
           template: './public/index.html',
         }),
       ],
+      stats: 'none',
       devServer: {
         static: {
           directory: path.join(__dirname, 'public'),

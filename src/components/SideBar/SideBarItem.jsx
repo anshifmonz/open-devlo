@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
 function SideBarItem({ item }) {
     const [isOpen, setOpen] = useState(false);
@@ -8,11 +9,7 @@ function SideBarItem({ item }) {
             <div className="side-bar-title" onClick={() => setOpen(!isOpen)}>
                 {item.path ? <a href={item.path}>{item.title}</a> : <p>{item.title}</p>}
                 {item.childrens && (
-                    <img 
-                        src="assets/dropdown.png" 
-                        alt="dropdown icon" 
-                        className={isOpen ? "dropdown open" : ""} 
-                    />
+                    <ChevronDown width={20} height={15}/>
                 )}
             </div>
 
