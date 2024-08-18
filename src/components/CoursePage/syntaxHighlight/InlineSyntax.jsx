@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import hljs from 'highlight.js';
 
-const InlineSyntaxHighlight = ({ code, inside }) => {
+const InlineSyntaxHighlight = ({ code, classes }) => {
   const codeRef = useRef(null);
 
   useEffect(() => {
-    if (codeRef.current) {
+    if (codeRef.current && codeRef.current.dataset.highlighted !== 'yes') {
       hljs.highlightElement(codeRef.current);
     }
   }, [code]);
@@ -28,7 +28,7 @@ const InlineSyntaxHighlight = ({ code, inside }) => {
 
   return (
     <span>
-      <code ref={codeRef} className={ inside ? "language-html inline-code inside-ex" : "language-html inline-code"} onClick={copyToClipboard} title='Click to Copy'>
+      <code ref={codeRef} className={ classes ? `language-html inline-code ${classes}` : "language-html inline-code"} onClick={copyToClipboard} title='Click to Copy'>
         {code}
       </code>
     </span>
