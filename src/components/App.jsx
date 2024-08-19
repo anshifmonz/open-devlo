@@ -1,15 +1,12 @@
-import '../styles/app.css'
-import NavBar from "./Navbar/NavBar";
-import SideBar from "./SideBar/SideBar" 
-import Home from './Home/Home';
-import CoursePage from './CoursePage/CoursePage';
+import { Routes, Route } from 'react-router-dom';
+import AppRoutes from '../Routes/Routes';
 
 function App() {
-    return (
-        <>
-            <CoursePage />
-        </>
-    );
+  return (
+    <Routes>
+      <Route path='*' element={<AppRoutes />} />
+    </Routes>
+  );
 }
 
 export default App;

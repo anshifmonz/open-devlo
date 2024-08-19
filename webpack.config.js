@@ -13,6 +13,7 @@ module.exports = new Promise((resolve, reject) => {
       output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
+        publicPath: '/',
       },
       module: {
         rules: [
@@ -49,6 +50,7 @@ module.exports = new Promise((resolve, reject) => {
         port: port,
         open: true,
         hot: true,
+        historyApiFallback: true,
       },
       resolve: {
         extensions: ['.js', '.jsx'],
