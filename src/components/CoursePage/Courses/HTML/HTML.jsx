@@ -1,13 +1,13 @@
+import { Outlet } from 'react-router-dom';
+
 import '../../../../styles/Courses/html/html.css';
-import Introduction from './Introduction';
-import TagsAndElem from './TagsAndElem';
-import Attributes from './Attributes';
+import Tutorial from '../../Tutorial';
 
 function HTML() {
   return (
-    <section className='tutorial'>
-      <Introduction />
-    </section>
+    <Tutorial>
+      <Outlet />
+    </Tutorial>
   )
 }
 

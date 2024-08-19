@@ -1,0 +1,21 @@
+[
+  {
+    "heading": "Unordered List",
+    "p": "In an unordered list, the order of the items does not matter. It is typically displayed with bullet points.",
+    "tag": "<ul>",
+    "liTag": "<li>"
+  },
+  {
+    "heading": "Ordered List",
+    "p": "In an ordered list, the order of the items is important. It is typically displayed with numbers or letters.",
+    "tag": "<ol>",
+    "liTag": "<li>"
+  },
+  {
+    "heading": "Description List",
+    "p": "A description list is used for terms and descriptions. It’s useful for defining terms or creating glossary-like lists.",
+    "dTag": "<dl>",
+    "dliTag": "<dt>",
+    "dTagDesc": "<dd>"
+  }
+]

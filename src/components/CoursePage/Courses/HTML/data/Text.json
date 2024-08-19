@@ -1,0 +1,37 @@
+[
+  {
+    "tag": "breaking",
+    "p": "Inserts a line break.",
+    "code": "<p>Line one<br>Line two</p>"
+  },
+  {
+    "tag": "bold",
+    "p": "Makes text bold.",
+    "code": "<b>This text is bold.</b>"
+  },
+  {
+    "tag": "italic",
+    "p": "Makes text italic.",
+    "code": "<i>This text is italic.</i>"
+  },
+  {
+    "tag": "strong",
+    "p": "Indicates that the text is of strong importance (usually bold).",
+    "code": "<strong>Important text</strong>"
+  },
+  {
+    "tag": "emphasized",
+    "p": "Indicates that the text should be emphasized (usually italic).",
+    "code": "<em>Emphasized text</em>"
+  },
+  {
+    "tag": "underline",
+    "p": "Underlines the text.",
+    "code": "<u>Underlined text</u>"
+  },
+  {
+    "tag": "span",
+    "p": "Applies styles or classes to a portion of text without affecting its block-level formatting.",
+    "code": "<span style=\"color: red;\">Red text</span>"
+  }
+]

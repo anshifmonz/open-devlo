@@ -2,16 +2,14 @@ const Intro = {
   structure:
   `<!DOCTYPE html>
 <html>
+    <head>
+        <title>My First Web Page</title>
+    </head>
 
-  <head>
-    <title>My First Web Page</title>
-  </head>
-
-  <body>
-    <h1>Hello, World!</h1>
-    <p>This is a paragraph of text.</p>
-  </body>
-  
+    <body>
+        <h1>Hello, World!</h1>
+        <p>This is a paragraph of text.</p>
+    </body>
 </html>`,
 
   tagName:
@@ -20,27 +18,27 @@ const Intro = {
   allTogether:
   `<!DOCTYPE html>
 <html>
-  <head>
-    <title>My First Web Page</title>
-  </head>
-  <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a paragraph of text.</p>
-    <p>This is a line breaked <br> text</p>
-    <a href="https://www.example.com">Visit Example</a>
-    <div>
-      <ol>
-        <li>First item</li>
-        <li>Second item</li>
-      </ol>
-      <ul>
-        <li>Item one</li>
-        <li>Item two</li>
-      </ul>
-      <hr>
-    </div>
-    <img src="/assets/image.png" alt="Description of the image" />
-  </body>
+    <head>
+        <title>My First Web Page</title>
+    </head>
+    <body>
+        <h1>Welcome to My Website</h1>
+        <p>This is a paragraph of text.</p>
+        <p>This is a line breaked <br> text</p>
+        <a href="https://www.example.com">Visit Example</a>
+        <div>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+            </ol>
+            <ul>
+                <li>Item one</li>
+                <li>Item two</li>
+            </ul>
+            <hr>
+        </div>
+        <img src="/assets/image.png" alt="Description of the image" />
+    </body>
 </html>`
 };
 
@@ -181,7 +179,7 @@ const Text = {
 </html>`
 };
 
-const Links = {
+const LinksCode = {
 
   a:
   `<a href="https://www.example.com">Visit Example</a>`,
@@ -233,51 +231,55 @@ const Links = {
 };
 
 const Img = {
-  img:
-  `<img src="image.jpg" alt="Description of the image">`,
+  picture:
+  `<picture>
+  <source srcset="image-small.jpg" media="(max-width: 600px)">
+  <source srcset="image-large.jpg" media="(min-width: 601px)">
+  <img src="image-default.jpg" alt="Responsive Image">
+</picture>`,
 };
 
 const List = {
   uList:
   `<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
 </ul>`,
 
   oList:
   `<ol>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
 </ol>`,
 
   descList:
   `<dl>
-  <dt>HTML</dt>
-  <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
-  
-  <dt>CSS</dt>
-  <dd>Cascading Style Sheets, used to style and layout web pages.</dd>
-  
-  <dt>JavaScript</dt>
-  <dd>A programming language used to create interactive effects within web browsers.</dd>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets, used to style and layout web pages.</dd>
+
+    <dt>JavaScript</dt>
+    <dd>A programming language used to create interactive effects within web browsers.</dd>
 </dl>`,
 
   nestedList:
   `<ul>
-  <li>Fruits
-    <ul>
-      <li>Apple</li>
-      <li>Orange</li>
-    </ul>
-  </li>
-  <li>Vegetables
-    <ol>
-      <li>Carrot</li>
-      <li>Broccoli</li>
-    </ol>
-  </li>
+    <li>Fruits
+        <ul>
+            <li>Apple</li>
+            <li>Orange</li>
+        </ul>
+    </li>
+    <li>Vegetables
+        <ol>
+            <li>Carrot</li>
+            <li>Broccoli</li>
+        </ol>
+    </li>
 </ul>`,
 
   type:
@@ -299,101 +301,101 @@ const List = {
   <title>HTML Lists Example</title>
 </head>
 <body>
-  <h1>HTML Lists</h1>
+    <h1>HTML Lists</h1>
 
-  <h2>Unordered List</h2>
-  <ul class="custom-bullets">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-  </ul>
+    <h3>Unordered List</h3>
+    <ul class="custom-bullets">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 
-  <h2>Ordered List</h2>
-  <ol class="custom-numbers">
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-  </ol>
+    <h3>Ordered List</h3>
+    <ol class="custom-numbers">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
 
-  <h2>Description List</h2>
-  <dl>
-    <dt>HTML</dt>
-    <dd>HyperText Markup Language</dd>
-    <dt>CSS</dt>
-    <dd>Cascading Style Sheets</dd>
-  </dl>
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
 
-  <h2>Nested Lists</h2>
-  <ul>
-    <li>Fruits
-      <ul>
-        <li>Apple</li>
-        <li>Banana</li>
-      </ul>
-    </li>
-    <li>Vegetables
-      <ol>
-        <li>Carrot</li>
-        <li>Broccoli</li>
-      </ol>
-    </li>
-  </ul>
+    <h3>Nested Lists</h3>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ol>
+                <li>Carrot</li>
+                <li>Broccoli</li>
+            </ol>
+        </li>
+    </ul>
 </body>
 
 </html>
   `
 };
 
-const Table = {
+const TableCode = {
   table:
   `<table>
-  <tr> <-- First row contain header>
-    <th>Header 1</th>
-    <th>Header 2</th>
-  </tr>
-  <tr>
-    <td>Data 1</td>
-    <td>Data 2</td>
-  </tr>
-  <tr>
-    <td>Data 3</td>
-    <td>Data 4</td>
-  </tr>
+    <tr> <!-- First row contain header -->
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+    </tr>
+    <tr>
+        <td>Data 3</td>
+        <td>Data 4</td>
+    </tr>
 </table>`,
 
   head:
-  `<thead>
-  <tr>
-    <th>Header 1</th>
-    <th>Header 2</th>
-  </tr>
-</thead>`,
+  `<table>
+    <thead>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    </thead>
+</table>`,
 
   body:
-  `<tbody>
-  <tr>
-    <td>Data 1</td>
-    <td>Data 2</td>
-  </tr>
-  <tr>
-    <td>Data 3</td>
-    <td>Data 4</td>
-  </tr>
-</tbody>`,
+  `<table>
+    <tbody>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+    </tr>
+    <tr>
+        <td>Data 3</td>
+        <td>Data 4</td>
+    </tr>
+    </tbody>
+</table>`,
 
    foot:
-   `<tfoot>
-  <tr>
-    <td>Total</td>
-    <td>$100</td>
-  </tr>
-</tfoot>`,
-
-  col:
-  `<td colspan="2">Spans Two Columns</td>`,
-
-  row:
-  `<td colspan="2">Spans Two Columns</td>`,
+   `<table>
+    <tfoot>
+    <tr>
+        <td>Total</td>
+        <td>$100</td>
+    </tr>
+    </tfoot>
+</table>`,
 
   allTogether:
   `<!DOCTYPE html>
@@ -403,79 +405,65 @@ const Table = {
 </head>
 
 <body>
-  <h1>HTML Tables</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Data 1</td>
-        <td>Data 2</td>
-        <td>Data 3</td>
-      </tr>
-      <tr>
-        <td colspan="2">Data spanning two columns</td>
-        <td>Data 4</td>
-      </tr>
-      <tr>
-        <td rowspan="2">Data spanning two rows</td>
-        <td>Data 5</td>
-        <td>Data 6</td>
-      </tr>
-      <tr>
-        <td>Data 7</td>
-        <td>Data 8</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td>Total</td>
-        <td colspan="2">$100</td>
-      </tr>
-    </tfoot>
-  </table>
+    <h1>HTML Tables</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td colspan="2">span 1 col</td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <td rowspan="2">span 2 row</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+            </tr>
+            <tr>
+                <td>Data 7</td>
+                <td>Data 8</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="2">$100</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
   `
 };
 
-const Form = {
+const FormCode = {
   form:
   `<form action="/submit" method="post">
   <!-- Form elements go here -->
 </form>`,
 
-  input:
-  `<input type="text" name="username" placeholder="Enter your username">`,
+  dropdown:
+  `<select name="language">
+  <option value="" disabled selected>Choose a programming language</option>
+  <option value="golang">Go</option>
+  <option value="javascript">Javascript</option>
+  <option value="python">Python</option>
+</select>`,
 
-  textArea:
-  `<textarea name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>`,
-
-  btn:
-  `<button type="submit">Submit</button>`,
-
-  action:
-  `<form action="/submit">`,
-
-  method:
-  `<form action="/login" method="post">`,
-
-  encType:
-  `<form enctype="multipart/form-data">`,
-
-  require:
-  `<input type="text" name="username" required>`,
-
-  pattern:
-  `<input type="text" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">`,
-
-  minMax:
-  `<input type="text" name="username" minlength="3" maxlength="15">`,
+  formAttr:
+  `<form action="/submit" method="post" enctype="multipart/form-data">
+  
+</form>`,
 
   allTogether:
   `<!DOCTYPE html>
@@ -484,55 +472,60 @@ const Form = {
   <title>HTML Forms Example</title>
 </head>
 <body>
-  <h1>HTML Forms</h1>
+    <h1>HTML Forms</h1>
   
-  <form action="/submit" method="post" enctype="multipart/form-data">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" placeholder="Enter your username" required>
-    <br><br>
-    
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-    <br><br>
-    
-    <label for="gender">Gender:</label>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label>
-    <br><br>
-    
-    <label for="subscribe">Subscribe to newsletter:</label>
-    <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
-    <br><br>
-    
-    <label for="country">Country:</label>
-    <select id="country" name="country">
-      <option value="usa">United States</option>
-      <option value="uk">United Kingdom</option>
-      <option value="canada">Canada</option>
-    </select>
-    <br><br>
-    
-    <label for="comments">Comments:</label>
-    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
-    <br><br>
-    
-    <label for="resume">Upload Resume:</label>
-    <input type="file" id="resume" name="resume">
-    <br><br>
-    
-    <input type="hidden" name="userID" value="12345">
-    <br><br>
-    
-    <button type="submit">Submit</button>
-  </form>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+        <br><br>
+
+        <label for="programming-langauge">Programming Langauge:</label>
+        <select name="language">
+            <option value="" disabled selected>Choose a programming language</option>
+            <option value="golang">Go</option>
+            <option value="javascript">Javascript</option>
+            <option value="python">Python</option>
+        </select>
+        <br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+        <br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume">
+        <br><br>
+
+        <input type="hidden" name="userID" value="12345">
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
   
 </body>
 </html>`
 };
 
-const Semantic = {
+const SemanticCode = {
   header:
   `<header>
   <h1>My Website</h1>
@@ -599,14 +592,6 @@ const Semantic = {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Semantic HTML Example</title>
-  <style>
-    body { font-family: Arial, sans-serif; }
-    header, nav, main, section, article, aside, footer { padding: 20px; margin: 10px; border: 1px solid #ccc; }
-    header { background-color: #f2f2f2; }
-    nav ul { list-style: none; padding: 0; }
-    nav ul li { display: inline; margin-right: 10px; }
-    footer { background-color: #f2f2f2; text-align: center; }
-  </style>
 </head>
 <body>
 
@@ -652,13 +637,101 @@ const Semantic = {
 </html>`
 }
 
+const MultimediaCode = {
+  Images:
+  `<img src="small.jpg" 
+      srcset="large.jpg 1024w, medium.jpg 768w, small.jpg 480w" 
+      sizes="(max-width: 600px) 480px, (max-width: 1024px) 768px, 1024px" 
+      alt="Responsive image example">`,
+
+  Audio:
+  `<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>`,
+
+  Video:
+  `<video width="640" height="360" controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    Your browser does not support the video tag.
+</video>`,
+
+  iframe:
+  `<iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>`,
+
+  object:
+  `<object data="document.pdf" type="application/pdf" width="600" height="800">
+    <p>Your browser does not support PDFs. <a href="document.pdf">Download the PDF</a>.</p>
+</object>
+`,
+
+  map:
+  `<img src="map.jpg" alt="Map" usemap="#image-map">
+
+<map name="image-map">
+    <area shape="rect" coords="34,44,270,350" href="page1.html" alt="Link to Page 1">
+    <area shape="circle" coords="512,213,50" href="page2.html" alt="Link to Page 2">
+</map>
+`,
+
+  canvas:
+  `<canvas id="myCanvas" width="200" height="100">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+`,
+  
+  svg:
+  `<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+`
+}
+
+const MetaTag = {
+
+  OGTags:
+  `<meta property="og:title" content="Understanding Meta Tags in HTML">
+<meta property="og:description" content="A detailed guide on meta tags and their importance.">
+<meta property="og:image" content="https://www.example.com/image.jpg">
+<meta property="og:url" content="https://www.example.com/meta-tags">`,
+
+  twitter:
+  `<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@yourusername">
+<meta name="twitter:title" content="Understanding Meta Tags in HTML">
+<meta name="twitter:description" content="A detailed guide on meta tags and their importance.">
+<meta name="twitter:image" content="https://www.example.com/image.jpg">`,
+
+  httpEquiv:
+  `<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">`
+
+}
+
+const SEOCode ={
+  heading:
+  `<h1>SEO Best Practices for HTML</h1>
+<h2>Title Tags</h2>
+`
+}
 export {
   Intro,
   Attr,
   Text,
-  Links,
+  LinksCode,
   List,
-  Table,
-  Form,
-  Semantic
+  TableCode,
+  FormCode,
+  Img,
+  SemanticCode,
+  MultimediaCode,
+  MetaTag,
+  SEOCode
 };

@@ -1,0 +1,27 @@
+@import url('./app.css');
+
+#root{
+  display: flex;
+  flex-direction: column;  
+}
+#course-page{
+  display: flex;
+  padding-top: 50px;
+  width: 100dvw;
+  min-height: 100dvh;
+  background-color: var(--background1);
+}
+main#main{
+  width: 100%;
+  padding: 35px 16px 0;
+  padding-left: 235px;
+  flex-grow: 1;
+  color: var(--text);
+}
+section.tutorial{
+  width: 100%;
+}
+.num-indent{
+  margin-left: 1.5em;
+  text-indent: -1.6em;
+}

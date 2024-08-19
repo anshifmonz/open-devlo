@@ -1,5 +1,5 @@
 @import url('../../app.css');
-@import url(../../content.css);
+@import url('../../tutorial.css');
 
 /* HTML Introduction */
 #what-is-html, #html-structure, #basic-tags{

@@ -1,276 +1,66 @@
 [
     {
         "title": "Introduction to HTML",
-        "childrens": [
-            {
-                "title": "What is HTML?",
-                "path": "#what-is-html"
-            },
-            {
-                "title": "Structure of an HTML document",
-                "path": "#html-structure"
-            },
-            {
-                "title": "Basic tags",
-                "path": "#basic-tags"                
-            }
-        ]
+        "path": "/courses/html"
     },
     {
         "title": "HTML Tags and Elements",
-        "path": "/tags-and-elements"
+        "path": "/courses/html/tags-and-elements"
     },
     {
         "title": "HTML Attributes",
-        "path": "/html-attributes",
-        "childrens": [
-            {
-                "title": "Global attributes",
-                "path": "/html-attributes#global-attributes"
-            },
-            {
-                "title": "Specific attributes for elements",
-                "path": "/html-attributes#specific-attributes"
-            }
-        ]
+        "path": "/courses/html/attributes"
     },
     {
         "title": "HTML Text",
-        "path": "/html-text/",
-        "childrens": [
-            {
-                "title": "Formatting Text",
-                "path": "/formatting-text"
-            },
-            {
-                "title": "Aligning Text",
-                "path": "/aligning-text/"
-            }
-        ]
-    },
-    {
-        "title": "HTML Comments",
-        "path": "/html-comments"
+        "path": "/courses/html/text/"
     },
     {
         "title": "HTML Links",
-        "path": "/html-links"
+        "path": "/courses/html/links"
     },
     {
         "title": "HTML Images",
-        "path": "/html-images"
+        "path": "/courses/html/images"
     },
     {
         "title": "HTML Lists",
-        "path": "/html-lists",
-        "childrens": [
-            {
-                "title": "Unordered Lists",
-                "path": "/html-lists#unordered-lists"
-            },
-            {
-                "title": "Ordered Lists",
-                "path": "/html-lists#ordered-lists"
-            },
-            {
-                "title": "Description Lists",
-                "path": "/html-lists#description-lists"
-            }
-        ]
+        "path": "/courses/html/lists"
     },
     {
         "title": "HTML Tables",
-        "path": "/html-table",
-        "childrens": [
-            {
-                "title": "Table Tags",
-                "path": "/html-table#tags",
-                "childrens": [
-                    {
-                        "title": "Table",
-                        "path": "/html-table#table"
-                    },
-                    {
-                        "title": "Table Row",
-                        "path": "/html-table#table-row"
-                    },
-                    {
-                        "title": "Table Header",
-                        "path": "/html-table#table-header"
-                    },
-                    {
-                        "title": "Table Data",
-                        "path": "/html-table#table-data"
-                    }
-                ]
-            },
-            {
-                "title": "Table Attributes",
-                "path": "/html-table#attributes",
-                "childrens": [
-                    {
-                        "title": "Border",
-                        "path": "/html-table#border"
-                    },
-                    {
-                        "title": "Colspan",
-                        "path": "/html-table#colspan"
-                    },
-                    {
-                        "title": "Rowspan",
-                        "path": "/html-table#rowspan"
-                    }
-                ]
-            }
-        ]
+        "path": "/courses/html/table"
     },
     {
         "title": "HTML Forms",
-        "childrens": [
-            {
-                "title": "Form Tag",
-                "path": "/form-tag"
-            },
-            {
-                "title": "Form Elements",
-                "childrens": [
-                    {
-                        "title": "Input",
-                        "path": "/input"
-                    },
-                    {
-                        "title": "Textarea",
-                        "path": "/textarea"
-                    },
-                    {
-                        "title": "Button",
-                        "path": "/button"
-                    },
-                    {
-                        "title": "Select",
-                        "path": "/select"
-                    },
-                    {
-                        "title": "Label",
-                        "path": "/label"
-                    }
-                ]
-            }
-        ]
+        "path": "/courses/html/form"
     },
     {
         "title": "HTML Semantic",
-        "path": "/html-semantic",
-        "childrens": [
-            {
-                "title": "Semantic Tags",
-                "childrens": [
-                    {
-                        "title": "Header",
-                        "path": "/header"
-                    },
-                    {
-                        "title": "Nav",
-                        "path": "/nav"
-                    },
-                    {
-                        "title": "Main",
-                        "path": "/main"
-                    },
-                    {
-                        "title": "Section",
-                        "path": "/section"
-                    },
-                    {
-                        "title": "Article",
-                        "path": "/article"
-                    },
-                    {
-                        "title": "Aside",
-                        "path": "/aside"
-                    },
-                    {
-                        "title": "Footer",
-                        "path": "/footer"
-                    },
-                    {
-                        "title": "Figure and Figcaption",
-                        "path": "/figure-and-figcaption"
-                    }
-                ]
-            },
-            {
-                "title": "Why Use Semantic Tags?",
-                "path": "/html-semantic#why-use-semantic-tags?"
-            }
-        ]
+        "path": "/courses/html/semantic"
     },
     {
         "title": "HTML Multimedia",
-        "childrens": [
-            {
-                "title": "Embedding Media",
-                "childrens": [
-                    {
-                        "title": "Audio",
-                        "path": "/audio"
-                    },
-                    {
-                        "title": "Video",
-                        "path": "/video"
-                    }
-                ]
-            },
-            {
-                "title": "Other Embeds",
-                "childrens": [
-                    {
-                        "title": "Iframe",
-                        "path": "/iframe"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "title": "HTML5 APIs",
-        "childrens": [
-            {
-                "title": "New Input Types",
-                "path": "/new-input-types"
-            },
-            {
-                "title": "Canvas",
-                "path": "/canvas"
-            },
-            {
-                "title": "Geolocation API",
-                "path": "/geolocation-api"
-            },
-            {
-                "title": "Drag and Drop API",
-                "path": "/drag-and-drop-api"
-            }
-        ]
+        "path": "/courses/html/multi-media"
     },
     {
         "title": "Advanced Topics",
         "childrens": [
             {
                 "title": "Meta Tags",
-                "path": "/meta-tags"
+                "path": "/courses/html/advance-topics/meta-tag"
             },
             {
                 "title": "Link Tags",
-                "path": "/link-tags"
+                "path": "/courses/html/advance-topics/link-tag"
             },
             {
                 "title": "Script Tags",
-                "path": "/script-tags"
+                "path": "/courses/html/advance-topics/script-tag"
             },
             {
                 "title": "SEO Best Practices",
-                "path": "/seo-best-practices"
+                "path": "/courses/html/advance-topics/seo-best-practices"
             }
         ]
     },
@@ -278,25 +68,20 @@
         "title": "Practice and Projects",
         "childrens": [
             {
-                "title": "Mini Projects",
-                "childrens": [
-                    {
-                        "title": "Personal Webpage",
-                        "path": "/personal-webpage"
-                    },
-                    {
-                        "title": "Portfolio Site",
-                        "path": "/portfolio-site"
-                    },
-                    {
-                        "title": "Blog Layout",
-                        "path": "/blog-layout"
-                    },
-                    {
-                        "title": "Simple Form Submission Page",
-                        "path": "/form-submission"
-                    }
-                ]
+                "title": "Personal Webpage",
+                "path": "/courses/html/personal-webpage"
+            },
+            {
+                "title": "Portfolio Site",
+                "path": "/courses/html/portfolio-site"
+            },
+            {
+                "title": "Blog Layout",
+                "path": "/courses/html/blog-layout"
+            },
+            {
+                "title": "Simple Form Submission Page",
+                "path": "/courses/html/form-submission"
             }
         ]
     }

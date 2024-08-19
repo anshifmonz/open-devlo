@@ -1,0 +1,14 @@
+#note{
+  display: flex;
+  align-items: flex-start;
+  background-color: #0b131b;
+  padding: 25px 20px;
+  border-radius: 5px;
+  margin: 0 20px 0 8px;
+}
+#note strong{
+  margin-right: 10px;
+}
+#note span{
+  flex: 1;
+}

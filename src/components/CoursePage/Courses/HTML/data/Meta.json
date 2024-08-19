@@ -1,0 +1,69 @@
+{
+  "sections": [
+    {  
+      "title": "Commonly Used Meta Tags",
+      "Attrs": [
+        {
+          "attr": "charset",
+          "desc": "Specifies character encoding.",
+          "ex": "<meta charset=\"UTF-8\">"
+        },
+        {
+          "attr": "viewport",
+          "desc": "Controls the layout on difference devices.",
+          "ex": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+        },
+        {
+          "attr": "description",
+          "desc": "Provide a brief description of the page's content, it's used by search engines to display a snippet of your page in search results.",
+          "ex": "<meta name=\"description\" content=\"Guide on meta tags.\">"
+        },
+        {
+          "attr": "keywords",
+          "desc": "Lists of keywords relevant to the page's content, Pastly used for SEO, but now mostly ignored by most search engines.",
+          "ex": "<meta name=\"keywords\" content=\"HTML, meta tags, SEO, web development\">"
+        },
+        {
+          "attr": "Author",
+          "desc": "Specifies the author of the page.",
+          "ex": "<meta name=\"author\" content=\"John Doe\">"
+        },
+        {
+          "attr": "Refresh",
+          "desc": "Redirects or refreshes the page after a specified time, used for timed redirects or refreshing content.",
+          "ex": "<meta http-equiv=\"refresh\" content=\"5;url=https://www.example.com\">"
+        },
+        {
+          "attr": "Robots",
+          "desc": "Guides search engines on whether to index the page and follow its links.",
+          "ex": "<meta name=\"robots\" content=\"noindex, nofollow\">"
+        }
+      ]
+    },
+    {
+      "title": "Open Graph (OG) Tags",
+      "desc": "Boosts social media engagement by controlling the title, description, and image shown when your content is shared.",
+      "SyCode": "OGTags"
+    },
+    {
+      "title": "Twitter Cards",
+      "desc": "Enhances Twitter previews, boosting visibility and engagement.",
+      "SyCode": "twitter"
+    },
+    {
+      "title": "Canonical Tag",
+      "desc": "Prevents duplicate content issues by telling search engines which page version to prioritize for SEO.",
+      "InCode": "<link rel=\"canonical\" href=\"https://www.example.com/original-page\">"
+    },
+    {
+      "title": "Viewport Tag",
+      "desc": "Makes your website responsive by controlling how it is displayed on mobile devices, and it's critical for modern web design, ensuring your site looks good on any device.",
+      "InCode": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+    },
+    {
+      "title": "Theme-Color",
+      "desc": "Sets the color of the browser's address bar on mobile devices.",
+      "InCode": "<meta name=\"theme-color\" content=\"#ffffff\">"
+    }
+  ]
+}

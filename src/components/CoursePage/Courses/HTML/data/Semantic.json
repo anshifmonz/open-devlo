@@ -1,0 +1,70 @@
+{
+  "tags": [
+    {
+      "heading": "Header Tag",
+      "tag": "<header>",
+      "desc": "Represents a container for introductory content or navigational links. Typically contains one or more heading elements (`<h1>` - `<h6>`) or logo."
+    },
+    {
+      "heading": "Navigation Tag",
+      "tag": "<nav>",
+      "desc": "A section of the page intended for navigation links."
+    },
+    {
+        "heading": "Main Tag",
+        "tag": "<main>",
+        "desc": "Represents the main content of the `<body>`. There should only be one `<main>` element per document."
+    },
+    {
+      "heading": "Section Tag",
+      "tag": "<section>",
+      "desc": "A standalone section of content which can have a heading."
+    },
+    {
+      "heading": "Article Tag",
+      "tag": "<article>",
+      "desc": "Represents a self-contained piece of content that can be independently distributed or reused (blog post, news article)."
+    },
+    {
+      "heading": "Aside Tag",
+      "tag": "<aside>",
+      "desc": "Represents content that is indirectly related to the surrounding content. (sidebars)."
+    },
+    {
+      "heading": "Footer Tag",
+      "tag": "<footer>",
+      "desc": "Represents the footer for its closest section or the whole page. It usually contains information about the author, copyright details, or links to related documents."
+    },
+    {
+      "heading": "Figure and Figcaption Tags",
+      "tags": [
+        {
+          "tag": "<figure>",
+          "desc": "Represents self-contained content, like images, diagrams, or code snippets, usually with a caption."
+        },
+        {
+          "tag": "<figcaption>",
+          "desc": "Provides a caption or legend for the content of the `<figure>`."
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "title": "Accessibility",
+      "desc": "Using semantic tags helps screen readers and other tools understand the layout and content of the page, making it easier for everyone to use."
+    },
+    {
+      "title": "SEO",
+      "desc": "Search engines can better understand and rank your content when you use semantic tags."
+    },
+    {
+      "title": "Maintainability",
+      "desc": "Semantic tags make your HTML code cleaner and easier for developers to work with."
+    },
+    {
+      "title": "Standardization",
+      "desc": "Using semantic HTML follows web standards, ensuring your site works well across different browsers."
+    }
+  ]
+}

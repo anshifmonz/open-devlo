@@ -1,0 +1,138 @@
+{
+  "Attributes": 
+  {
+    "title": "Common Attributes of the link Tag",
+    "Attrs": [
+      {
+        "attr": "rel",
+        "desc": "Specifies the relationship between the current document and the linked resource.",
+        "InCode": "<link rel=\"stylesheet\" href=\"styles.css\">",
+        "values": [
+          {
+            "value": "<code>stylesheet</code>",
+            "desc": "Links to an external CSS file."
+          },
+          {
+            "value": "<code>icon</code>",
+            "desc": "Links to a favicon or icon."
+          },
+          {
+            "value": "<code>preload</code>",
+            "desc": "Preloads certain resources to improve page load speed."
+          },
+          {
+            "value": "<code>alternate</code>",
+            "desc": "Provides alternate versions of the document (e.g., a different language or format)."
+          },
+          {
+            "value": "<code>manifest</code>",
+            "desc": "Links to a web app manifest."
+          }
+        ]
+      },
+      {
+        "attr": "href",
+        "desc": "Specifies the URL of the linked resource.",
+        "InCode": "<link rel=\"stylesheet\" href=\"https://example.com/styles.css\">"
+      },
+      {
+        "attr": "type",
+        "desc": "Specifies the MIME type of the linked resource, typically used with stylesheets as text/css.",
+        "InCode": "<link rel=\"stylesheet\" href=\"styles.css\" type=\"text/css\">"
+      },
+      {
+        "attr": "media",
+        "desc": "Specifies the media type or media query for which the linked resource is optimized.",
+        "InCode": "<link rel=\"stylesheet\" href=\"print.css\" media=\"print\">",
+        "values": [
+          {
+            "value": "<code>all</code>",
+            "desc": "Suitable for all devices."
+          },
+          {
+            "value": "<code>screen</code>",
+            "desc": "Optimized for screens."
+          },
+          {
+            "value": "<code>print</code>",
+            "desc": "Optimized for print."
+          }
+        ]
+      },
+      {
+        "attr": "sizes",
+        "desc": "Specifies the size of the icons for <code>rel=\"icon\"</code>",
+        "InCode": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"16x16\">"
+      },
+      {
+        "attr": "crossorigin",
+        "desc": "Specifies how the linked resource should be handled regarding cross-origin requests.",
+        "InCode": "<link rel=\"stylesheet\" href=\"https://example.com/styles.css\" crossorigin=\"anonymous\">",
+        "values": [
+          {
+            "value": "<code>anonymous</code>",
+            "desc": "No credentials (cookies, HTTP authentication, and client-side SSL certificates) will be sent."
+          },
+          {
+            "value": "<code>use-credentials</code>",
+            "desc": "Credentials will be sent with the request."
+          }
+        ]
+      },
+      {
+        "attr": "as",
+        "desc": "Used with <code>rel=\"preload\"</code> to specify the type of content being loaded.",
+        "InCode": "<link rel=\"preload\" href=\"styles.css\" as=\"style\">",
+        "values": [
+          {
+            "value": "<code>script</code>",
+            "desc": "JavaScript files."
+          },
+          {
+            "value": "<code>style</code>",
+            "desc": "CSS files."
+          },
+          {
+            "value": "<code>image</code>",
+            "desc": "Images file."
+          }
+        ]
+      },
+      {
+        "attr": "integrity",
+        "desc": "Provides a security feature by allowing you to specify a cryptographic hash of the resource to ensure it hasn’t been tampered with.",
+        "InCode": "<link rel=\"stylesheet\" href=\"https://example.com/styles.css\" integrity=\"HASH KEY\">"
+      }
+    ]
+  },
+  "Uses": {
+    "title": "Common Uses of the link Tag",
+    "uses": [
+      {
+        "title": "Linking to Stylesheets",
+        "desc": "The most common use of the `link` tag is to link to an external CSS file.",
+        "InCode": "<link rel=\"stylesheet\" href=\"styles.css\">"
+      },
+      {
+        "title": "Linking to Icons",
+        "desc": "The link tag is used to link to favicons and other icons that browsers display in tabs or bookmarks.",
+        "InCode": "<link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\">"
+      },
+      {
+        "title": "Preloading Resources",
+        "desc": "Preloading allows you to load resources early in the page’s lifecycle, improving performance.",
+        "InCode": "<link rel=\"preload\" href=\"styles.css\" as=\"style\">"
+      },
+      {
+        "title": "Alternate Versions of a Document",
+        "desc": "Provides links to alternate versions of the page, like different languages.",
+        "InCode": "<link rel=\"alternate\" href=\"page-fr.html\" hreflang=\"fr\" title=\"French version\">"
+      },
+      {
+        "title": "Manifest File",
+        "desc": "Links to a web app manifest, which provides metadata about the web application.",
+        "InCode": "<link rel=\"manifest\" href=\"/manifest.json\">"
+      }
+    ]
+  }
+}

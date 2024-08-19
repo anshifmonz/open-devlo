@@ -1,0 +1,159 @@
+{
+  "title": "HTML Multimedia",
+  "sections": [
+    {
+      "title": "Images",
+      "desc": "Images are the most common form of multimedia on the web.",
+      "ele": "<img>",
+      "def": "Embeds an image into the HTML document.",
+      "InCode": "<img src=\"image.jpg\" alt=\"Description of the image\" width=\"500\" height=\"300\">",
+      "attrs": [
+        {
+          "attr": "src",
+          "desc": "Specifies the path to the image."
+        },
+        {
+          "attr": "alt",
+          "desc": "Provides alternative text if the image can't be displayed."
+        },
+        {
+          "attr": "width",
+          "attr1": "height",
+          "desc": "Set the dimensions of the image."
+        },
+        {
+          "attr": "srcset",
+          "attr1": "sizes",
+          "desc": "For responsive images."
+        },
+        {
+          "attr": "loading",
+          "desc": "For lazy loading images."
+        }
+      ],
+      "SyCode": "Images"
+    },
+    {
+      "title": "Audio",
+      "desc": "Audio tag allows a simple way to embed audio files.",
+      "ele": "<audio>",
+      "def": "Embeds an audio file.",
+      "attrs": [
+        {
+          "attr": "controls",
+          "desc": "Add play, pause, and volume controls."
+        },
+        {
+          "attr": "source",
+          "desc": "Specifies the audio file format for better browser compatibility."
+        }
+      ],
+      "SyCode": "Audio"
+    },
+    {
+      "title": "Video",
+      "desc": "Embedding video content is as easy as embedding images and audio.",
+      "ele": "<video>",
+      "def": "Embeds a video file.",
+      "attrs": [
+        {
+          "attr": "width",
+          "attr1": "height",
+          "desc": "Set the dimensions of the video."
+        },
+        {
+          "attr": "controls",
+          "desc": "Add play, pause, and volume controls."
+        },
+        {
+          "attr": "autoplay",
+          "desc": "Automatically starts the video when the page loads."
+        },
+        {
+          "attr": "loop",
+          "desc": "Loops the video playback."
+        },
+        {
+          "attr": "muted",
+          "desc": "Mutes the audio of the video by default."
+        }
+      ],
+      "SyCode": "Video"
+    },
+    {
+      "title": "Embedding YouTube Videos",
+      "desc": "You can also embed videos from platforms like YouTube.",
+      "ele": "<iframe>",
+      "def": "Embeds external content, such as a YouTube video.",
+      "attrs": [
+        {
+          "attr": "src",
+          "desc": "The URL of the video."
+        },
+        {
+          "attr": "frameborder",
+          "desc": "Specifies whether the iframe should have a border. Set to 0 for no border."
+        },
+        {
+          "attr": "allow",
+          "desc": "Specifies a list of features that the iframe is allowed to use, like autoplay, fullscreen, and more."
+        },
+        {
+          "attr": "allowfullscreen",
+          "desc": "Enables full-screen viewing."
+        }
+      ],
+      "SyCode": "iframe"
+    },
+    {
+      "title": "Embedding Other Multimedia Content",
+      "desc": "The <code>object</code> and <code>embed</code> elements are used to embed media like PDFs, Flash, and other types of content",
+      "eles": [
+        {
+          "ele": "<embed>",
+          "desc": "Embeds external content, like a PDF or a Flash file.",
+          "InCode": "<embed src=\"document.pdf\" width=\"500\" height=\"600\" type=\"application/pdf\">"
+        },
+        {
+          "ele": "<object>",
+          "desc": "object element is more versatile and allows you to provide fallback content.",
+          "SyCode": "object"
+        }
+      ]
+    },
+    {
+      "title": "Image Maps",
+      "desc": "Image maps allow you to define clickable areas on an image that can link to different pages.",
+      "ele": "<map>",
+      "ele1": "<area>",
+      "def": "Define an image map.",
+      "attrs": [
+        {
+          "attr": "shape",
+          "desc": "Defines the shape of the clickable area (rect, circle, poly)."
+        },
+        {
+          "attr": "coords",
+          "desc": "Specifies the coordinates for the clickable area."
+        }
+      ],
+      "SyCode": "map"
+    },
+    {
+      "title": "Canvas and SVG",
+      "desc": "Used for more advanced graphics and animations.",
+      "eles": [
+        {
+          "ele": "<canvas>",
+          "desc": "Used for drawing graphics on the fly using JavaScript.",
+          "SyCode": "canvas"
+        },
+        {
+          "ele": "SVG (Scalable Vector Graphics)",
+          "desc": "XML-based markup for creating vector graphics.",
+          "SyCode": "svg"
+        }
+      ]
+    }
+  ]
+}

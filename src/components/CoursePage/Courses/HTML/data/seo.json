@@ -1,0 +1,91 @@
+{
+  "title": "SEO Best Practice",
+  "desc": "Search Engine Optimization (SEO) involves optimizing your website to rank higher in search engine results pages (SERPs). Implementing best SEO practice in your HTML can improve your website’s visibility.",
+
+  "methods": [
+    {
+      "title": "Title Tags",
+      "desc": "Defines the title of the web page.",
+      "consider": [
+        "Keep it under 60 characters.",
+        "Include relevant keywords.",
+        "Make it unique for each page."
+      ],
+      "code" : "<title>Best Practices for SEO in HTML | YourSiteName</title>"
+    },
+    {
+      "title": "Meta Descriptions",
+      "desc": "Provides a summary of the page content.",
+      "consider": [
+        "Keep it under 155 characters.",
+        "Include relevant keywords and a call-to-action.",
+        "Ensure it is unique for each page."
+      ],
+      "code": "<meta name=\"description\" content=\"Your content description HERE \">"
+    },
+    {
+      "title": "Heading Tags",
+      "desc": "Structure content for both users and search engines.",
+      "consider": [
+        "Use one <code>h1</code> tag per page for the main topic.",
+        "Use <code>h2</code>, <code>h3</code> and etc, to structure subsections.",
+        "Include keywords in headings where relevant."
+      ],
+      "code": "heading"
+    },
+    {
+      "title": "URL Structure",
+      "desc": "Creates user-friendly and search-engine-friendly URLs.",
+      "consider": [
+        "Use descriptive, keyword-rich URLs.",
+        "Avoid complex query strings.",
+        "Use hyphens to separate words (e.g., `your-site.com/seo-best-practices`)."
+      ],
+      "code": "<a href=\"https://example.com/seo-best-practices\">SEO Best Practices</a>"
+    },
+    {
+      "title": "Alt Text for Images",
+      "desc": "Describes the content of images for search engines and accessibility.",
+      "consider": [
+        "Provide descriptive alt text for every image.",
+        "Include relevant keywords without keyword stuffing."
+      ],
+      "code": "<img src=\"seo-tips.jpg\" alt=\"SEO tips for improving website visibility\">"
+    },
+    {
+      "title": "Sitemap",
+      "desc": "Helps search engines understand the structure of your site.",
+      "consider": [
+        "Include a link to your XML sitemap in the robots.txt file.",
+        "Ensure your sitemap is updated regularly."
+      ],
+      "code": "<code>Sitemap: https://example.com/sitemap.xml</code>"
+    },
+    {
+      "title": "Robots Meta Tags",
+      "desc": "Provides instructions to search engine crawlers about indexing and following ",
+      "consider": [
+        "Use <code>index</code>, <code>follow</code> for pages you want to be indexed.",
+        "Use <code>noindex</code> for pages you don’t want to be indexed."
+      ],
+      "code": "<meta name=\"robots\" content=\"index, follow\">"
+    },
+    {
+      "title": "Canonical Tags",
+      "desc": "Prevents duplicate content issues by specifying the preferred version of a page.",
+      "consider": [
+        "Use on pages with similar or duplicate content."
+      ],
+      "code": "<link rel=\"canonical\" href=\"https://example.com/original-page\">"
+    },
+    {
+      "title": "Mobile Optimization",
+      "desc": "Ensures your site is usable and accessible on mobile devices.",
+      "consider": [
+        "Use responsive design techniques.",
+        "Optimize images and resources for mobile."
+      ],
+      "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{ 
+  "textInput": [
+    {
+      "title": "Password",
+      "description": "Creates a field for entering passwords (the text is obscured).",
+      "code": "<input type=\"password\">"
+    },
+    {
+      "title": "Radio Button",
+      "description": "Allows the user to select one option from a set.",
+      "code": "<input type=\"radio\">"
+    },
+    {
+      "title": "Checkboxes",
+      "description": "Allows the user to select one or more options.",
+      "code": "<input type=\"checkbox\">"
+    },
+    {
+      "title": "Select Dropdown",
+      "description": "Creates a dropdown menu.",
+      "code": "<select>",
+      "additionalCode": "<option>",
+      "additionalDescription": "Defines the options within the dropdown."
+    },
+    {
+      "title": "File Input",
+      "description": "Allows users to upload files.",
+      "code": "<input type=\"file\">"
+    },
+    {
+      "title": "Hidden Input",
+      "description": "Stores data that is not visible to the user but can be submitted with the form.",
+      "code": "<input type=\"hidden\">"
+    }
+  ],
+  "textAButton": [
+    {
+      "id": 2,
+      "heading": "Textarea",
+      "tag": "<textarea>",
+      "code": "<textarea name=\"comments\" rows=\"4\" cols=\"50\" placeholder=\"Enter your comments\"></textarea>",
+      "desc": "Creates a multi-line text input field."
+    },
+    {
+      "id": 3,
+      "heading": "Button",
+      "tag": "<button>",
+      "code": "<button type=\"submit\">Submit</button>",
+      "desc": "A clickable button that can be used to submit the form or trigger other actions."
+    }
+  ],
+  "Attr": [
+    {
+      "attr": "action",
+      "desc": "Specifies the URL where the form data should be sent."
+    },
+    {
+      "attr": "method",
+      "desc": "Specifies the HTTP method to use for form submission. Options include:",
+      "options": [
+        {
+          "title": "GET",
+          "desc": "Appends form data to the URL as query parameters."
+        },
+        {
+          "title": "POST",
+          "desc": "Sends form data in the body of the request (more secure for sensitive data)."
+        }
+      ]
+    },
+    {
+      "attr": "enctype",
+      "desc": "Specifies how the form data should be encoded when submitting it to the server. Common values include:",
+      "options": [
+        {
+          "title": "application/x-www-form-urlencoded",
+          "desc": "Default encoding for form data."
+        },
+        {
+          "title": "multipart/form-data",
+          "desc": "Used for file uploads."
+        },
+        {
+          "title": "text/plain",
+          "desc": "Submits form data as plain text."
+        }
+      ]
+    }
+  ],
+  "formValidation": [
+    {
+      "title": "Required Field",
+      "attr": "required",
+      "desc": "Ensures that the field must be filled out before submitting the form.",
+      "ex": "<input type=\"text\" name=\"username\" required>"
+    },
+    {
+      "title": "Pattern Matching",
+      "attr": "pattern",
+      "desc": "Specifies a regular expression for validating input.",
+      "ex": "<input type=\"text\" name=\"phone\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" placeholder=\"123-456-7890\">"
+    },
+    {
+      "title": "Min/Max Length",
+      "attr": "minlength",
+      "attr1": "maxlength",
+      "desc": "Set the minimum and maximum length of text input fields.",
+      "ex": "<input type=\"text\" name=\"username\" minlength=\"3\" maxlength=\"15\">"
+    },
+    {
+      "title": "Email and URL Validation",
+      "attrs": [
+        {
+          "title": "type=\"email\"",
+          "desc": "Validates that the input is a valid email address."
+        },
+        {
+          "title": "type=\"url\"",
+          "desc": "Validates that the input is a valid URL."
+        }
+      ],
+      "ex": "<input type=\"email\" name=\"email\" required>\n<input type=\"url\" name=\"website\">"
+    }
+  ]
+}

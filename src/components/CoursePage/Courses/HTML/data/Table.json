@@ -1,0 +1,14 @@
+[
+  {
+    "tag": "head",
+    "def": "Groups the header content."
+  },
+  {
+    "tag": "body",
+    "def": "Groups the body content of the table."
+  },
+  {
+    "tag": "foot",
+    "def": "Groups the footer content."
+  }
+]

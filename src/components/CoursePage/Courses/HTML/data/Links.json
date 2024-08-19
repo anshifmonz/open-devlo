@@ -1,0 +1,102 @@
+[
+  {
+    "attr": "href",
+    "def": "Defines the destination URL of the link.",
+    "code": "<a href=\"https://www.example.com\">Go to Example</a>"
+  },
+  {
+    "attr": "target",
+    "def": "Determines where the linked page or resourse will open.",
+    "code": "<a href=\"https://www.example.com\" target=\"_blank\">Open in New Tab</a>",
+    "values": [
+      {
+        "name": "_self",
+        "desc": "Opens the link in the same frame or window (default behavior)."
+      },
+      {
+        "name": "_blank",
+        "desc": "Opens the link in a new tab or window."
+      },
+      {
+        "name": "_parent",
+        "desc": "Opens the link in the parent frame."
+      },
+      {
+        "name": "_top",
+        "desc": "Opens the link in the full window."
+      }
+    ]
+  },
+  {
+    "attr": "title",
+    "def": "Provides additional information about the link, often shown when the mouse hovers over the element.",
+    "code": "<a href=\"https://www.example.com\" title=\"Go to Example Site\">Visit Example</a>"
+  },
+  {
+    "attr": "rel",
+    "def": "Specifies the relationship between current document and linked document. Useful for SEO and security.",
+    "code": "<a href=\"https://www.example.com\" rel=\"nofollow noopener noreferrer\">Do Not Follow</a>",
+    "values": [
+      {
+        "name": "nofollow",
+        "desc": "Prevents the browser from sending the referrer information.",
+        "childrens": [
+              "Preventing Spam: Stops spammy links from boosting their site's ranking.",
+              "Untrusted Content: Avoids endorsing untrusted sites with link value."
+        ]
+      },
+      {
+        "name": "noopener",
+        "desc": "Prevents the new page from accessing the `window.opener` property through javascript.",
+        "childrens": [
+              "Security: Prevents the new page from controlling the original page.",
+              "Performance: Reduces overhead by preventing the new page from interacting with the original page."
+        ]
+      },
+      {
+        "name": "noreferrer",
+        "desc": "Prevents the browser from sending the referrer information.",
+        "childrens": [
+              "Privacy: Prevents the new page from seeing where the link came from by not sending referrer information.",
+              "Security: Implicitly includes the benefits of rel=\"noopener\", preventing the new page from accessing the original page."
+        ]
+      }
+    ]
+  },
+  {
+    "attr": "download",
+    "def": "Indicates that the link is for downloading a file.",
+    "code": "<a href=\"file.zip\" download>Download File</a>"
+  },
+
+
+
+  {
+    "type": true,
+    "id": 0,
+    "heading": "External Web Pages",
+    "def": "Create a link to a external web page.",
+    "code": "<a href=\"https://www.example.com\">Visit Example</a>"
+  },
+  {
+    "type": true,
+    "id": 1,
+    "heading": "Internal Links (within the same page)",
+    "def": "Create a link to a specific page within the same website.",
+    "code": "<a href=\"/products\">Go to Product Page</a>"
+  },
+  {
+    "type": true,
+    "id": 2,
+    "heading": "Email Links",
+    "def": "Opens the default email client with a pre-filled email address.",
+    "code": "<a href=\"mailto:example@example.com\">Email Us</a>"
+  },
+  {
+    "type": true,
+    "id": 3,
+    "heading": "Phone Links",
+    "def": "Initiates a phone call on devices that support.",
+    "code": "<a href=\"tel:+1234567890\">Call Us</a>"
+  }
+]

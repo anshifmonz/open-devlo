@@ -1,0 +1,77 @@
+{
+  "title": "Script Tag",
+  "desc": "The script tag is used to include or define JavaScript code within a web page. It allows you to either embed JavaScript directly or link to external JavaScript files.",
+  "sections": [
+    {
+      "title": "Basic Syntax",
+      "subsections": [
+        {
+          "title": "Inline Script",
+          "desc": "You can write JavaScript code directly inside the script tag.",
+          "code": "<script>\n  alert('Hello, World!');\n</script>"
+        },
+        {
+          "title": "External Script",
+          "desc": "You can link to an external JavaScript file using the src attribute.",
+          "code": "<script src=\"script.js\"></script>"
+        }
+      ]
+    },
+    {
+      "title": "Common Attributes",
+      "attributes": [
+        {
+          "name": "src",
+          "desc": "Specifies the path/URL of an external script file, used to include JavaScript files",
+          "code": "<script src=\"https://example.com/script.js\"></script>"
+        },
+        {
+          "name": "type",
+          "desc": "Specifies the MIME type of the script, Generally used for specifying the type of the script, especially if using languages other than JavaScript (e.g., TypeScript or CoffeeScript). default value is <code>text/javascript</code>",
+          "code": "<script type=\"module\" src=\"module.js\"></script>"
+        },
+        {
+          "name": "async",
+          "desc": "Specifies that the script should be executed asynchronously as soon as it is available. this is used for non-blocking script execution, the script will be executed while the page is loading.",
+          "code": "<script src=\"script.js\" async></script>"
+        },
+        {
+          "name": "defer",
+          "desc": "Specifies that the script should be executed after the HTML document has been completely parsed, used to ensure that the script is executed only after the document is fully loaded.",
+          "code": "<script src=\"script.js\" defer></script>"
+        },
+        {
+          "name": "crossorigin",
+          "desc": "Specifies how the script should handle cross-origin requests.",
+          "values": [
+            "anonymous: No credentials will be sent.",
+            "use-credentials: Credentials (like cookies) will be sent."
+          ],
+          "code": "<script src=\"https://example.com/script.js\" crossorigin=\"anonymous\"></script>"
+        }
+      ]
+    },
+    {
+      "title": "Best Practices",
+      "practices": [
+        {
+          "title": "Placement in HTML",
+          "desc": "Pastly, scripts were placed in the <head> tag. However, for performance reasons, it's often better to place them at the end of the body tag, or use defer to ensure the DOM is loaded before the script executes.",
+          "code": "<body>\n  <!-- Content -->\n  <script src=\"script.js\" defer></script>\n</body>"
+        },
+        {
+          "title": "Minify Scripts",
+          "desc": "Reduces the size of JavaScript files by removing whitespace and comments. This helps in reducing page load time."
+        },
+        {
+          "title": "Use External Files",
+          "desc": "External JavaScript files improve code organization and reusability. They also help in caching scripts for better performance."
+        },
+        {
+          "title": "Avoid Inline Scripts",
+          "desc": "Inline scripts can be a security risk as they are more susceptible to XSS attacks. Prefer external scripts and use Content Security Policy (CSP) to mitigate risks."
+        }
+      ]
+    }
+  ]
+}

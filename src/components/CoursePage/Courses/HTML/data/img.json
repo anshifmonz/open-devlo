@@ -1,0 +1,42 @@
+{
+  "attributes": [
+    {
+      "attr": "src",
+      "desc": "Specifies the URL (external) or path (internal) to the image file.",
+      "ex": "<img src=\"image.jpg\" alt=\"A beautiful landscape\">"
+    },
+    {
+      "attr": "alt",
+      "desc": "This is crucial for accessibility and SEO, and also provide alternative text for the image if not displayed.",
+      "ex": "<img src=\"logo.png\" alt=\"Company Logo\">"
+    },
+    {
+      "attr": "width",
+      "attr1": "heigth",
+      "desc": "Define the dimensions of the image. You can use pixels (`width=\"300\"`) or percentages (`width=\"50%\"`).",
+      "ex": "<img src=\"image.jpg\" alt=\"Description\" width=\"300\" height=\"200\">"
+    },
+    {
+      "attr": "title",
+      "desc": "Displays a tooltip with additional information when the user's mouse hovers over the image.",
+      "ex": "<img src=\"image.jpg\" alt=\"Description\" title=\"Hover text\">"
+    },
+    {
+      "attr": "loading",
+      "desc": "Specifies how the browser should load the image. `lazy` (for lazy loading) and `eager` (for immediate loading).",
+      "ex": "<img src=\"image.jpg\" alt=\"Description\" loading=\"lazy\">"
+    }
+  ],
+  "RImage": [
+    {
+      "tag": "picture",
+      "desc": "Allow to specify different images for different screen sizes or resolutions.",
+      "ex": "picture"
+    },
+    {
+      "attr": "srcset",
+      "desc": "Defines multiple image sources for different screen resolutions.",
+      "ex": "<img src=\"image.jpg\" srcset=\"image-small.jpg 600w, image-large.jpg 1200w\" alt=\"Responsive Image\">"
+    }
+  ]
+}
