@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import {Link} from 'react-router-dom'
 
 function SideBarItem({ item }) {
     const [isOpen, setOpen] = useState(false);
@@ -7,7 +8,7 @@ function SideBarItem({ item }) {
     return (
         <div className={isOpen ? "side-bar-item open" : "side-bar-item"}>
             <div className="side-bar-title" onClick={() => setOpen(!isOpen)}>
-                {item.path ? <a href={item.path}>{item.title}</a> : <p>{item.title}</p>}
+                {item.path ? <Link to={item.path}>{item.title}</Link> : <p>{item.title}</p>}
                 {item.childrens && (
                     <ChevronDown width={20} height={15}/>
                 )}

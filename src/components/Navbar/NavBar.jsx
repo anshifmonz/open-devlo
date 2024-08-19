@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import '../../styles/nav.css';
 import Navigations from './Navigation';
 
@@ -18,14 +20,14 @@ function NavBar() {
 
     return(
         <nav style={{borderBottom: borderStyle}}>
-            <a href='/'>Open Devlo</a>
+            <Link to='/'>Open Devlo</Link>
             <input type="text" name='searcg=h-box' placeholder='Search our courses'/>
             <div className="navigation">
                 <Navigations />
                 <div className="icons">
-                    <img src={`assets/nav/${theme === 'dark' ? 'dark' : 'light'}.png`} alt="Theme" onClick={toggleTheme}/>
+                    <img src={`/assets/nav/${theme === 'dark' ? 'dark' : 'light'}.png`} alt="Theme" onClick={toggleTheme}/>
                     <a href="/user">
-                        <img src={theme == 'dark' ? "assets/nav/userLight.png" : "assets/nav/userDark.png"} alt="User icon" width={30} height={30}/>
+                        <img src={theme == 'dark' ? "/assets/nav/userLight.png" : "/assets/nav/userDark.png"} alt="User icon" width={30} height={30}/>
                     </a>
                 </div>
             </div>

@@ -20,8 +20,8 @@ function SocialLinks() {
   
   return (
     <div className="social-links">
-      {icons.map(icon => (
-        <a href={icon.link} target="_blank" rel="noopener noreferrer">
+      {icons.map((icon, i) => (
+        <a key={i} href={icon.link} target="_blank" rel="noopener noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"

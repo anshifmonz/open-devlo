@@ -3,8 +3,8 @@
 aside.sidebar{
     position: fixed;
     background-color: var(--aside); /* 262626  */
-    width: 17vw;
-    height: 91vh;
+    width: 211px;
+    height: 100dvh;
     color: var(--text);
     overflow-y: scroll;
     padding-top: 10px;
@@ -51,6 +51,8 @@ aside::-webkit-scrollbar-thumb:hover {
     font-weight: 500;
 }
 .side-bar-title a{
+    display: block;
+    width: 211px;
     text-decoration: none;
     color: var(--text);
 }

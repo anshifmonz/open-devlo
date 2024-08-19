@@ -4,7 +4,6 @@ import SocialLinks from './SocialLinks';
 function Footer() {
 
   const currentYear = new Date().getFullYear()
-  console.log(`Copyright © ${currentYear}`);
     
   return (
     <footer>
