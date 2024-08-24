@@ -3,3 +3,5 @@ html.md
 css.md
 javascript.md
 .history
+.env
+db.sql
