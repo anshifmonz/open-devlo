@@ -5,3 +5,5 @@ javascript.md
 .history
 .env
 db.sql
+docker-compose_production.yml
+Dockerfile_Production

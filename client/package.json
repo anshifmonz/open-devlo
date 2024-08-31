@@ -4,17 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
     "highlight.js": "^11.10.0",
     "lucide-react": "^0.424.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

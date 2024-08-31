@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import '../../styles/course.css'
 import Data from '../../data/course.json';
 
@@ -10,7 +12,7 @@ function Course() {
           <div className="course-details">
             <h1>{course.title}</h1>
             <p>{course.desc}</p>
-            <a href={course.path}>Start Now</a>
+            <Link to={course.path}>Start Now</Link>
           </div>
         </div>
       ))}
