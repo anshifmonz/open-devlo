@@ -1,0 +1,58 @@
+[
+  {
+    "title": "CSS Inroduction",
+    "path": "/courses/css"
+  },
+  {
+    "title": "CSS Syntax",
+    "path": "/courses/css/syntax"
+  },
+  {
+    "title": "CSS Selector",
+    "path": "/courses/css/selector"
+  },
+  {
+    "title": "CSS Text",
+    "path": "/courses/css/text"
+  },
+  {
+    "title": "CSS Color",
+    "path": "/courses/css/color"
+  },
+  {
+    "title": "CSS Background",
+    "path": "/courses/css/background"
+  },
+  {
+    "title": "CSS Box Model",
+    "path": "/courses/css/box-model"
+  },
+  {
+    "title": "CSS Display",
+    "path": "/courses/css/display"
+  },
+  {
+    "title": "CSS Positioning",
+    "path": "/courses/css/positioning"
+  },
+  {
+    "title": "CSS Flex-box",
+    "path": "/courses/css/flex-box"
+  },
+  {
+    "title": "CSS Grid",
+    "path": "/courses/css/grid"
+  },
+  {
+    "title": "Responsive Design",
+    "path": "/courses/css/responsive-design"
+  },
+  {
+    "title": "Float and Clearfix",
+    "path": "/courses/css/float-and-clearfix"
+  },
+  {
+    "title": "",
+    "path": "/courses/css"
+  }
+]
