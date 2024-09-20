@@ -1,13 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
-import hljs from 'highlight.js';
-import html from 'highlight.js/lib/languages/xml';
+import { useRef, useState } from 'react';
+
 import '../../../styles/Courses/html/code.css';
 import { PlayButtonIcon, EditIcon } from './Icons';
 import ShowResult from './ShowResult';
 import Copy from './Copy';
 import CodeEditor from './CodeEditor';
-
-hljs.registerLanguage('html', html);
 
 function SyntaxHighlight({ code, classes, restriction }) {
   
@@ -40,14 +37,7 @@ function SyntaxHighlight({ code, classes, restriction }) {
       }
     }
     return { width: "160px" };
-  };
-  
-  // Not highlighting when live code change (create new element), Idk why
-  useEffect(() => {
-    if (codeRef.current && codeRef.current.dataset.highlighted !== 'yes') {
-      hljs.highlightElement(codeRef.current);
-    }
-  }, [resultCode]);
+  };  
 
   return (
     <div className={classes ? `html-code-container ${classes}` : "html-code-container"}>

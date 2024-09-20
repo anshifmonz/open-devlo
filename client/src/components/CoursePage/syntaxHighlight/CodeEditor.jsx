@@ -1,4 +1,12 @@
 import React, { useEffect, useRef } from "react";
+import hljs from 'highlight.js/lib/core';
+import html from 'highlight.js/lib/languages/xml';
+import css from 'highlight.js/lib/languages/css';
+import javascript from "highlight.js/lib/languages/javascript";
+
+hljs.registerLanguage('html', html);
+hljs.registerLanguage('css', css);
+hljs.registerLanguage('javascript', javascript);
 
 function CodeEditor({ codeRef, edit, setResultCode, code }) {
   const selectionRef = useRef(null);
@@ -37,9 +45,16 @@ function CodeEditor({ codeRef, edit, setResultCode, code }) {
     }
   };
 
+  useEffect(() => {
+    console.log('asd')
+    if (codeRef.current && codeRef.current.dataset.highlighted !== 'yes') {
+      hljs.highlightElement(codeRef.current);
+    }
+  }, [codeRef.current]);
+
   return (
     <code
-      className="language-html scroll-bar"
+      className="scroll-bar"
       ref={codeRef}
       contentEditable={edit}
       onInput={codeChange}
