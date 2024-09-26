@@ -1,11 +1,10 @@
 import express from 'express';
 import authRoutes from './authRoutes.js';
+import securityRoutes from './securityRoutes.js';
 
 const router = express.Router();
 
-router.get('/health', (req, res) => {
-  res.status(200).send('ok')
-})
-router.use('/auth', authRoutes)
+router.use('/auth', authRoutes);
+router.use('/sec', securityRoutes);
 
 export default router;
