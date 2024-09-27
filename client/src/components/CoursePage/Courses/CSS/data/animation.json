@@ -1,0 +1,37 @@
+[
+  { 
+    "title": "CSS Transitions",
+    "desc": "<b>Transitions</b> allows to smoothly change an element's properties over a specified duration when a state change occurs like hovering or clicking.",
+    "sHead": "Basic Syntax of Transitions",
+    "syntax": "transSyntax",
+    "values": [
+      {
+        "title": "Property",
+        "desc": "The CSS property to animate like <code>width</code>, <code>opacity</code>)."
+      },
+      {
+        "title": "Duration",
+        "desc": "How long the transition lasts."
+      },
+      {
+        "title": "Timing Function",
+        "desc": "Defines the speed curves like <code>ease</code>, <code>linear</code>, <code>ease-in</code>, etc."
+      },
+      {
+        "title": "Delay",
+        "desc": "Optional; delays the start of the transition."
+      }
+    ],
+    "example": "transition",
+    "explain": "when the user hovers over the <code>.button</code>, the background color transitions from blue to green over 0.5 seconds."
+  },
+  {
+    "title": "CSS Keyframes",
+    "desc": "<b>Keyframes</b> allows to create more complex animations by defining multiple stages of change. Each keyframe represents a different point in time where specific styles should be applied.",
+    "sHead": "Basic Syntax of Keyframes",
+    "syntax": "keyFramesSyntax",
+    "desc1": "Then we can apply these keyframes to an element using the <code>animation<cod/e> property.",
+    "example": "keyFrames",
+    "explain": "In this example, the <code>.box</code> element slides 100 pixels to the right over 2 seconds and repeats infinitely."
+  }
+]

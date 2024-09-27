@@ -1,0 +1,116 @@
+[
+  {
+    "title": "translate()",
+    "desc": "The <code>translate()</code> function moves or translates an element along the X and Y axes, without affecting other elements around it. It can be useful for animating elements or adjusting their position.",
+    "syntax": "transform: translate(x, y);",
+    "params": [
+      {
+        "name": "x",
+        "desc": "Horizontal movement. positive values move right, negative values move left."
+      },
+      {
+        "name": "y",
+        "desc": "Vertical movement. positive values move down, negative values move up."
+      }
+    ],
+    "example": "translate"
+  },
+  {
+    "title": "rotate()",
+    "desc": "The <code>rotate()</code> function rotates an element around a central point, specified in degrees. Positive values rotate clockwise, while negative values rotate counterclockwise.",
+    "syntax": "transform: rotate(angle);",
+    "params": [
+      {
+        "name": "angle",
+        "desc": "Specifies the degree of rotation in <code>deg</code>, <code>turn</code> or <code>rad<code>."
+      }
+    ],
+    "example": "rotate"
+  },
+  {
+    "title": "scale()",
+    "desc": "The <code>scale()</code> function resizes an element along the X and Y axes. You can specify different scaling factors for both axes or use a single value to scale uniformly.",
+    "syntax": "transform: scale(x, y);",
+    "params": [
+      {
+        "name": "x",
+        "desc": "Horizontal scaling factor greater than 1 enlarges, less than 1 shrinks."
+      },
+      {
+        "name": "y",
+        "desc": "Vertical scaling factor if omitted, the same value as <code>x<code> is applied to both axes."
+      }
+    ],
+    "example": "scale"
+  },
+  {
+    "title": "skew()",
+    "desc": "The <code>skew()</code> function distorts an element by tilting it along the X and Y axes. It’s useful for creating dynamic effects like slanted elements.",
+    "syntax": "transform: skew(x-angle, y-angle);",
+    "params": [
+      {
+        "name": "x-angle",
+        "desc": "Skew angle along the X axis horizontal skew."
+      },
+      {
+        "name": "y-angle",
+        "desc": "Skew angle along the Y axis vertical skew."
+      }
+    ],
+    "example": "skew"
+  },
+  {
+    "title": "matrix()",
+    "desc": "The <code>matrix()</code> function combines multiple transform properties (translate, rotate, scale, and skew) into one single function. It takes six params that define the transformation.",
+    "syntax": "transform: matrix(scaleX, skewY, skewX, scaleY, translateX, translateY);",
+    "params": [
+      {
+        "name": "scaleX",
+        "desc": "Scaling factor along the X axis."
+      },
+      {
+        "name": "scaleY",
+        "desc": "Scaling factor along the Y axis."
+      },
+      {
+        "name": "skewX",
+        "desc": "S]ewing along the X axis."
+      },
+      {
+        "name": "skewY",
+        "desc": "Skewing along the Y axis."
+      },
+      {
+        "name": "translateX",
+        "desc": "Translation or movement along the X axis."
+      },
+      {
+        "name": "translateY",
+        "desc": "Translation or movement along the Y axis."
+      }
+    ],
+    "example": "matrix"
+  },
+  {
+    "title": "Multiple Transforms",
+    "desc": "You can apply multiple transformations to a single element by chaining the transform functions together. CSS will apply them in order, from left to right.",
+    "example": "multiple",
+    "explain": "This moves the element, rotates it by 30 degrees, and then scales it by 1.2 times."
+  },
+  {
+    "title": "Transform-Origin",
+    "desc": "The <code>transform-origin</code> property sets the origin point around which the transformation occurs. By default, it is the center of the element, but you can change it.",
+    "syntax": "transform-origin",
+    "params": [
+      {
+        "title": "x",
+        "desc": "Horizontal origin like <code>left</code>, <code>center</code>, <code>right</code> or percentage."
+      },
+      {
+        "title": "y",
+        "desc": "Vertical origin <code>top</code>, <code>center</code>, <code>bottom</code> or percentage."
+      }
+    ],
+    "example": "transformOrigin"
+  }
+]

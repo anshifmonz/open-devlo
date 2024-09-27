@@ -1,0 +1,113 @@
+[
+  {
+    "title": "Understanding the 3D Coordinate System",
+    "desc": "In 3D space, there are three axes:",
+    "params": [
+      {
+        "name": "X-axis",
+        "desc": "Runs horizontally (left to right)."
+      },
+      {
+        "name": "Y-axis",
+        "desc": "Runs vertically (top to bottom)."
+      },
+      {
+        "name": "Z-axis",
+        "desc": "Represents depth (forward and backward)."
+      }
+    ]
+  },
+  {
+    "title": "3D Transform Functions",
+    "desc": "",
+    "funcs": [
+      {
+        "title": "rotateX(angle)",
+        "descs": [
+          "Rotates an element around the X-axis.",
+          "Positive values tilt the top of the element backward, while negative values tilt it forward."
+        ],
+        "example": "rotateX"
+      },
+      {
+        "title": "rotateY(angle)",
+        "descs": [
+          "Rotates an element around the Y-axis.",
+          "Positive values rotate the right side backward, while negative values rotate it forward."
+        ],
+        "syntax": "transform: rotateY(angle);",
+        "example": "rotateY"
+      },
+      {
+        "title": "rotateZ(angle)",
+        "descs": [
+          "Rotates an element around the Z-axis, which is similar to the standard 2D <code>rotate()</code> function.",
+          "Positive values rotate clockwise, negative values counterclockwise."
+        ],
+        "syntax": "transform: rotateZ(angle);",
+        "example": "rotateZ"
+      },
+      {
+        "title": "translateZ(length)",
+        "descs": [
+          "Moves an element along the Z-axis, creating the illusion of moving closer to or farther from the viewer.",
+          "Positive values move the element closer, negative values move it farther."
+        ],
+        "syntax": "transform: translateZ(length);",
+        "example": "translateZ"
+      },
+      {
+        "title": "translate3d(x, y, z)",
+        "descs": [
+          "Moves an element in 3D space using X, Y, and Z coordinates.",
+          "Combines <code>translateX()</code>, <code>translateY()</code>, and <code>translateZ()</code> into one shorthand property."
+        ],
+        "syntax": "transform: translate3d(x, y, z);",
+        "example": "translate3d"
+      },
+      {
+        "title": "scaleZ(factor)",
+        "desc": "Scales an element along the Z-axis, affecting its depth.",
+        "syntax": "transform: scaleZ(factor);",
+        "example": "scaleZ"
+      },
+      {
+        "title": "scale3d(x, y, z)",
+        "desc": "Scales an element in 3D space by specifying different scaling factors for the X, Y, and Z axes.",
+        "syntax": "transform: scale3d(x, y, z);",
+        "example": "scale3d"
+      }
+    ]
+  },
+  {
+    "title": "Perspective for 3D Effects",
+    "desc": "The <code>perspective</code> property is crucial in 3D transforms. it determines how elements are viewed in 3D space. It gives the illusion of objects coming closer or moving away.",
+    "props": [
+      {
+        "name": "perspective",
+        "desc": "Can be applied on the parent container to define the perspective for all child elements.",
+        "example": "perspective"
+      },
+      {
+        "name": "perspective-origin",
+        "desc": "Specifies the point from which the viewer observes the 3D scene similar to <code>transform-origin</code>. By default, it's set to <code>50% 50%</code> center."
+      }
+    ]
+  },
+  {
+    "title": "Transform-Origin in 3D",
+    "desc": "Controls the point from which the transformation is applied. For 3D transformations, this becomes more important as it defines the anchor point in 3D space.",
+    "example": "transformOrigin"
+  },
+  {
+    "title": "Backface Visibility",
+    "desc": "The <code>backface-visibility</code> property controls whether the back side of a 3D-transformed element is visible when it is rotated. By default, it is set to <code>visible<code>.",
+    "example": "backfaceVisibility"
+  },
+  {
+    "title": "Combining 3D Transforms",
+    "desc": "You can combine multiple 3D transform functions to create complex effects.",
+    "example": "combining",
+    "explain": "This rotates the element on both the X and Y axes and moves it forward along the Z-axis."
+  }
+]

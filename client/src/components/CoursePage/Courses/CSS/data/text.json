@@ -1,0 +1,132 @@
+{
+  "title": "Text Styling",
+  "desc": "Text styling in CSS is essential for creating visually appealing web content. just take a look into the most important properties you can use to style text.",
+
+  "methods": [
+    {
+      "title": "Basic Properties to Style Text",
+      "properties": [
+        {
+          "name": "color",
+          "desc": "Sets the color of the text.",
+          "code": "color:  #333;"
+        },
+        {
+          "name": "font-family",
+          "desc": "Specifies the font of the text.",
+          "code": "font-family:  'Arial', sans-serif;"
+        },
+        {
+          "name": "font-size",
+          "desc": "Defines the size of the text.",
+          "code": "font-size: 16px;"
+        },
+        {
+          "name": "font-weight",
+          "desc": "Sets the thickness of the text.",
+          "code": "font-weight: bold;"
+        },
+        {
+          "name": "font-style",
+          "desc": "Applies styles like italic or oblique.",
+          "code": "font-style: italic;"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Font Styling",
+      "properties": [
+        {
+          "name": "font-variant",
+          "desc": "Controls the text appearance in small-caps.",
+          "code": "font-variant: small-caps;"
+        },
+        {
+          "name": "line-height",
+          "desc": "Adjusts the height of each line of text.",
+          "code": "line-height: 1.5;"
+        },
+        {
+          "name": "letter-spacing",
+          "desc": "Controls the space between characters.",
+          "code": "letter-spacing: 1px;"
+        },
+        {
+          "name": "text-transform",
+          "desc": "Alters the case of the text.",
+          "code": "text-transform: uppercase;"
+        }
+      ]
+    },
+    {
+      "title": "Text Alignment and Decoration",
+      "properties": [
+        {
+          "name": "text-align",
+          "desc": "Aligns text horizontally.",
+          "code": "text-align: center;"
+        },
+        {
+          "name": "text-decoration",
+          "desc": "Adds decoration to text, like underlining.",
+          "code": "text-decoration: underline;"
+        },
+        {
+          "name": "text-indent",
+          "desc": "Indents the first line of a paragraph.",
+          "code": "text-indent: 30px;"
+        },
+        {
+          "name": "text-shadow",
+          "desc": "Adds a shadow effect to text.",
+          "code": "text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"
+        }
+      ]
+    },
+    {
+      "title": "Text Wrapping and Overflow",
+      "properties": [
+        {
+          "name": "word-wrap",
+          "desc": "Allows long words to break and wrap onto the next line.",
+          "code": "word-wrap: break-word;"
+        },
+        {
+          "name": "white-space",
+          "desc": "Controls how whitespace is handled.",
+          "code": "white-space: nowrap;"
+        },
+        {
+          "name": "text-overflow",
+          "desc": "Specifies how overflowed content that is not displayed is signaled to the user.",
+          "code": "text-overflow: ellipsis;"
+        }
+      ]
+    },
+    {
+      "title": "Font Shorthand",
+      "properties": [
+        {
+          "name": "font",
+          "desc": "Combines font properties using shorthand.",
+          "code": "font: italic bold 16px/1.5 'Arial', sans-serif;"
+        }
+      ]
+    },
+    {
+      "title": "Responsive Text",
+      "properties": [
+        {
+          "name": "viewport units",
+          "desc": "Use vw or vh for responsive font sizes.",
+          "code": "font-size: 2vw;"
+        },
+        {
+          "name": "Media Queries",
+          "desc": "Adjust font size or style based on screen size.",
+          "code": "media"
+        }
+      ]
+    }
+  ]
+}

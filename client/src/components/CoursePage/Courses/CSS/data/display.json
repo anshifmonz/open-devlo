@@ -1,0 +1,66 @@
+{
+  "title": "CSS Display",
+  "desc": "The <code>display</code> property in CSS determines how an element is displayed in the document. It controls the inner and outer display types, influencing both how the element itself behaves and how it affects other elements.",
+
+  "values": [
+    {
+      "name": "block",
+      "descs": [
+        "The element takes up the full width available and starts on a new line.",
+        "Examples: <code>&lt;div&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, etc.",
+        "<b>Use case</b>: When you want the element to occupy the full width of its container."
+      ]
+    },
+    {
+      "name": "inline",
+      "descs": [
+        "The element only takes up as much width as necessary and does not start on a new line.",
+        "Examples: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, etc.",
+        "<b>Use case</b>: When you want the element to flow with text or other inline elements."
+      ]
+    },
+    {
+      "name": "inline-block",
+      "descs": [
+        "Similar to <code>inline</code>, but you can set width and height.",
+        "The element does not start on a new line, but you can control its size.",
+        "<b>Use case</b>: Useful when you want an element to be inline but also control its dimensions."
+      ]
+    },
+    {
+      "name": "none",
+      "descs": [
+        "The element is completely removed from the document flow and is not displayed.",
+        "<b>Use case</b>: Useful for hiding elements without deleting them from the DOM."
+      ]
+    },
+    {
+      "name": "flex",
+      "descs": [
+        "Enables a flexbox layout, which is powerful for creating complex, responsive layouts.",
+        "<b>Use case</b>: When you need a flexible and dynamic layout, like a navigation bar."
+      ]
+    },
+    {
+      "name": "grid",
+      "descs": [
+        "Enables CSS Grid Layout, allowing for two-dimensional layouts (rows and columns).",
+        "<b>Use case</b>: Ideal for creating more complex and organized layouts, such as page templates."
+      ]
+    },
+    {
+      "name": "inline-flex",
+      "descs": [
+        "Similar to <code>flex</code>, but the container itself behaves like an inline element.",
+        "<b>Use case</b>: When you want a flex container that flows with text or inline content."
+      ]
+    },
+    {
+      "name": "inline-grid",
+      "descs": [
+        "Similar to <code>grid</code>, but the container itself behaves like an inline element.",
+        "<b>Use case</b>: When you need grid layout behavior in an inline context."
+      ]
+    }
+  ]
+}

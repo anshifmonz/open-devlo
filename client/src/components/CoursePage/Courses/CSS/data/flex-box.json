@@ -1,0 +1,187 @@
+{
+  "intro": [
+    {
+      "title": "Flex Container",
+      "desc": "The parent element that holds flex items. You can turn an element into a flex container by setting its <code>display</code> property to <code>flex</code> or <code>inline-flex</code>",
+      "example": "container"
+    },
+    {
+      "title": "Flex Items",
+      "desc": "The child elements of a flex container. These are the items that will be laid out according to flexbox rules."
+    }
+  ],
+
+  "contaninerProps": [
+    {
+      "prop": "flex-direction",
+      "desc": "Defines the direction flex items are placed in the flex container. It can be:",
+      "values": [
+        {
+          "value": "row",
+          "desc": " (default): Horizontal left to right"
+        },
+        {
+          "value": "row-reverse",
+          "desc": ": Horizontal right to left"
+        },
+        {
+          "value": "column",
+          "desc": ": Vertical top to bottom"
+        },
+        {
+          "value": "column-reverse",
+          "desc": ": Vertical bottom to top"
+        }
+      ],
+      "example": "flexDirection"
+    },
+    {
+      "prop": "flex-wrap",
+      "desc": "Specifies whether flex items should wrap onto multiple lines.",
+      "values": [
+        {
+          "value": "nowrap",
+          "desc": " (default): All flex items are in one line"
+        },
+        {
+          "value": "wrap",
+          "desc": ": Flex items wrap onto multiple lines"
+        },
+        {
+          "value": "wrap-reverse",
+          "desc": ": Flex items wrap onto multiple lines in reverse order"
+        }
+      ],
+      "example": "flexWrap"
+    },
+    {
+      "prop": "flex-flow",
+      "desc": "A shorthand for <code>flex-direction</code> and <code>flex-wrap<code>.",
+      "example": "flexFlow"
+    },
+    {
+      "prop": "justify-content",
+      "desc": "Aligns flex items along the main axis (horizontal if <code>flex-direction</code> is <code>row</code>, vertical if <code>column</code>).",
+      "values": [
+        {
+          "value": "flex-start",
+          "desc": " (default): Align items to the start"
+        },
+        {
+          "value": "flex-end",
+          "desc": ": Align items to the end"
+        },
+        {
+          "value": "center",
+          "desc": ": Align items to the center"
+        },
+        {
+          "value": "space-between",
+          "desc": ": Distribute items with space between"
+        },
+        {
+          "value": "space-around",
+          "desc": ": Distribute items with space around"
+        }
+      ],
+      "example": "justifyContent"
+    },
+    {
+      "prop": "align-items",
+      "desc": "Aligns flex items along the cross axis (perpendicular to the main axis).",
+      "values": [
+        {
+          "value": "stretch",
+          "desc": " (default): Stretch items to fill the container"
+        },
+        {
+          "value": "flex-start",
+          "desc": ": Align items to the start of the cross axis"
+        },
+        {
+          "value": "flex-end",
+          "desc": ": Align items to the end of the cross axis"
+        },
+        {
+          "value": "center",
+          "desc": ": Align items to the center of the cross axis"
+        },
+        {
+          "value": "space-between",
+          "desc": ": Distribute items with space between"
+        },
+        {
+          "value": "space-around",
+          "desc": ": Distribute items with space around"
+        },
+        {
+          "value": "baseline",
+          "desc": ": Align items to their baseline"
+        }
+      ],
+      "example": "alignItems"
+    },
+    {
+      "prop": "align-content",
+      "desc": "Aligns flex lines within the flex container. Similar to <code>align-items</code>, but for multiple lines.",
+      "values": [ 
+        {
+          "value": "stretch",
+          "desc": " (default): Stretch items to fill the container"
+        },
+        {
+          "value": "flex-start",
+          "desc": ": Align items to the start of the cross axis"
+        },
+        {
+          "value": "flex-end",
+          "desc": ": Align items to the end of the cross axis"
+        },
+        {
+          "value": "center",
+          "desc": ": Align items to the center of the cross axis"
+        },
+        {
+          "value": "space-between",
+          "desc": ": Distribute items with space between"
+        },
+        {
+          "value": "space-around",
+          "desc": ": Distribute items with space around"
+        },
+        {
+          "value": "baseline",
+          "desc": ": Align items to their baseline"
+        }
+      ],
+      "example": "alignContent"
+    }
+  ],
+  "itemProps": [
+    {
+      "prop": "flex-grow",
+      "desc": "Defines the ability for a flex item to grow if necessary (default is 0).",
+      "example": "flexGrow"
+    },
+    {
+      "prop": "flex-shrink",
+      "desc": "Defines the ability for a flex item to shrink if necessary (default is 1).",
+      "example": "flexShrink"
+    },
+    {
+      "prop": "flex-basis",
+      "desc": "Defines the initial size of a flex item before any available space is distributed. It can be a length (200px) or a percentage (10%).",
+      "example": "flexBasis"
+    },
+    {
+      "prop": "flex",
+      "desc": "A shorthand for <code>flex-grow<code/>, <code>flex-shrink<code/>, and <code>flex-basis</code>. The default value is <code>0 1 auto<code>.",
+      "example": "flex"
+    },
+    {
+      "prop": "align-self",
+      "desc": "Overrides <code>align-items</code> for a specific flex item.",
+      "example": "alignSelf"
+    }
+  ]
+}

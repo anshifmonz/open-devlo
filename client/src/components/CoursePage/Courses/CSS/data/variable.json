@@ -1,0 +1,48 @@
+[
+  { 
+    "title": "Basic Syntax of CSS Variables",
+    "desc": "CSS variables are declared using the <code>--</code> prefix followed by a custom name, and they are accessed using the <code>var()</code> function.",
+    "subHead": [
+      {
+        "title": "Declaring a CSS Variable",
+        "example": "declareVariable",
+        "explains": [
+          "The <code>--main-color</code> and <code>--padding-size</code> are custom property names.",
+          "The <code>:root</code> selector represents the highest-level parent element, allowing the variables to be available globally throughout the document."
+        ]
+      },
+      {
+        "title": "Using CSS Variables",
+        "example": "useVariable",
+        "explains": [
+          "In this example, the button's background color and padding will use the values stored in the <code>--main-color</code> and <code>--padding-size</code> variables.",
+          "The <code>var()</code> function can accept a fallback value that is used if the variable is not defined or is invalid.",
+          { "syntax": "color: var(--undefined-color, #000);" },
+          "If <code>--undefined-color</code> is not defined, the fallback value <code>#000</code> (black) will be applied."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Variable Scope",
+    "desc": "CSS variables can be defined at different levels (global or local):",
+    "points": [
+      {
+        "title": "Global Variables",
+        "desc": "Declared at the <code>:root</code> level (as shown above) to be available anywhere in the stylesheet."
+      },
+      {
+        "title": "Local Variables",
+        "desc": "Declared inside specific selectors and can only be accessed within those elements.",
+        "example": "localVariable"
+      }
+    ],
+    "explain": "In this case, the <code>.card</code> and <code>.button</code> elements each have their own <code>--card-color</code> values."
+  },
+  {
+    "title": "CSS Variables in Media Queries",
+    "desc": "CSS variables are great for responsive design, as you can modify them within media queries to adjust values based on screen size.",
+    "example": "mediaQuery",
+    "explain": "In this example, the font size will increase when the screen width exceeds 768 pixels, thanks to the updated variable inside the media query."
+  }
+]

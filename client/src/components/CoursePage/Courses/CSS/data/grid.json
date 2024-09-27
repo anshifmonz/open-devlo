@@ -1,0 +1,101 @@
+{
+  "g": [
+    {
+      "title": "Creating a Grid Container",
+      "desc": "To create a grid container, you use the <code>display</code> property.",
+      "example": "container"
+    },
+    {
+      "title": "Defining Columns and Rows",
+      "desc": "You define the columns and rows using <code>grid-template-columns</code> and <code>grid-template-rows</code> properties.",
+      "subHead": [
+        {
+          "title": "Fixed Size Columns and Rows",
+          "example": "fixColRow"
+        },
+        {
+          "title": "Fractional Units (fr)",
+          "example": "fractionalUnit"
+        },
+        {
+          "title": "Auto-Fill and Auto-Fit",
+          "example": "autoFitFill"
+        }
+      ]
+    },
+    {
+      "title": "Grid Areas",
+      "desc": "You can name grid areas for more intuitive layout management.",
+      "example": "gridArea"
+    },
+    {
+      "title": "Grid gap",
+      "desc": "The gap between grid items can be set using <code>grid-gap</code> property",
+      "example": "gridGap",
+      "desc1": "Or with specific row and column gaps",
+      "example1": "specificGap"
+    },
+    {
+      "title": "Alignment and Justification",
+      "subBold": [
+        {
+          "bold": "Align Items",
+          "desc": "Align grid items within their grid areas.",
+          "example": "alignItems"
+        },
+        {
+          "bold": "Justify Items",
+          "desc": "Align grid items horizontally.",
+          "example": "justifyItem"
+        },
+        {
+          "bold": "Align Content",
+          "desc": "Align the whole grid within the container.",
+          "example": "alignContent"
+        },
+        {
+          "bold": "Justify Content",
+          "desc": "Align the whole grid horizontally.",
+          "example": "justifyContent"
+        }
+      ]
+    },
+    {
+      "title": "Grid Template Areas",
+      "desc": "To position items in a grid:",
+      "example": "gridTemplateAreas"
+    },
+    {
+      "title": "Implicit vs. Explicit Grids",
+      "subBold": [
+        {
+          "bold": "Explicit Grid",
+          "desc": "Defined with <code>grid-template-columns</code> and <code>grid-template-rows</code>."
+        },
+        {
+          "bold": "Implicit Grid",
+          "desc": "Automatically created by adding grid items beyond the defined grid."
+        }
+      ]
+    },
+    {
+      "title": "Responsive Design",
+      "desc": "Use media queries to adapt grid layouts for different screen sizes:",
+      "example": "responsiveDesign"
+    },
+    {
+      "title": "Advanced Features",
+      "subBold": [
+        {
+          "bold": "Grid Functions",
+          "desc": " <code>minmax()</code>, <code>repeat()</code>, <code>auto-fill</code>, <code>auto-fit</code>."
+        },
+        {
+          "bold": "Subgrid",
+          "desc": "Allows a grid item to inherit the grid definition of its parent grid."
+        }
+      ],
+      "example": "advancedFeature"
+    }
+  ]
+}
