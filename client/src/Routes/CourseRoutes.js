@@ -2,13 +2,13 @@ import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 const Courses = lazy(() => import('../pages/Courses/Courses'));
-const Javascript = lazy(() => import('../components/CoursePage/Courses/Javascript/Javascript'));
-const ReactCourse = lazy(() => import('../components/CoursePage/Courses/React/React'));
-const Git = lazy(() => import('../components/CoursePage/Courses/Git/Git'));
-const Node = lazy(() => import('../components/CoursePage/Courses/Node/Node'));
-const Express = lazy(() => import('../components/CoursePage/Courses/Express/Express'));
-const EJS = lazy(() => import('../components/CoursePage/Courses/EJS/EJS'));
-const PostgreSql = lazy(() => import('../components/CoursePage/Courses/PostgreSql/PostgreSql'));
+const Javascript = lazy(() => import('../pages/Courses/Javascript/Javascript'));
+const ReactCourse = lazy(() => import('../pages/Courses/React/React'));
+const Git = lazy(() => import('../pages/Courses/Git/Git'));
+const Node = lazy(() => import('../pages/Courses/Node/Node'));
+const Express = lazy(() => import('../pages/Courses/Express/Express'));
+const EJS = lazy(() => import('../pages/Courses/EJS/EJS'));
+const PostgreSql = lazy(() => import('../pages/Courses/PostgreSql/PostgreSql'));
 const NotFound = lazy(() => import('../pages/NotFound'));
 
 const HTMLRoutes = lazy(() => import('./Courses/HTML'));
