@@ -1,0 +1,154 @@
+[
+  {
+    "title": "Syntax of Keyframes",
+    "desc": "The <code>@keyframes</code> rule is used to define animations, specifying the intermediate styles at different points in the animation sequence. Each animation must be given a name, which is later applied to an element using the <code>animation</code> property.",
+    "example": "syntax",
+    "explain": "Keyframes are defined using percentages (0% to 100%)."
+  },
+  {
+    "title": "Applying Keyframes with the <code>animation</code> Property",
+    "desc": "Once the keyframes are defined, you apply them to an element using the <code>animation</code> property. This shorthand property can accept multiple values to control different aspects of the animation.",
+    "example": "keyframe",
+    "explain": "This applies the <code>fadeIn</code> animation over a duration of 2 seconds."
+  },
+  {
+    "title": "Keyframes with Multiple Steps",
+    "desc": "You can define multiple steps in an animation by specifying additional percentages between 0% and 100%. Each percentage defines a point in the animation where a specific style should be applied.",
+    "example": "multiple",
+    "explain": "In this example, the element moves horizontally while fading out from 0% to 100%."
+  },
+  {
+    "title": "Using from and to Keywords",
+    "desc": "Instead of percentages, you can use the <code>from</code> and <code>to</code> keywords as shorthand for 0% and 100%, respectively.",
+    "example": "fromTo",
+    "explain": "This example is equivalent to the one using percentages."
+  },
+  {
+    "title": "Animation Properties",
+    "desc": "There are several properties related to animations that can control how keyframes are applied.",
+    "properties": [
+      {
+        "name": "animation-name",
+        "desc": "Specifies the name of the keyframes to be used.",
+        "example": "animation-name: fadeIn;"
+      },
+      {
+        "name": "animation-duration",
+        "desc": "Define the duration of animation it will take in one cycle.",
+        "example": "animation-duration: 2s; /* 2 seconds */"
+      },
+      {
+        "name": "animation-timing-function",
+        "desc": "Controls the speed curve of the animation.",
+        "example": "animation-timing-function: ease-in-out;"
+      },
+      {
+        "name": "animation-delay",
+        "desc": "Specifies a delay before the animation starts.",
+        "example": "animation-delay: 1s; /* 1-second delay */"
+      },
+      {
+        "name": "animation-iteration-count",
+        "desc": "Defines how many times the animation should repeat.",
+        "examples": [
+          "animation-iteration-count: 3; /* Repeats 3 times */",
+          "animation-iteration-count: infinite; /* Repeats forever */"
+        ]
+      },
+      {
+        "name": "animation-direction",
+        "desc": "Determines whether the animation plays in reverse on alternate cycles.",
+        "values":  [
+          {
+            "name": "normal",
+            "desc": "The animation runs forward each time."
+          },
+          {
+            "name": "reverse",
+            "desc": "The animation runs backward."
+          },
+          {
+            "name": "alternate",
+            "desc": "The animation runs forward on odd iterations and backward on even iterations."
+          }
+        ],
+        "example": "animation-direction: alternate;"
+      },
+      {
+        "name": "animation-fill-mode",
+        "desc": "Specifies how styles are applied before and after the animation plays.",
+        "values":  [
+          {
+            "name": "none",
+            "desc": "No styles are applied before or after."
+          },
+          {
+            "name": "forwards",
+            "desc": "The final keyframe styles are retained after the animation ends."
+          },
+          {
+            "name": "backwards",
+            "desc": "The starting keyframe styles are applied during the delay before the animation starts."
+          },
+          {
+            "name": "both",
+            "desc": "Applies both forwards and backwards."
+          }
+        ],
+        "example": "animation-fill-mode: forwards;"
+      },
+      {
+        "name": "animation-play-state",
+        "desc": "Controls whether the animation is running or paused.",
+        "values":  [
+          {
+            "name": "running",
+            "desc": "The animation is playing."
+          },
+          {
+            "name": "paused",
+            "desc": "The animation is paused."
+          }
+        ],
+        "example": "animation-play-state: paused;"
+      }
+    ]
+  },
+  {
+    "title": "Shorthand animation Property",
+    "desc": "The <code>animation</code> property is a shorthand that can combine all of the animation properties into one line.",
+    "example": "shortS",
+    "example1": "shortE",
+    "explain": "In this example:",
+    "explains": [
+      {
+        "name": "moveAndFade",
+        "desc": "The keyframes to use."
+      },
+      {
+        "name": "3s",
+        "desc": "The duration."
+      },
+      {
+        "name": "ease-in-out",
+        "desc": "The timing function."
+      },
+      {
+        "name": "1s",
+        "desc": "The delay before starting."
+      },
+      {
+        "name": "infinite",
+        "desc": "Repeats forever."
+      },
+      {
+        "name": "alternate",
+        "desc": "Runs forward and then backward on each cycle."
+      },
+      {
+        "name": "forwards",
+        "desc": "Retains the final keyframe styles."
+      }
+    ]
+  }
+]

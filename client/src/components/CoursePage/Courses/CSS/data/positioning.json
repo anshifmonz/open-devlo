@@ -1,0 +1,34 @@
+{
+  "methods": [
+    {
+      "title": "Static Positioning",
+      "desc": "All HTML elements are positioned statically by default. This means they are placed according to the normal flow of the document.",
+      "example": "static"
+    },
+    {
+      "title": "Relative Positioning",
+      "desc": "Elements are positioned relative to their original position. Moving an element with <code>position: relative</code> does not affect the layout of other elements. <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> can be used to move the element.",
+      "example": "relative"
+    },
+    {
+      "title": "Absolute Positioning",
+      "desc": "The element is removed from the normal document flow and positioned relative to the nearest ancestor with a position other than <code>static<code>. <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> can be used to move the element.",
+      "example": "absolute"
+    },
+    {
+      "title": "Fixed Positioning",
+      "desc": "The element is removed from the normal document flow and positioned relative to the browser window or viewport. It stays in place even when the page is scrolled. <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> can be used to move the element.",
+      "example": "fixed"
+    },
+    {
+      "title": "Sticky Positioning",
+      "desc": "The element is treated as relatively positioned until it crosses a specified threshold, then it becomes fixed. <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> define when the element should stick.",
+      "example": "sticky"
+    },
+    {
+      "title": "Z-Index",
+      "desc": "Controls the vertical stacking order of elements that overlap. Only works on positioned elements with <code>position</code> set to <code>relative</code>, <code>absolute</code>, <code>fixed</code>, or <code>sticky</code>. Elements with a higher <code>z-index</code> appear on top.",
+      "example": "zIndex"
+    }
+  ]
+}

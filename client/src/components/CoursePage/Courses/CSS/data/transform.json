@@ -1,0 +1,14 @@
+[
+  {
+    "title": "2D Transforms",
+    "desc": "2D transforms in CSS let you manipulate elements using functions like <code>translate()</code>, <code>rotate()</code>, <code>scale()</code> and <code>skew()</code>. These changes affect the element's position, size, and angle in two-dimensional space.",
+    "example": "twoD",
+    "link": "/courses/css/transform/2d-transform"
+  },
+  {
+    "title": "3D Transforms",
+    "desc": "3D transforms allow elements to move in three-dimensional space using functions like <code>rotateX()</code>, <code>rotateY()</code> and <code>translateZ()</code>. This adds depth and perspective to your elements.",
+    "example": "threeD",
+    "link": "/courses/css/transform/3d-transform"
+  }
+]

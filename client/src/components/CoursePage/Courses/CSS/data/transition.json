@@ -1,0 +1,107 @@
+{
+  "transition": [
+    {
+      "title": "Syntax of Transition",
+      "desc": "A transition requires two things.",
+      "points": [
+        "A property to change.",
+        "A duration for the change."
+      ],
+      "bold1": [
+        {
+          "bold": "transition",
+          "desc": "Shorthand property for setting the transition."
+        },
+        {
+          "bold": "background-color",
+          "desc": "The property being animated."
+        },
+        {
+          "bold": "0.3s",
+          "desc": "Specify the Duration that the transition will takes)."
+        },
+        {
+          "bold": "ease",
+          "desc": "Timing function that determine the speed of the transition is distributed over time."
+        }
+      ],
+      "example": "syntax"
+    },
+    {
+      "title": "Transition Properties",
+      "desc": "We can specify which CSS properties will transition.",
+      "example": "property"
+    },
+    {
+      "title": "Individual Transition Properties",
+      "desc": "We can break down the <code>transition</code> shorthand into its individual components.",
+      "bold": [
+        {
+          "bold": "transition-property",
+          "desc": "Specifies which CSS property will be transitioned."
+        },
+        {
+          "bold": "transition-duration",
+          "desc": "Defines how long the transition takes."
+        },
+        {
+          "bold": "transition-timing-function",
+          "desc": "Determine the speed of the transition will change over its duration."
+        },
+        {
+          "bold": "transition-delay",
+          "desc": "Sets a delay before the transition starts."
+        }
+      ],
+      "example": "individual"
+    },
+    {
+      "title": "Transition Timing Functions",
+      "desc": "The <code>transition-timing-function</code> controls the pace of the transition.",
+      "bold": [
+        {
+          "bold": "ease",
+          "desc": "Default. Starts slow, speeds up, then slows down."
+        },
+        {
+          "bold": "linear",
+          "desc": "Consistent speed throughout."
+        }
+        ,{
+          "bold": "ease-in",
+          "desc": "Starts slow and accelerates."
+        }
+        ,{
+          "bold": "ease-out",
+          "desc": "Starts fast and slows down."
+        }
+        ,{
+          "bold": "ease-in-out",
+          "desc": "Slow at both the start and end."
+        }
+        ,{
+          "bold": "cubic-bezier",
+          "desc": "Custom curve using four control points."
+        }
+      ],
+      "example": "timing",
+      "additional": "Use <a href='https://cubic-bezier.com/' target='blank'>Cubic Bezier generator</a> to visualize and fine-tune your easing curves."
+    },
+    {
+      "title": "Transitioning Multiple Properties",
+      "desc": "You can transition multiple properties at once by separating them with commas.",
+      "example": "multiple"
+    },
+    {
+      "title": "Transition Delay",
+      "desc": "You can delay the start of a transition using <code>transition-delay</code>.",
+      "example": "delay",
+      "additional": "it is useful for creating staggered animations."
+    },
+    {
+      "title": "The <code>all</code> Keyword",
+      "desc": "The <code>all</code> keyword allows you to apply a transition to <b>all</b> animatable properties of an element.",
+      "example": "all"
+    }
+  ]
+}

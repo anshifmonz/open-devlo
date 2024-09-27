@@ -1,0 +1,20 @@
+{
+  "parts": [
+    {
+      "title": "Content",
+      "desc": "The actual content of the element (text, images, etc.). The size of the content box can be controlled using properties like <code>width</code> and <code>height</code>."
+    },
+    {
+      "title": "Padding",
+      "desc": "Space between the content and the border of the element. The padding is transparent and can be set using <code>padding</code>, <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>. It can also be set in a shorthand format, like <code>padding: 10px 20px;</code>."
+    },
+    {
+      "title": "Border",
+      "desc": "Surrounds the padding (if any) and the content. Borders can be styled using <code>border-width</code>, <code>border-style</code>, and <code>border-color</code>. You can also set all border properties in one line using the <code>border</code> shorthand, like <code>border: 1px solid #000;</code>."
+    },
+    {
+      "title": "Margin",
+      "desc": "The space outside the border, essentially the space between elements. Margins are transparent, and can be adjusted using <code>margin</code>, <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code>. The shorthand <code>margin: 10px 20px;</code> can also be used."
+    }
+  ]
+}

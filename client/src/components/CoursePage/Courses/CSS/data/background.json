@@ -1,0 +1,232 @@
+{
+  "properties": [
+    {
+      "name": "Background Color",
+      "desc": "The <code>background-color</code> property sets the background color of an element.",
+      "code": "background-color: #f0f0f0;",
+      "values": [
+        {
+          "value": "Named colors <code>red</code>, <code>blue</code>, <code>green</code>"
+        },
+        {
+          "value": "Hex codes <code>#ff0000</code>"
+        },
+        {
+          "value": "RGB/RGBA <code>rgb(255, 0, 0)</code>, <code>rgba(255, 0, 0, 0.5)</code>"
+        },
+        {
+          "value": "HSL/HSLA <code>hsl(120, 100%, 50%)</code>, <code>hsla(120, 100%, 50%, 0.5)</code>"
+        }
+      ]
+    },
+    {
+      "name": "Background Image",
+      "desc": "The <code>background-image</code> property sets an image as the background of an element.",
+      "code": "background-image: url('background.png');",
+      "values": [
+        {
+          "value": "url('path/to/image.jpg')",
+          "desc": "Specifies the image path."
+        },
+        {
+          "value": "none",
+          "desc": "No background image."
+        }
+      ],
+      "extraDesc": "You can also set gradients as backgrounds using <code>linear-gradient</code> or <code>radial-gradient</code>.",
+      "extraCode": "background-image: linear-gradient(to right, #ff7e5f, #feb47b);"
+    },
+    {
+      "name": "Background Repeat",
+      "desc": "The <code>background-repeat</code> property controls whether and how the background image repeats.",
+      "code": "background-repeat: no-repeat;",
+      "values": [
+        {
+          "value": "repeat",
+          "desc": "Repeats the image both horizontally and vertically."
+        },
+        {
+          "value": "repeat-x",
+          "desc": "Repeats the image horizontally."
+        },
+        {
+          "value": "repeat-y",
+          "desc": "Repeats the image vertically."
+        },
+        {
+          "value": "no-repeat",
+          "desc": "No repetition."
+        },
+        {
+          "value": "space",
+          "desc": "Repeats the image with equal spacing between images."
+        },
+        {
+          "value": "round",
+          "desc": "Repeats the image, scaling it to fit without clipping."
+        }
+      ]
+    },
+    {
+      "name": "Background Size",
+      "desc": "The <code>background-size</code> property specifies the size of the background image.",
+      "code": "background-size: cover;",
+      "values": [
+        {
+          "value": "auto",
+          "desc": "Default size, image is displayed at its original size."
+        },
+        {
+          "value": "cover",
+          "desc": "Scales the image to cover the entire element."
+        },
+        {
+          "value": "contain",
+          "desc": "Scales the image to be fully visible within the element."
+        },
+        {
+          "value": "100% 100%",
+          "desc": "Width and height specified as percentages of the containing element."
+        }
+      ]
+    },
+    {
+      "name": "Background Position",
+      "desc": "The <code>background-position</code> property sets the initial position of the background image.",
+      "code": "background-position: center center;",
+      "values": [
+        {
+          "value": "top",
+          "desc": "Aligns the background image to the top."
+        },
+        {
+          "value": "bottom",
+          "desc": "Aligns the background image to the bottom."
+        },
+        {
+          "value": "left",
+          "desc": "Aligns the background image to the left."
+        },
+        {
+          "value": "right",
+          "desc": "Aligns the background image to the right."
+        },
+        {
+          "value": "center",
+          "desc": "Centers the background image."
+        },
+        {
+          "value": "10px 20px",
+          "desc": "Positions the background image at 10px from the left and 20px from the top."
+        },
+        {
+          "value": "50% 50%",
+          "desc": "Positions the background image at 50% from the left and 50% from the top."
+        }
+      ]
+    },
+    {
+      "name": "Background Attachment",
+      "desc": "The <code>background-attachment</code> property determines whether the background image scrolls with the page or is fixed.",
+      "code": "background-attachment: fixed;",
+      "values": [
+        {
+          "value": "scroll",
+          "desc": "Background scrolls with the content."
+        },
+        {
+          "value": "fixed",
+          "desc": "Background stays in place when the content is scrolled."
+        },
+        {
+          "value": "local",
+          "desc": "Background scrolls with the content of the element."
+        }
+      ]
+    },
+    {
+      "name": "Background Clip",
+      "desc": "The <code>background-clip</code> property defines how far the background should extend within an element.",
+      "code": "background-clip: padding-box;",
+      "values": [
+        {
+          "value": "border-box",
+          "desc": "Background extends to the outside edge of the border."
+        },
+        {
+          "value": "padding-box",
+          "desc": "Background extends to the edge of the padding."
+        },
+        {
+          "value": "content-box",
+          "desc": "Background extends to the edge of the content."
+        }
+      ]
+    },
+    {
+      "name": "Background Origin",
+      "desc": "The <code>background-origin</code> property specifies the positioning area of the background image.",
+      "code": "background-origin: border-box;",
+      "values": [
+        {
+          "value": "border-box",
+          "desc": "The background image starts at the border edge."
+        },
+        {
+          "value": "padding-box",
+          "desc": "The background image starts at the padding edge."
+        },
+        {
+          "value": "content-box",
+          "desc": "The background image starts at the content edge."
+        }
+      ]
+    },
+    {
+      "name": "Background Shorthand",
+      "desc": "You can combine several background properties using the shorthand <code>background</code>.",
+      "code": "background: url('background.png') no-repeat center/cover #333;",
+      "valueDesc" : "The shorthand includes properties in the following order:",
+      "values": [
+        {
+          "value": "background-color",
+          "desc": "Sets the background color."
+        },
+        {
+          "value": "background-image",
+          "desc": "Sets the background image."
+        },
+        {
+          "value": "background-repeat",
+          "desc": "Sets how the background image repeats."
+        },
+        {
+          "value": "background-attachment",
+          "desc": "Sets whether the background image is fixed or scrolls with the content."
+        },
+        {
+          "value": "background-position",
+          "desc": "Sets the position of the background image."
+        },
+        {
+          "value": "background-size",
+          "desc": "Sets the size of the background image."
+        },
+        {
+          "value": "background-clip",
+          "desc": "Sets how far the background extends within the element."
+        },
+        {
+          "value": "background-origin",
+          "desc": "Sets the positioning area of the background image."
+        }
+      ]
+    },
+    {
+      "name": "Multiple Backgrounds",
+      "desc": "CSS allows you to layer multiple background images on an element by separating them with commas.",
+      "SyCode": "multiBackground",
+      "extraDesc": "The first background specified is on top, and the last one is at the bottom."
+    }
+  ]
+}

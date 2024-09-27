@@ -1,0 +1,82 @@
+{
+  "title": "CSS Selectors",
+  "desc": "Selectors are used to target the HTML elements you want to style, There are multiple ways to select an element.",
+
+  "selectors": [
+    {
+      "title": "Universal Selector <code>*</code>",
+      "desc": "This selector targets all elements on the page.",
+      "code": "universal"
+    },
+    {
+      "title": "Type Selector",
+      "desc": "Targets all elements of a given type.",
+      "code": "type"
+    },
+    {
+      "title": "ID Selector <code>#</code>",
+      "desc": "Targets an element with a specific ID. IDs are unique, so this selector applies styles to a single element.",
+      "code": "id"
+    },
+    {
+      "title": "Class Selector <code>.</code>",
+      "desc": "Targets elements with a specific class attribute. You can give the same class name to multiple elements to style them as a group.",
+      "code": "class"
+    },
+    {
+      "title": "Attribute Selector",
+      "desc": "Targets elements based on their attributes.",
+      "code": "attr"
+    },
+    {
+      "title": "Descendant Selector",
+      "desc": "Selects elements that are descendants or children of another element.",
+      "code": "descendant"
+    },
+    {
+      "title": "Child Selector <code>&gt;</code>",
+      "desc": "Selects elements that are direct children of a specified element.",
+      "code": "child"
+    },
+    {
+      "title": "Adjacent Sibling Selector <code>+</code>",
+      "desc": "Targets an element that immediately follows another specified element.",
+      "code": "adjacent"
+    },
+    {
+      "title": "General Sibling Selector <code>~</code>",
+      "desc": "Targets all elements that are siblings of a specified element.",
+      "code": "general"
+    },
+    {
+      "title": "Pseudo-class <code>:hover</code>",
+      "desc": "Applies styles when the user hovers over an element.",
+      "code": "pseudoClass"
+    },
+    {
+      "title": "Pseudo-class <code>:first-child</code>",
+      "desc": "Targets the first child element of its parent.",
+      "code": "pseudoClass1"
+    },
+    {
+      "title": "Pseudo-element <code>::before</code>",
+      "desc": "Adds content before an element's content.",
+      "code": "pseudoElement"
+    },
+    {
+      "title": "Pseudo-element <code>::after</code>",
+      "desc": "Adds content after an element's content.",
+      "code": "pseudoElement1"
+    },
+    {
+      "title": "Combining Selectors",
+      "desc": "You can combine selectors to be more specific:",
+      "code": "combining"
+    },
+    {
+      "title": "CSS Comments",
+      "desc": "CSS also supports comments, which are ignored by the browser:",
+      "code": "comment"
+    }
+  ]
+}

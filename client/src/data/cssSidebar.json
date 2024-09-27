@@ -1,0 +1,82 @@
+[
+  {
+    "title": "CSS Introduction",
+    "path": "/courses/css/introduction"
+  },
+  {
+    "title": "CSS Syntax",
+    "path": "/courses/css/syntax"
+  },
+  {
+    "title": "CSS Selector",
+    "path": "/courses/css/selector"
+  },
+  {
+    "title": "CSS Text",
+    "path": "/courses/css/text"
+  },
+  {
+    "title": "CSS Color",
+    "path": "/courses/css/color"
+  },
+  {
+    "title": "CSS Background",
+    "path": "/courses/css/background"
+  },
+  {
+    "title": "CSS Box Model",
+    "path": "/courses/css/box-model"
+  },
+  {
+    "title": "CSS Display",
+    "path": "/courses/css/display"
+  },
+  {
+    "title": "CSS Positioning",
+    "path": "/courses/css/positioning"
+  },
+  {
+    "title": "CSS Flex-box",
+    "path": "/courses/css/flex-box"
+  },
+  {
+    "title": "CSS Grid",
+    "path": "/courses/css/grid"
+  },
+  {
+    "title": "CSS Animation",
+    "path": "/courses/css/animation",
+    "childrens": [
+      {
+        "title": "Transition",
+        "path": "/courses/css/animation/transition"
+      },
+      {
+        "title": "Keyframes",
+        "path": "/courses/css/animation/keyframes"
+      }
+    ]
+  },
+  {
+    "title": "CSS Transforms",
+    "path": "/courses/css/transform",
+    "childrens": [
+      {
+        "title": "2D Tranform",
+        "path": "/courses/css/transform/2d-transform"
+      },
+      {
+        "title": "3D Tranform",
+        "path": "/courses/css/transform/3d-transform"
+      }
+    ]
+  },
+  {
+    "title": "CSS Variable",
+    "path": "/courses/css/variable"
+  },
+  {
+    "title": "Responsive Design",
+    "path": "/courses/css/responsive-design"
+  }
+]

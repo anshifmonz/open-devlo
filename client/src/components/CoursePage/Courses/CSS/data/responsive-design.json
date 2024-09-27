@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Fluid Layouts",
+    "desc": "Fluid layouts means using relative units like percentages instead of fixed units like pixels to make elements adapt to different screen sizes.",
+    "example": "fluid"
+  },
+  {
+    "title": "Media Queries",
+    "desc": "By using Media queries we can apply different CSS styles based on the screen size or orientation. They’re the backbone of responsive design.",
+    "example": "mediaQuery"
+  },
+  {
+    "title": "Responsive Grid Systems",
+    "desc": "Grid systems divide the page into columns, making it easy to create responsive layouts that adapt to different screen sizes.",
+    "example": "grid"
+  },
+  {
+    "title": "Flexbox",
+    "desc": "Flexbox is another flexible layout methods for responsive design. It can adapt elements based on the available space.",
+    "example": "flexbox"
+  },
+  {
+    "title": "Mobile-First Approach",
+    "desc": "Mobile-first design means writing CSS for smaller screens first, then progressively implement media queries for larger screens.",
+    "example": "mobileFirst",
+    "extra": "This approach ensures the site performs well on different screen size"
+  },
+  {
+    "title": "Viewport Meta Tag",
+    "desc": "To make sure the website scales properly on mobile devices, add the viewport meta tag in the <code>&lt;head&gt;</code> of HTML",
+    "syntax": "viewPort",
+    "extra": "This tells the browser to set the viewport width to the device’s screen width and use a 1:1 scale ratio, which prevents zoomed-out rendering on mobile."
+  },
+  {
+    "title": "Responsive Units",
+    "desc": "Use responsive units like <code>em</code>, <code>rem</code>, <code>%</code>, <code>vw</code> and <code>vh</code> instead of fixed pixels to make your layout more flexible.",
+    "points": [
+      {
+        "name": "rem",
+        "desc": "Root element-relative units. 1rem equals the font size of the root element (default 16px)."
+      },
+      {
+        "name": "vw/vh",
+        "desc": "Viewport width and height units. <code>100vw/100vh</code> equals the full width/height of the viewport."
+      }
+    ],
+    "example": "units"
+  },
+  {
+    "title": "Responsive Typography",
+    "desc": "Scaling font sizes based on screen size ensures text is readable on all devices.",
+    "example": "clamp",
+    "extra": "The <code>clamp()</code> function automatically scales the font size between the given values."
+  },
+  {
+    "title": "Responsive Navigation",
+    "desc": "Navigation menus should adapt to different screen sizes, often transitioning to a mobile-friendly format like a hamburger menu.",
+    "example": "nav"
+  }
+]
