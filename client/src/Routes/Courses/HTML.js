@@ -1,27 +1,27 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
-const HTML = lazy(() => import('../../components/CoursePage/Courses/HTML/HTML'));
-const Introduction = lazy(() => import('../../components/CoursePage/Courses/HTML/Introduction'));
-const TagsAndElem = lazy(() => import('../../components/CoursePage/Courses/HTML/TagsAndElem'));
-const Attributes = lazy(() => import('../../components/CoursePage/Courses/HTML/Attributes'));
-const Text = lazy(() => import('../../components/CoursePage/Courses/HTML/Text'));
-const Links = lazy(() => import('../../components/CoursePage/Courses/HTML/Link'));
-const Images = lazy(() => import('../../components/CoursePage/Courses/HTML/Img'));
-const Lists = lazy(() => import('../../components/CoursePage/Courses/HTML/List'));
-const Table = lazy(() => import('../../components/CoursePage/Courses/HTML/Table'));
-const Form = lazy(() => import('../../components/CoursePage/Courses/HTML/Form'));
-const Semantic = lazy(() => import('../../components/CoursePage/Courses/HTML/Semantic'));
-const Multimedia = lazy(() => import('../../components/CoursePage/Courses/HTML/Multimedia'));
-// const AdvTopics = lazy(() => import('../../components/CoursePage/Courses/HTML/AdvTopics'));
-const PraAndProj = lazy(() => import('../../components/CoursePage/Courses/HTML/PraAndProj'));
-const Meta = lazy(() => import('../../components/CoursePage/Courses/HTML/AdvTopics/Meta'));
-const Link = lazy(() => import('../../components/CoursePage/Courses/HTML/AdvTopics/Link'));
-const Script = lazy(() => import('../../components/CoursePage/Courses/HTML/AdvTopics/Script'));
-const SEO = lazy(() => import('../../components/CoursePage/Courses/HTML/AdvTopics/SEO'));
+const HTML = lazy(() => import('../../pages/Courses/HTML/HTML'));
+const Introduction = lazy(() => import('../../pages/Courses/HTML/Introduction'));
+const TagsAndElem = lazy(() => import('../../pages/Courses/HTML/TagsAndElem'));
+const Attributes = lazy(() => import('../../pages/Courses/HTML/Attributes'));
+const Text = lazy(() => import('../../pages/Courses/HTML/Text'));
+const Links = lazy(() => import('../../pages/Courses/HTML/Link'));
+const Images = lazy(() => import('../../pages/Courses/HTML/Img'));
+const Lists = lazy(() => import('../../pages/Courses/HTML/List'));
+const Table = lazy(() => import('../../pages/Courses/HTML/Table'));
+const Form = lazy(() => import('../../pages/Courses/HTML/Form'));
+const Semantic = lazy(() => import('../../pages/Courses/HTML/Semantic'));
+const Multimedia = lazy(() => import('../../pages/Courses/HTML/Multimedia'));
+// const AdvTopics = lazy(() => import('../../pages/Courses/HTML/AdvTopics'));
+const PraAndProj = lazy(() => import('../../pages/Courses/HTML/PraAndProj'));
+const Meta = lazy(() => import('../../pages/Courses/HTML/AdvTopics/Meta'));
+const Link = lazy(() => import('../../pages/Courses/HTML/AdvTopics/Link'));
+const Script = lazy(() => import('../../pages/Courses/HTML/AdvTopics/Script'));
+const SEO = lazy(() => import('../../pages/Courses/HTML/AdvTopics/SEO'));
 
 
-const NotFound = lazy(() => import('../../components/NotFound'));
+const NotFound = lazy(() => import('../../pages/NotFound'));
 
 const HTMLRoutes = () => {
   return (

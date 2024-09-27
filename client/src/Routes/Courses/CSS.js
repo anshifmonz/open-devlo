@@ -1,29 +1,29 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
-const CSS = lazy(() => import ('../../components/CoursePage/Courses/CSS/CSS'));
-const Introduction = lazy(() => import ('../../components/CoursePage/Courses/CSS/Introduction'));
-const Syntax = lazy(() => import('../../components/CoursePage/Courses/CSS/Syntax/Syntax'));
-const Selector = lazy(() => import('../../components/CoursePage/Courses/CSS/Selector'));
-const Text = lazy(() => import('../../components/CoursePage/Courses/CSS/Text'));
-const Color = lazy(() => import('../../components/CoursePage/Courses/CSS/Color'));
-const Background = lazy(() => import('../../components/CoursePage/Courses/CSS/Background'))
-const BoxModel = lazy(() => import('../../components/CoursePage/Courses/CSS/BoxModel'))
-const Display = lazy(() => import('../../components/CoursePage/Courses/CSS/Display'))
-const FlexBox = lazy(() => import('../../components/CoursePage/Courses/CSS/FlexBox'))
-const Grid = lazy(() => import('../../components/CoursePage/Courses/CSS/Grid'))
-const Positioning = lazy(() => import('../../components/CoursePage/Courses/CSS/Positioning'))
-const Animation = lazy(() => import('../../components/CoursePage/Courses/CSS/Animation/Animation'))
-const Transitions = lazy(() => import('../../components/CoursePage/Courses/CSS/Animation/Transitions'));
-const Keyframes = lazy(() => import('../../components/CoursePage/Courses/CSS/Animation/Keyframes'));
-const Transform = lazy(() => import('../../components/CoursePage/Courses/CSS/Transform/Transform'));
-const TwoDTransform = lazy(() => import('../../components/CoursePage/Courses/CSS/Transform/2dTransform'));
-const ThreeDTransform = lazy(() => import('../../components/CoursePage/Courses/CSS/Transform/3dTransform'));
-const Variable = lazy(() => import('../../components/CoursePage/Courses/CSS/Variable'))
+const CSS = lazy(() => import ('../../pages/Courses/CSS/CSS'));
+const Introduction = lazy(() => import ('../../pages/Courses/CSS/Introduction'));
+const Syntax = lazy(() => import('../../pages/Courses/CSS/Syntax/Syntax'));
+const Selector = lazy(() => import('../../pages/Courses/CSS/Selector'));
+const Text = lazy(() => import('../../pages/Courses/CSS/Text'));
+const Color = lazy(() => import('../../pages/Courses/CSS/Color'));
+const Background = lazy(() => import('../../pages/Courses/CSS/Background'))
+const BoxModel = lazy(() => import('../../pages/Courses/CSS/BoxModel'))
+const Display = lazy(() => import('../../pages/Courses/CSS/Display'))
+const FlexBox = lazy(() => import('../../pages/Courses/CSS/FlexBox'))
+const Grid = lazy(() => import('../../pages/Courses/CSS/Grid'))
+const Positioning = lazy(() => import('../../pages/Courses/CSS/Positioning'))
+const Animation = lazy(() => import('../../pages/Courses/CSS/Animation/Animation'))
+const Transitions = lazy(() => import('../../pages/Courses/CSS/Animation/Transitions'));
+const Keyframes = lazy(() => import('../../pages/Courses/CSS/Animation/Keyframes'));
+const Transform = lazy(() => import('../../pages/Courses/CSS/Transform/Transform'));
+const TwoDTransform = lazy(() => import('../../pages/Courses/CSS/Transform/2dTransform'));
+const ThreeDTransform = lazy(() => import('../../pages/Courses/CSS/Transform/3dTransform'));
+const Variable = lazy(() => import('../../pages/Courses/CSS/Variable'))
 
-const ResponsiveDesign = lazy(() => import('../../components/CoursePage/Courses/CSS/ResponsiveDesign'))
+const ResponsiveDesign = lazy(() => import('../../pages/Courses/CSS/ResponsiveDesign'))
 
-const NotFound = lazy(() => import('../../components/NotFound'));
+const NotFound = lazy(() => import('../../pages/NotFound'));
 
 function CSSRoutes() {
   return (

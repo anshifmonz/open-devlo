@@ -1,9 +1,9 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from 'react-router-dom';
 
-const Home = lazy(() => import('../components/Home/Home'));
+const Home = lazy(() => import('../pages/Home/Home'));
 const CourseRoutes = lazy(() => import('./CourseRoutes'));
-const NotFound = lazy(() => import('../components/NotFound'));
+const NotFound = lazy(() => import('../pages/NotFound'));
 
 const AppRoutes = () => {
   return (
