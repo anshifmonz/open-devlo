@@ -2,7 +2,6 @@ import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 const Courses = lazy(() => import('../components/CoursePage/Courses'));
-const CSS = lazy(() => import('../components/CoursePage/Courses/CSS/CSS'));
 const Javascript = lazy(() => import('../components/CoursePage/Courses/Javascript/Javascript'));
 const ReactCourse = lazy(() => import('../components/CoursePage/Courses/React/React'));
 const Git = lazy(() => import('../components/CoursePage/Courses/Git/Git'));
@@ -13,6 +12,7 @@ const PostgreSql = lazy(() => import('../components/CoursePage/Courses/PostgreSq
 const NotFound = lazy(() => import('../components/NotFound'));
 
 const HTMLRoutes = lazy(() => import('./Courses/HTML'));
+const CSSRoutes = lazy(() => import('./Courses/CSS'));
 
 function CourseRoutes() {
   return (
@@ -20,7 +20,7 @@ function CourseRoutes() {
       <Routes>
         <Route path="/" element={<Courses />} />
         <Route path="html/*" element={<HTMLRoutes />} />
-        <Route path="css" element={<CSS />} />
+        <Route path="css/*" element={<CSSRoutes />} />
         <Route path="javascript" element={<Javascript />} />
         <Route path="ejs" element={<EJS />} />
         <Route path="express" element={<Express />} />

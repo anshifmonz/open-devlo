@@ -44,15 +44,39 @@
     "path": "/courses/css/grid"
   },
   {
+    "title": "CSS Animation",
+    "path": "/courses/css/animation",
+    "childrens": [
+      {
+        "title": "Transition",
+        "path": "/courses/css/animation/transition"
+      },
+      {
+        "title": "Keyframes",
+        "path": "/courses/css/animation/keyframes"
+      }
+    ]
+  },
+  {
+    "title": "CSS Transforms",
+    "path": "/courses/css/transform",
+    "childrens": [
+      {
+        "title": "2D Tranform",
+        "path": "/courses/css/transform/2d-transform"
+      },
+      {
+        "title": "3D Tranform",
+        "path": "/courses/css/transform/3d-transform"
+      }
+    ]
+  },
+  {
+    "title": "CSS Variable",
+    "path": "/courses/css/variable"
+  },
+  {
     "title": "Responsive Design",
     "path": "/courses/css/responsive-design"
-  },
-  {
-    "title": "Float and Clearfix",
-    "path": "/courses/css/float-and-clearfix"
-  },
-  {
-    "title": "",
-    "path": "/courses/css"
   }
 ]
