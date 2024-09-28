@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import InlineSyntaxHighlight from "../../../components/syntaxHighlight/InlineSyntax"
-import SyntaxHighlight from "../../../components/syntaxHighlight/SyntaxHighlight"
+import CodePlayground from "../../../components/syntaxHighlight/Updates/CodePlayground"
 import { TableCode } from './data/html';
 import data from './data/Table.json'
 
@@ -20,14 +20,14 @@ function Table() {
       </ul>
 
       <h3 className='mgt-8 mgb-2'>Basic example</h3>
-      <SyntaxHighlight code={TableCode.table} />
+      <CodePlayground code={{html: TableCode.table}} langs={'HTML'} />
 
       <h2 className='fs-7 mgt-8 mgb-4'>Table Sections</h2>
       {
         data.map((item, i) => (
           <Fragment key={i}>
             <p className="fw-5 mgb-2 lh-2 mgt-6 mgl-4"><b><InlineSyntaxHighlight code={`<${item.tag}>`} /></b>: {item.def}</p>
-            <SyntaxHighlight code={TableCode[item.tag]} classes={"mgl-4 mgb-9"} />
+            <CodePlayground code={{html: TableCode[item.tag]}} classes={"mgl-4 mgb-9"} langs={'HTML'} />
           </Fragment>
         ))
       }
@@ -40,7 +40,7 @@ function Table() {
       <InlineSyntaxHighlight code={'<td rowspan="2">Spans Two Rows</td>'} classes={"mgl-6"} />
 
       <h3 className='mgt-8 mgb-2'>Example Combining All Elements</h3>
-      <SyntaxHighlight code={TableCode.allTogether} />
+      <CodePlayground code={{html: TableCode.allTogether}} langs={'HTML'} />
     </>
   )
 }

@@ -1,4 +1,3 @@
-import SyntaxHighlight from "../../../components/syntaxHighlight/SyntaxHighlight";
 import InlineSyntaxHighlight from "../../../components/syntaxHighlight/InlineSyntax";
 
 function TagsAndElem() {

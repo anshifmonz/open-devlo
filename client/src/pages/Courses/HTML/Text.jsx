@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import SyntaxHighlight from "../../../components/syntaxHighlight/SyntaxHighlight"
+import CodePlayground from "../../../components/syntaxHighlight/Updates/CodePlayground"
 import InlineSyntaxHighlight from "../../../components/syntaxHighlight/InlineSyntax"
 import { Text } from "./data/html";
 import data from './data/Text.json';
@@ -23,7 +23,7 @@ function HtmlText() {
         }
 
         <h3 className='mgt-8 mgb-2'>Example with all of these Tags</h3>
-        <SyntaxHighlight code={Text.allTogether} />
+        <CodePlayground code={{html: Text.allTogether}} langs={'HTML'} />
     </>
   )
 }

@@ -1,8 +1,6 @@
-import { Fragment } from 'react';
-
 import data from '../data/script.json';
 import InlineSyntaxHighlight from '../../../../components/syntaxHighlight/InlineSyntax';
-import SyntaxHighlight from '../../../../components/syntaxHighlight/SyntaxHighlight';
+import CodePlayground from '../../../../components/syntaxHighlight/Updates/CodePlayground';
 
 function Script() {
 
@@ -37,7 +35,7 @@ function Script() {
                   <p className='fw-5 mgb-1 lh-2'>{practice.desc}</p>
                   {
                     practice.code &&
-                    <SyntaxHighlight code={practice.code} classes={'pad'} restriction={'noEdit noResult'} />
+                    <CodePlayground code={{html: practice.code}} classes={'pad'} restriction={'noEdit noResult'} langs={'HTML'} />
                   }
                 </div>
               ))

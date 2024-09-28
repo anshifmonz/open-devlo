@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import SyntaxHighlight from '../../../components/syntaxHighlight/SyntaxHighlight';
+import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
 import InlineSyntaxHighlight from '../../../components/syntaxHighlight/InlineSyntax';
 import data from './data/Links.json'
 import { LinksCode } from './data/html'
@@ -59,7 +59,7 @@ function Links() {
 
       <h3 className='mgt-8 mgb-2'>Example Combining Various Link Types</h3>
 
-      <SyntaxHighlight code={LinksCode.allTogether} />
+      <CodePlayground code={{html: LinksCode.allTogether}} langs={'HTML'} />
     </>
   )
 }

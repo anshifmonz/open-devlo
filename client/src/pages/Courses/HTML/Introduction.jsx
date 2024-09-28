@@ -1,6 +1,6 @@
 import React from 'react';
 import { Intro } from './data/html';
-import SyntaxHighlight from '../../../components/syntaxHighlight/SyntaxHighlight';
+import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
 import InlineHighlight from '../../../components/syntaxHighlight/InlineSyntax';
 
 function Introduction() {
@@ -10,7 +10,7 @@ function Introduction() {
       <h1 className='fs-10 mgb-8'>HTML Introduction</h1>
       <hr />
       <h2 id='what-is-html' className='scroll-top fs-7 mgt-8 mgb-4'>What is HTML?</h2>
-      <ul class="mgl-8 mgt-3">
+      <ul className="mgl-8 mgt-3">
         <li>HTML stands for <strong>HyperText Markup Language</strong>.</li>
         <li className='mgt-2'>HTML is the standard language for creating web pages. It uses tags to define headings, paragraphs and images.</li>
         <li className='mgt-2'>Each element tells the browser how to display content on the page.  </li>
@@ -20,7 +20,7 @@ function Introduction() {
       <h2 id='html-structure' className='scroll-top fs-7 mgt-8 mgb-4'>Structure of an HTML document</h2>
       <p className='fw-5 mgb-1 lh-2'>The structure of an HTML document is like a basic blueprint for a web page.</p>
 
-      <ul class="mgl-8 mgt-3">
+      <ul className="mgl-8 mgt-3">
         <li><InlineHighlight code={"<!DOCTYPE html>"} />: Tells the browser that this is an HTML file.</li>
         <li><InlineHighlight code={"<html>"} />: The root element of an HTML file that contains all the other elements on the page.</li>
         <li><InlineHighlight code={"<head>"} />: Contains meta-information about the page, like the title, links to stylesheets, and scripts.</li>
@@ -29,7 +29,7 @@ function Introduction() {
       </ul>
 
       <h3 className='mgt-8 mgb-2'>Example of an HTML File:</h3>
-      <SyntaxHighlight code={Intro.structure} />
+      <CodePlayground code={{html: Intro.structure}} langs={'HTML'} />
 
       <h2 className='fs-7 mgt-8 mgb-4'>Tags and Elements in HTML</h2>
       <div className="inside-explaination">
@@ -41,7 +41,7 @@ function Introduction() {
       </div>
 
       <h2 id='basic-tags'>Basic Tags</h2>
-      <ul class="mgl-8 mgt-3">
+      <ul className="mgl-8 mgt-3">
         <li><InlineHighlight code={"<!DOCTYPE html>"}/> : Declares the document type and version of HTML.</li>
         <li><InlineHighlight code={"<html>"}/> : The root element that wraps all the content on the page.</li>
         <li><InlineHighlight code={"<head>"}/> : Contains meta-information about the document, like its title and links to stylesheets.</li>
@@ -60,7 +60,7 @@ function Introduction() {
       </ul>
 
       <h3 className='mgt-8 mgb-2'>Example of putting all these together</h3>
-      <SyntaxHighlight code={Intro.allTogether}/>
+      <CodePlayground code={{html: Intro.allTogether}} restriction={'noEdit'} langs={'HTML'} />
     </>
   )
 }

@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import SyntaxHighlight from '../../../components/syntaxHighlight/SyntaxHighlight';
+import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
 import InlineSyntaxHighlight from '../../../components/syntaxHighlight/InlineSyntax';
 import data from './data/Multimedia.json';
 import { MultimediaCode } from './data/html';
@@ -27,7 +27,7 @@ function Multimedia() {
                   {
                     item.InCode
                     ? <InlineSyntaxHighlight code={item.InCode} classes={"mgl-4"}/>
-                    : <SyntaxHighlight code={MultimediaCode[item.SyCode]} classes={"mgl-4 mgt-3"} />
+                    : <CodePlayground code={{html: MultimediaCode[item.SyCode]}} classes={"mgl-4 mgt-3"} langs={'HTML'} />
                   }
                 </Fragment>
               ))
@@ -48,7 +48,7 @@ function Multimedia() {
             }
             {
               item.SyCode
-              ? <SyntaxHighlight code={MultimediaCode[item.SyCode]} classes={"mgt-4"} />
+              ? <CodePlayground code={{html: MultimediaCode[item.SyCode]}} classes={"mgt-4"} langs={'HTML'} />
               : item.InCode
               && <InlineSyntaxHighlight code={item.InCode} />
             }

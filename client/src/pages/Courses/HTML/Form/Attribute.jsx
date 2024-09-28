@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import SyntaxHighlight from "../../../../components/syntaxHighlight/SyntaxHighlight";
+import CodePlayground from "../../../../components/syntaxHighlight/Updates/CodePlayground";
 
 function Attribute({data, FormCode}) {
   return (
@@ -18,7 +18,7 @@ function Attribute({data, FormCode}) {
             </Fragment>
           ))
         }
-      <SyntaxHighlight code={FormCode} restriction={'noEdit noResult'} classes={'mgt-5'}/>
+      <CodePlayground code={{html: FormCode}} restriction={'noEdit noResult'} classes={'mgt-5'} langs={'HTML'} />
       </div>
     </>
   )

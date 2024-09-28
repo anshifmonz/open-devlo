@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import SyntaxHighlight from "../../../components/syntaxHighlight/SyntaxHighlight";
+import CodePlayground from "../../../components/syntaxHighlight/Updates/CodePlayground";
 import InlineSyntaxHighlight from "../../../components/syntaxHighlight/InlineSyntax";
 import { Img } from './data/html';
 import data from './data/img.json';
@@ -36,7 +36,7 @@ function Images() {
 
             {item.ex.includes('<') 
             ? <InlineSyntaxHighlight code={item.ex} classes={"mgl-6 pad"} />
-            : <SyntaxHighlight code={Img[item.ex]} classes={"mgl-4"} />}
+            : <CodePlayground code={{html: Img[item.ex]}} classes={"mgl-4"} langs={'HTML'} />}
           </Fragment>
         ))
       }

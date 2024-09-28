@@ -1,4 +1,4 @@
-import SyntaxHighlight from "../../../components/syntaxHighlight/SyntaxHighlight";
+import CodePlayground from "../../../components/syntaxHighlight/Updates/CodePlayground";
 import InlineSyntaxHighlight from "../../../components/syntaxHighlight/InlineSyntax";
 import { FormCode } from "./data/html";
 import data from './data/Form.json';
@@ -13,7 +13,7 @@ function Form() {
       <p className="fw-5 mgb-1 lh-2">Forms are used to collect user input and submit data to a server. Forms are crucial for user interactions such as login, registration, and data entry.</p>
 
       <h2 className='fs-7 mgt-6 mgb-4'>Basic Structure</h2>
-      <SyntaxHighlight code={FormCode.form} />
+      <CodePlayground code={{html: FormCode.form}} langs={'HTML'} />
 
       <p className="fw-5 mgb-1 lh-2 mgt-4"><b><InlineSyntaxHighlight code={"<form>"} /></b> : The container for all form elements.</p>
       <p className="fw-5 mgb-1 lh-2"><b><code>action</code></b> : Data will be sent to the specific endpoint/URL.</p>
@@ -24,7 +24,7 @@ function Form() {
       <Validation data={data.formValidation} />
 
       <h3 className='mgt-8 mgb-2'>Example Combining All Form Elements</h3>
-      <SyntaxHighlight code={FormCode.allTogether} />
+      <CodePlayground code={{html: FormCode.allTogether}} langs={'HTML'} />
     </>
   )
 }

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import InlineSyntaxHighlight from "../../../../components/syntaxHighlight/InlineSyntax";
-import SyntaxHighlight from "../../../../components/syntaxHighlight/SyntaxHighlight";
+import CodePlayground from "../../../../components/syntaxHighlight/Updates/CodePlayground";
 
 function Elements({textInput, textAButton, FormCode}) {
   return (
@@ -23,7 +23,7 @@ function Elements({textInput, textAButton, FormCode}) {
                 item.additionalCode &&
                 <>
                   <p className="fw-5 mgb-1 lh-2"><strong><InlineSyntaxHighlight code={item.additionalCode} classes={"mgl-6"}/></strong>: {item.additionalDescription}</p>
-                  <SyntaxHighlight code={FormCode} classes={"mgl-4"} />
+                  <CodePlayground code={{html: FormCode}} classes={"mgl-4"} langs={'HTML'} />
                 </>
               }
             </Fragment>
@@ -37,7 +37,7 @@ function Elements({textInput, textAButton, FormCode}) {
             <h3 className='mgt-8 mgb-2'>{item.id}. {item.heading}</h3>
             <div className="mgt-4 mgl-4">
               <p className="fw-5 mgb-1 lh-2"><strong><InlineSyntaxHighlight code={item.tag} /></strong>: {item.desc}</p>
-              <SyntaxHighlight code={item.code} />
+              <CodePlayground code={{html: item.code}} langs={'HTML'} />
             </div>
           </Fragment>
         ))

@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import SyntaxHighlight from "../../../components/syntaxHighlight/SyntaxHighlight";
+import CodePlayground from "../../../components/syntaxHighlight/Updates/CodePlayground";
 import InlineSyntaxHighlight from "../../../components/syntaxHighlight/InlineSyntax";
 import data from './data/Attribute'
 import { Attr } from './data/html'
@@ -21,7 +21,7 @@ function Attributes() {
       }
 
       <h3 className='mgt-8 mgb-2'>Example of putting all these together</h3>
-      <SyntaxHighlight code={Attr.allTogether} />
+      <CodePlayground code={{html: Attr.allTogether}} langs={'HTML'} />
     </>
   )
 }

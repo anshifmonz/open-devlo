@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 import InlineSyntaxHighlight from "../../../../components/syntaxHighlight/InlineSyntax"
-import SyntaxHighlight from "../../../../components/syntaxHighlight/SyntaxHighlight";
+import CodePlayground from "../../../../components/syntaxHighlight/Updates/CodePlayground";
 import data from '../data/Meta.json';
 import { MetaTag } from '../data/html';
 
@@ -33,7 +33,7 @@ function Meta() {
                     <p className="fw-5 mgb-1 lh-2">{item.desc}</p>
                     {
                       item.SyCode 
-                      ? <SyntaxHighlight code={MetaTag[item.SyCode]} classes={'mgt-2'} restriction={'noEdit noResult'}/>
+                      ? <CodePlayground code={{html: MetaTag[item.SyCode]}} classes={'mgt-2'} restriction={'noEdit noResult'} langs={'HTML'} />
                       : <InlineSyntaxHighlight code={item.InCode} classes={'mgt-2 pad'} />
                     }
                   </>

@@ -1,5 +1,5 @@
 import InlineSyntaxHighlight from '../../../../components/syntaxHighlight/InlineSyntax';
-import SyntaxHighlight from '../../../../components/syntaxHighlight/SyntaxHighlight';
+import CodePlayground from '../../../../components/syntaxHighlight/Updates/CodePlayground';
 import data from '../data/seo.json';
 import {SEOCode} from '../data/html';
 import { Fragment } from 'react';
@@ -27,7 +27,7 @@ function SEO() {
               ? <p className='fw-5 mgb-1 lh-2 mgl-2' dangerouslySetInnerHTML={{__html: method.code}}></p>
               : method.code.includes('<') 
               ? <InlineSyntaxHighlight code={method.code} classes={'mgl-1 pad'}/>
-              : <SyntaxHighlight code={SEOCode[method.code]} classes={'mgt-4'} restriction={'noEdit'} />
+              : <CodePlayground code={{html: SEOCode[method.code]}} classes={'mgt-4'} restriction={'noEdit'} langs={'HTML'} />
             }
           </Fragment>
         ))
