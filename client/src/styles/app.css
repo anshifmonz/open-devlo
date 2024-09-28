@@ -20,6 +20,7 @@
   --body-scroll-bar-hover: #a0a0a0;
   --body-scroll-bar-border: #d0d0d0;
 
+  --nav-bottom-border: 1.5px solid rgba(0, 0, 0, 0.1);
   --aside: #e5edf8;
   --aside-hover: #c3cbd7;
   --aside-item-hover: #b5bbc4;
@@ -48,7 +49,9 @@
   --body-scroll-bar: #555;
   --body-scroll-bar-track: #333333;
   --body-scroll-bar-hover: #888888;
-  --body-scroll-bar-border: #262626; 
+  --body-scroll-bar-border: #262626;
+
+  --nav-bottom-border: 1.5px solid rgba(255, 255, 255, 0.1);
   
   --aside: #171a35;
   --aside-hover: #272b4d;

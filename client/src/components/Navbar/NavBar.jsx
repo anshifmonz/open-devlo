@@ -1,25 +1,18 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../../styles/nav.css';
 import Navigations from './Navigation';
+import { useTheme } from '../../hooks/ThemeContext';
 
 function NavBar() {
 
-    const [theme, setTheme] = useState('dark');
-    const [borderStyle, setBorderStyle] = useState('1.5px solid rgba(255, 255, 255, 0.1)');
-
-    useEffect(() => {
-      document.documentElement.setAttribute('data-theme', theme);
-      theme == 'dark' ? setBorderStyle('1.5px solid rgba(255, 255, 255, 0.1)') : setBorderStyle('1.5px solid rgba(0, 0, 0, 0.1)')
-    }, [theme]);
-
+    const { theme, setTheme } = useTheme();
     const toggleTheme = () => {
       setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
     };
 
     return(
-        <nav style={{borderBottom: borderStyle}}>
+        <nav>
             <Link to='/'>Open Devlo</Link>
             <input type="text" name='searcg=h-box' placeholder='Search our courses'/>
             <div className="navigation">
