@@ -1,8 +1,7 @@
 import { useRef } from 'react';
-import { calculateRightDivWidth, calculateTabButtonsWidth, tabActivater } from '../../../../utils/codeBlockHelper';
+import { calculateRightDivWidth, calculateTabButtonsWidth, tabActivater } from '../../../utils/codeBlockHelper';
 import { EditIcon, PlayButtonIcon } from '../Icons';
 import Copy from '../Copy';
-import './css-editor.css';
 
 function CodeHead({ codeRef, langs, setActiveLang, restriction, editFunc, resultFunc, result }) {
 
@@ -10,7 +9,7 @@ function CodeHead({ codeRef, langs, setActiveLang, restriction, editFunc, result
   langs = langs.split(' ')
 
   return (
-    <div className="code-head1">
+    <div className="code-head">
       <div ref={tabButtons} className="tab-buttons" style={calculateTabButtonsWidth(langs)}>
         {
           langs.map((item, i) => (

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { highlighter, codeChange, restoreCursorPosition } from "../../../../utils/codeBlockHelper";
+import { highlighter, codeChange, restoreCursorPosition } from "../../../utils/codeBlockHelper";
 
 function CodeEditor({ codeRef, edit, activeLang, setHtml, setCss, setJs, html, css, js }) {
   const selectionRef = useRef(null)
@@ -34,9 +34,9 @@ function CodeEditor({ codeRef, edit, activeLang, setHtml, setCss, setJs, html, c
   }, [html, css, js, activeLang]);
 
   return (
-    <pre className="code-editor">
+    <pre>
       <code
-        className="scroll-bar"
+        className="scroll-bar hljs"
         ref={codeRef}
         contentEditable={edit}
         onInput={(e) => {

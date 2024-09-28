@@ -2,12 +2,11 @@ import { useRef, useState } from 'react';
 import CodeHead from './CodeHead';
 import CodeEditor from './CodeEditor';
 import CodePreview from './CodePreview';
-import useCodeState from '../../../../hooks/useCodeState';
+import useCodeState from '../../../hooks/useCodeState';
 
-import '../../../../styles/Courses/html/code.css';
-import './css-editor.css';
+import '../../../styles/Courses/code.css';
 
-function CodeBlock({ code, classes, restriction, langs }) {
+function CodePlayground({ code, classes, restriction, langs }) {
   const { htmlCode, cssCode, jsCode, setHtmlCode, setCssCode, setJsCode } = useCodeState(code);
   const [ activeLang, setActiveLang ] = useState(langs.split(' ')[0]);
   const [ result, setResult ] = useState(false);
@@ -37,4 +36,4 @@ function CodeBlock({ code, classes, restriction, langs }) {
   )
 }
 
-export default CodeBlock;
+export default CodePlayground;
