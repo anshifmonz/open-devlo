@@ -1,9 +1,0 @@
-@import url('../../app.css');
-@import url('../../tutorial.css');
-
-/* HTML Introduction */
-#what-is-html, #html-structure, #basic-tags{
-  scroll-margin-top: calc(var(--heading-s) + var(--margin-l) + 5px);
-}
-
-

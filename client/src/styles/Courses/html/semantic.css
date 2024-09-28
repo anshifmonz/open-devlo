@@ -1,7 +1,0 @@
-.why-use-semantic-tags body { font-family: Arial, sans-serif; }
-.why-use-semantic-tags header, .why-use-semantic-tags nav, .why-use-semantic-tags main, .why-use-semantic-tags section, .why-use-semantic-tags article, .why-use-semantic-tags aside, .why-use-semantic-tags footer { padding: 10px; margin: 10px; border: 1px solid #ccc; }
-#result > header {background-color: #fff;}
-.why-use-semantic-tags header { background-color: #f2f2f2; }
-.why-use-semantic-tags nav ul { list-style: none; padding: 0; }
-.why-use-semantic-tags nav ul li { display: inline; margin-right: 10px; }
-#result > footer { background-color: hsl(220, 13%, 23%); text-align: center; }

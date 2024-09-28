@@ -1,8 +1,11 @@
+import { useLocation } from 'react-router-dom';
+
 import NavBar from './Navbar/NavBar';
 import SideBar from './SideBar/SideBar';
 import Footer from './Footer/Footer';
+
 import '../styles/tutorial.css';
-import { useLocation } from 'react-router-dom';
+import '../styles/Courses/code.css'
 
 function Tutorial({ children }) {
 

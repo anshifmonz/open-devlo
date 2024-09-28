@@ -1,5 +1,3 @@
-import '../../../../styles/Courses/html/code.css';
-
 function Example() {
   return (
     <div className="html-code-container">

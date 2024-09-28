@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import hljs from 'highlight.js';
 import css from 'highlight.js/lib/languages/css';
-import '../../../../styles/Courses/html/code.css';
+import '../../../../styles/Courses/code.css';
 import { PlayButtonIcon, EditIcon } from '../../../../components/syntaxHighlight/Icons';
 import ShowResult from '../../../../components/syntaxHighlight/ShowResult';
 import Copy from '../../../../components/syntaxHighlight/Copy';
