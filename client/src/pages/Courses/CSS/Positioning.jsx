@@ -1,6 +1,6 @@
 import data from './data/positioning.json';
 import { positionCode } from './data/codes';
-import SHighlight from './Higlight/SHighlight';
+import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
 
 function Positioning() {
   return (
@@ -13,7 +13,7 @@ function Positioning() {
           <div className={item.title.toLocaleLowerCase().replace(' ', '-') + ' mgt-8'}>
             <h2 className='fs-7 mgb-4'>{item.title}</h2>
             <p className='fw-5 mgb-2 lh-2' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-            <SHighlight code={positionCode[item.example]} restriction={'noResult noEdit'} />
+            <CodePlayground code={{css: positionCode[item.example]}} langs={'CSS'} restriction={'noResult noEdit'} />
           </div>
         ))
       }

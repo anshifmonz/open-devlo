@@ -1,7 +1,7 @@
 import data from './data/text.json';
 import { textCode } from './data/codes';
 import InlineSyntaxHighlight from './Higlight/InlineSyHiglight';
-import SHighlight from './Higlight/SHighlight'
+import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground'
 
 function Text() {
   return (
@@ -19,7 +19,7 @@ function Text() {
                   <p className='fw-5 mgb-1 lh-2 mgt-6'><strong><code>{property.name}</code>: </strong>{property.desc}</p>
                   {
                     property.name === 'Media Queries'
-                    ? <SHighlight code={textCode[property.code]} restriction={'noEdit noResult'} />
+                    ? <CodePlayground code={{css: textCode[property.code]}} langs={'CSS'} restriction={'noEdit noResult'} />
                     : <InlineSyntaxHighlight code={property.code} />                  
                   }
                 </div>

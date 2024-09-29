@@ -1,7 +1,7 @@
 import data from '../data/2d-Transform.json';
 import { twoDTransfrom } from '../data/codes';
 import InlineSyHiglight from '../Higlight/InlineSyHiglight';
-import SHighlight from '../Higlight/SHighlight';
+import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
 
 function Transform() {
   return (
@@ -23,7 +23,7 @@ function Transform() {
                 ))
               }
             </div>
-            <SHighlight code={twoDTransfrom[item.example]} classes={'mgt-6'} />
+            <CodePlayGround code={{css: twoDTransfrom[item.example]}} langs={'CSS'} classes={'mgt-6'} />
           </div>
         ))
       }

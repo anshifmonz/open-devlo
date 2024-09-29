@@ -1,5 +1,5 @@
 import data from './data/responsive-design.json';
-import SHighlight from './Higlight/SHighlight';
+import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
 import InlineSyntax from '../../../components/syntaxHighlight/InlineSyntax';
 import { responsiveDesignCode } from './data/codes';
 
@@ -25,7 +25,7 @@ function ResponsiveDesign() {
               </div>
             }
             { item?.syntax && <InlineSyntax code={responsiveDesignCode[item.syntax]} /> }
-            { item?.example && <SHighlight code={responsiveDesignCode[item.example]} /> }
+            { item?.example && <CodePlayground code={{css: responsiveDesignCode[item.example]}} langs={'CSS'} /> }
             { item?.extra && <p className='fw-5 mgb-1 lh-2 mgt-7' dangerouslySetInnerHTML={{ __html: item.extra }}></p> }
           </div>
         ))

@@ -1,6 +1,6 @@
 import data from '../data/keyframes.json';
 import { keyframesCode } from '../data/codes';
-import SHighlight from '../Higlight/SHighlight';
+import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
 import InlineSyHiglight from '../Higlight/InlineSyHiglight';
 import { Fragment } from 'react';
 
@@ -33,7 +33,7 @@ function Keyframes() {
               </Fragment>
               )) 
             }
-            { item.example && <SHighlight code={keyframesCode[item.example]} /> }
+            { item.example && <CodePlayGround code={{css: keyframesCode[item.example]}} langs={'CSS'} /> }
             { item.explain && <p className='fw-5 mgb-1 lh-2 mgt-5' dangerouslySetInnerHTML={{ __html: item.explain }}></p> }
             { item.explains && item.explains.map((item, i) =>  (
                 <p key={i} className='fw-5 mgb-1 lh-2'><code>{item.name}</code>: {item.desc}</p>

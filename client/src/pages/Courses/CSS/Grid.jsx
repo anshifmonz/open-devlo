@@ -1,6 +1,6 @@
 import { gridCode } from './data/codes';
 import data from './data/grid.json';
-import SHighlight from './Higlight/SHighlight';
+import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
 
 function Grid() {
   return (
@@ -16,21 +16,21 @@ function Grid() {
           <div key={i}>
             <h2 className='fs-7 mgt-10 mgb-4'>{item.title}</h2>
             {item.desc && <p className='fw-5 mgb-1 lh-2' dangerouslySetInnerHTML={{ __html: item.desc }}></p>}
-            {item.example && <SHighlight code={gridCode[item.example]} /> }
+            {item.example && <CodePlayground code={{css: gridCode[item.example]}} langs={'CSS'} /> }
             {item.desc1 && <p className='fw-5 mgb-1 lh-2 mgt-6'>{item.desc1}</p>}
-            {item.example1 && <SHighlight code={gridCode[item.example1]} />}
+            {item.example1 && <CodePlayground code={{css: gridCode[item.example1]}} langs={'CSS'} />}
             { item.subHead
               ? item.subHead.map((sub, i) => (
                 <div key={i} className={sub.title.toLocaleLowerCase().replace(' ', '-')}>
                   <h3 className='mgt-7 mgb-2'>{sub.title}</h3>
-                  <SHighlight code={gridCode[sub.example]} />
+                  <CodePlayground code={{css: gridCode[sub.example]}} langs={'CSS'} />
                 </div>
               ))
               : item.subBold
               && item.subBold.map((subBold, i) => (
                 <div key={i} className={subBold.bold.toLocaleLowerCase().replace(' ', '-')} >
                   <p className='fw-5 mgb-2 lh-2' dangerouslySetInnerHTML={{ __html: `<b>${subBold.bold}</b>: ${subBold.desc}` }}></p>
-                  {subBold.example && <SHighlight code={gridCode[subBold.example]} classes={'mgb-5'} />}
+                  {subBold.example && <CodePlayground code={{css: gridCode[subBold.example]}} langs={'CSS'} classes={'mgb-5'} />}
                 </div>
               ))
             }

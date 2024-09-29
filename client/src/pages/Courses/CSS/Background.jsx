@@ -1,7 +1,7 @@
 import data from './data/background.json';
 import { backgroundCode } from './data/codes';
 import InlineSyHiglight from './Higlight/InlineSyHiglight';
-import SHighlight from './Higlight/SHighlight';
+import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
 
 function Background() {
   return (
@@ -18,7 +18,7 @@ function Background() {
               property.code
               ? <InlineSyHiglight code={property.code} />
               : property.SyCode
-              && <SHighlight code={backgroundCode[property.SyCode]} restriction={'noEdit noResult'} classes={'mgt-5 mgb--2'} />
+              && <CodePlayground code={{css: backgroundCode[property.SyCode]}} langs={'CSS'} restriction={'noEdit noResult'} classes={'mgt-5 mgb--2'} />
             }
             {
               property.values &&

@@ -1,6 +1,6 @@
 import data from '../data/3d-Transform.json';
 import { threeDTransform } from '../data/codes';
-import SHighlight from '../Higlight/SHighlight';
+import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
 
 
 function Transform() {
@@ -29,7 +29,7 @@ function Transform() {
                       <p key={i} className='fw-5 mgb-1 lh-2' dangerouslySetInnerHTML={{ __html: desc }}></p>
                     ))
                   }
-                  <SHighlight code={threeDTransform[func.example]} classes={'mgt-4'} />
+                  <CodePlayGround code={{css: threeDTransform[func.example]}} langs={'CSS'} classes={'mgt-4'} />
                 </div>
               ))
             }
@@ -41,13 +41,13 @@ function Transform() {
                   item.props?.map((prop, i) => (
                     <div key={i}>
                       <p key={i} className={i === 0 ? 'fw-5 mgb-1 lh-2 mgt-4' : 'fw-5 mgb-1 lh-2' } dangerouslySetInnerHTML={{ __html: `${i+1}. <code>${prop.name}</code>: ${prop.desc}` }}></p>
-                      { prop.example &&  <SHighlight code={threeDTransform[prop.example]} classes={'mgb-7'} /> }
+                      { prop.example &&  <CodePlayGround code={{css: threeDTransform[prop.example]}} langs={'CSS'} classes={'mgb-7'} /> }
                     </div>
                   ))
                 }
               </div>
             }
-            { item.example && <SHighlight code={threeDTransform[item.example]} classes={'mgt-3'} /> }
+            { item.example && <CodePlayGround code={{css: threeDTransform[item.example]}} langs={'CSS'} classes={'mgt-3'} /> }
             { item.explain && <p className='fw-5 mgt-6 lh-2'>{item.explain}</p> }
           </div>
         ))

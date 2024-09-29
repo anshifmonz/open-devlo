@@ -1,5 +1,5 @@
 import data from '../data/transition.json';
-import SHighlight from '../Higlight/SHighlight';
+import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
 import { transitionCode } from '../data/codes';
 
 function Transitions() {
@@ -30,7 +30,7 @@ function Transitions() {
                   ))}
                 </div>
             }
-            <SHighlight code={transitionCode[item.example]} />
+            <CodePlayGround code={{css: transitionCode[item.example]}} langs={'CSS'} />
             {
               item?.bold1 && <div key={i} className='mgt-5 mgb-3'>
                 {item.bold1.map((item, i) => (

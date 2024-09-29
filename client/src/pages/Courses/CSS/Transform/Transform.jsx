@@ -1,6 +1,6 @@
 import data from '../data/transform.json';
 import { transformCode } from '../data/codes';
-import SHighlight from '../Higlight/SHighlight';
+import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
 
 function Transform() {
   return (
@@ -13,7 +13,7 @@ function Transform() {
           <div key={i}>
             <h2 className='fs-7 mgt-8 mgb-4'>{item.title}</h2>
             <p className='fw-5 mgb-2 lh-2' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-            <SHighlight code={transformCode[item.example]} />
+            <CodePlayGround code={{css: transformCode[item.example]}} langs={'CSS'} />
             <p className='fw-5 mgt-6 lh-2'>For more detail about {item.title}, See <a href={item.link}>here</a></p>
           </div>
         ))

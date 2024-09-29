@@ -1,6 +1,6 @@
 import data from './data/selector.json'
 import { selectorCode } from './data/codes';
-import SyntaxHighlight from './Higlight/SHighlight';
+import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
 
 function Selector() {
   return (
@@ -16,7 +16,7 @@ function Selector() {
               && <h3 className='fs-6 mgt-8 mgb-4' dangerouslySetInnerHTML={{__html: selector.title}}></h3>
             }
             <p className={selector.code.includes('1') ? 'fw-5 mgb-1 lh-2 mgt-6' : 'fw-5 mgb-1 lh-2' }>{selector.desc}</p>
-            <SyntaxHighlight code={selectorCode[selector.code]} restriction={'noEdit noResult'} />
+            <CodePlayground code={{css: selectorCode[selector.code]}} langs={'CSS'} restriction={'noEdit noResult'} />
           </div>
         ))
       }
