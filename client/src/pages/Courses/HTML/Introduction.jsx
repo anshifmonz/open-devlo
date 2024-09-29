@@ -21,11 +21,11 @@ function Introduction() {
       <p className='fw-5 mgb-1 lh-2'>The structure of an HTML document is like a basic blueprint for a web page.</p>
 
       <ul className="mgl-8 mgt-3">
-        <li><InlineHighlight code={"<!DOCTYPE html>"} />: Tells the browser that this is an HTML file.</li>
-        <li><InlineHighlight code={"<html>"} />: The root element of an HTML file that contains all the other elements on the page.</li>
-        <li><InlineHighlight code={"<head>"} />: Contains meta-information about the page, like the title, links to stylesheets, and scripts.</li>
-        <li><InlineHighlight code={"<title>"} />: Sets the title of the page, which appears in the browser tab.</li>
-        <li><InlineHighlight code={"<body>"} />: Contains the main content of the page, like text, images, and links.</li>
+        <li><InlineHighlight lang={'html'} code={"<!DOCTYPE html>"} />: Tells the browser that this is an HTML file.</li>
+        <li><InlineHighlight lang={'html'} code={"<html>"} />: The root element of an HTML file that contains all the other elements on the page.</li>
+        <li><InlineHighlight lang={'html'} code={"<head>"} />: Contains meta-information about the page, like the title, links to stylesheets, and scripts.</li>
+        <li><InlineHighlight lang={'html'} code={"<title>"} />: Sets the title of the page, which appears in the browser tab.</li>
+        <li><InlineHighlight lang={'html'} code={"<body>"} />: Contains the main content of the page, like text, images, and links.</li>
       </ul>
 
       <h3 className='mgt-8 mgb-2'>Example of an HTML File:</h3>
@@ -37,26 +37,26 @@ function Introduction() {
         <p className='fw-5 mgb-1 lh-2'>The building blocks of HTML, written in angle brackets like &lt;tag&gt;. They come in pairs: an opening tag &lt;tag&gt; and a closing tag &lt;/tag&gt;, but some are self-closing like &lt;img /&gt;.</p>
         <h3 className='mgt-8 mgb-2'>HTML Element</h3>
         <p className='fw-5 mgb-1 lh-2'>An HTML element contains three parts: a start tag, some content, and an end tag.</p>
-        <p className='fw-5 mgb-1 lh-2'>Example: <InlineHighlight code={Intro.tagName} /></p>
+        <p className='fw-5 mgb-1 lh-2'>Example: <InlineHighlight lang={'html'} code={Intro.tagName} /></p>
       </div>
 
       <h2 id='basic-tags'>Basic Tags</h2>
       <ul className="mgl-8 mgt-3">
-        <li><InlineHighlight code={"<!DOCTYPE html>"}/> : Declares the document type and version of HTML.</li>
-        <li><InlineHighlight code={"<html>"}/> : The root element that wraps all the content on the page.</li>
-        <li><InlineHighlight code={"<head>"}/> : Contains meta-information about the document, like its title and links to stylesheets.</li>
-        <li><InlineHighlight code={"<title>"}/> : Sets the title of the document, shown in the browser tab.</li>
-        <li><InlineHighlight code={"<body>"}/> : Contains the main content of the HTML document.</li>
-        <li><InlineHighlight code={"<h1>"}/> to <InlineHighlight code={"<h6>"}/> : Headings, with <InlineHighlight code={"<h1>"}/> being the highest level and <InlineHighlight code={"<h6>"}/> the lowest.</li>
-        <li><InlineHighlight code={"<p"}/> : Defines a paragraph.</li>
-        <li><InlineHighlight code={"<a>"}/> : Creates a hyperlink.</li>
-        <li><InlineHighlight code={"<img>"}/> : Embeds an image.</li>
-        <li><InlineHighlight code={"<ul>"}/> and <InlineHighlight code={"<ol>"}/> : Creates unordered (bulleted) and ordered (numbered) lists, respectively.</li>
-        <li><InlineHighlight code={"<li>"}/> : List item, used inside <InlineHighlight code={"<ul>"}/> or <InlineHighlight code={"<ol>"}/>.</li>
-        <li><InlineHighlight code={"<div>"}/> : A container for other HTML elements, used to group content.</li>
-        <li><InlineHighlight code={"<span>"}/> : Inline container for text and other inline elements.</li>
-        <li><InlineHighlight code={"<br>"}/> : Inserts a line break.</li>
-        <li><InlineHighlight code={"<hr>"}/> : Inserts a horizontal rule (line).</li>
+        <li><InlineHighlight lang={'html'} code={"<!DOCTYPE html>"}/> : Declares the document type and version of HTML.</li>
+        <li><InlineHighlight lang={'html'} code={"<html>"}/> : The root element that wraps all the content on the page.</li>
+        <li><InlineHighlight lang={'html'} code={"<head>"}/> : Contains meta-information about the document, like its title and links to stylesheets.</li>
+        <li><InlineHighlight lang={'html'} code={"<title>"}/> : Sets the title of the document, shown in the browser tab.</li>
+        <li><InlineHighlight lang={'html'} code={"<body>"}/> : Contains the main content of the HTML document.</li>
+        <li><InlineHighlight lang={'html'} code={"<h1>"}/> to <InlineHighlight lang={'html'} code={"<h6>"}/> : Headings, with <InlineHighlight lang={'html'} code={"<h1>"}/> being the highest level and <InlineHighlight lang={'html'} code={"<h6>"}/> the lowest.</li>
+        <li><InlineHighlight lang={'html'} code={"<p"}/> : Defines a paragraph.</li>
+        <li><InlineHighlight lang={'html'} code={"<a>"}/> : Creates a hyperlink.</li>
+        <li><InlineHighlight lang={'html'} code={"<img>"}/> : Embeds an image.</li>
+        <li><InlineHighlight lang={'html'} code={"<ul>"}/> and <InlineHighlight lang={'html'} code={"<ol>"}/> : Creates unordered (bulleted) and ordered (numbered) lists, respectively.</li>
+        <li><InlineHighlight lang={'html'} code={"<li>"}/> : List item, used inside <InlineHighlight lang={'html'} code={"<ul>"}/> or <InlineHighlight lang={'html'} code={"<ol>"}/>.</li>
+        <li><InlineHighlight lang={'html'} code={"<div>"}/> : A container for other HTML elements, used to group content.</li>
+        <li><InlineHighlight lang={'html'} code={"<span>"}/> : Inline container for text and other inline elements.</li>
+        <li><InlineHighlight lang={'html'} code={"<br>"}/> : Inserts a line break.</li>
+        <li><InlineHighlight lang={'html'} code={"<hr>"}/> : Inserts a horizontal rule (line).</li>
       </ul>
 
       <h3 className='mgt-8 mgb-2'>Example of putting all these together</h3>

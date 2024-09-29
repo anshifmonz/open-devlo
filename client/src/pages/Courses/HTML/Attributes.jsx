@@ -8,14 +8,14 @@ function Attributes() {
   return (
     <>
       <h1 className='fs-10 mgb-8'>HTML Attributes</h1>
-      <p className='fw-5 mgb-1 lh-2'>HTML attributes provide additional information about HTML elements. They are always specified in the opening tag of an element and are written as name-value pairs. <InlineSyntaxHighlight code={'<tagname attribute="value">Content</tagname>'} /></p>
+      <p className='fw-5 mgb-1 lh-2'>HTML attributes provide additional information about HTML elements. They are always specified in the opening tag of an element and are written as name-value pairs. <InlineSyntaxHighlight lang={'html'} code={'<tagname attribute="value">Content</tagname>'} /></p>
       
       {
         data.map((item, index) => (
           <Fragment key={item.id}>
             <h3 className='mgt-8 mgb-2'>{index + 1}. {item.h3}</h3>
             <p className='fw-5 mgb-1 lh-2'>{item.p}</p>
-            <InlineSyntaxHighlight code={item.code} inside={true} />
+            <InlineSyntaxHighlight lang={'html'} code={item.code} inside={true} />
           </Fragment>
         ))
       }

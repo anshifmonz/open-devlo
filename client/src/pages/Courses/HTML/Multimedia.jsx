@@ -21,19 +21,19 @@ function Multimedia() {
                   {
                     item.ele.includes('SVG') 
                     ? <p className="fw-5 mgb-2 lh-2 mgt-6"><b>The {item.ele}:</b></p>
-                    : <p className="fw-5 mgb-2 lh-2 mgt-6"><b>The</b> <InlineSyntaxHighlight code={item.ele} /> <b>Element:</b></p>
+                    : <p className="fw-5 mgb-2 lh-2 mgt-6"><b>The</b> <InlineSyntaxHighlight lang={'html'} code={item.ele} /> <b>Element:</b></p>
                   }
                   <p className="fw-5 lh-2 mgl-4 mgb-1 mgt-3">{item.desc}</p>
                   {
                     item.InCode
-                    ? <InlineSyntaxHighlight code={item.InCode} classes={"mgl-4"}/>
+                    ? <InlineSyntaxHighlight lang={'html'} code={item.InCode} classes={"mgl-4"}/>
                     : <CodePlayground code={{html: MultimediaCode[item.SyCode]}} classes={"mgl-4 mgt-3"} langs={'HTML'} />
                   }
                 </Fragment>
               ))
               : item.ele1
-              ? <p className="fw-5 mgb-1 lh-2 mgt-1"><b>The</b> <InlineSyntaxHighlight code={item.ele} /> and <InlineSyntaxHighlight code={item.ele1} /> <b>Element:</b> {item.def}</p>
-              : <p className="fw-5 mgb-1 lh-2"><b>The</b> <InlineSyntaxHighlight code={item.ele} /> <b>Element:</b> {item.def}</p>
+              ? <p className="fw-5 mgb-1 lh-2 mgt-1"><b>The</b> <InlineSyntaxHighlight lang={'html'} code={item.ele} /> and <InlineSyntaxHighlight lang={'html'} code={item.ele1} /> <b>Element:</b> {item.def}</p>
+              : <p className="fw-5 mgb-1 lh-2"><b>The</b> <InlineSyntaxHighlight lang={'html'} code={item.ele} /> <b>Element:</b> {item.def}</p>
             }
             {
               item.attrs &&
@@ -50,7 +50,7 @@ function Multimedia() {
               item.SyCode
               ? <CodePlayground code={{html: MultimediaCode[item.SyCode]}} classes={"mgt-4"} langs={'HTML'} />
               : item.InCode
-              && <InlineSyntaxHighlight code={item.InCode} />
+              && <InlineSyntaxHighlight lang={'html'} code={item.InCode} />
             }
           </div>
         ))

@@ -15,7 +15,7 @@ function Form() {
       <h2 className='fs-7 mgt-6 mgb-4'>Basic Structure</h2>
       <CodePlayground code={{html: FormCode.form}} langs={'HTML'} />
 
-      <p className="fw-5 mgb-1 lh-2 mgt-4"><b><InlineSyntaxHighlight code={"<form>"} /></b> : The container for all form elements.</p>
+      <p className="fw-5 mgb-1 lh-2 mgt-4"><b><InlineSyntaxHighlight lang={'html'} code={"<form>"} /></b> : The container for all form elements.</p>
       <p className="fw-5 mgb-1 lh-2"><b><code>action</code></b> : Data will be sent to the specific endpoint/URL.</p>
       <p className="fw-5 mgb-1 lh-2"><b><code>method</code></b> : Specific the HTTP method to use (`GET` or `POST`, etc).</p>
 

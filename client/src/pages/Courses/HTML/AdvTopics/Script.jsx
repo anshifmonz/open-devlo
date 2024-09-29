@@ -18,7 +18,7 @@ function Script() {
                 <div key={i}>
                   <h3 className='mgt-8 mgb-2'>{sub.title}</h3>
                   <p className='fw-5 mgb-1 lh-2'>{sub.desc}</p>
-                  <InlineSyntaxHighlight code={sub.code} classes={'pad'} />
+                  <InlineSyntaxHighlight lang={'html'} code={sub.code} classes={'pad'} />
                 </div>
               ))
               : section.attributes
@@ -26,7 +26,7 @@ function Script() {
                 <div key={i}>
                   <h3 className='mgt-8 mgb-2'>The <code>{attr.name}</code> Attribute</h3>
                   <p className='fw-5 mgb-1 lh-2'>{attr.desc}</p>
-                  <InlineSyntaxHighlight code={attr.code} classes={'pad'} />
+                  <InlineSyntaxHighlight lang={'html'} code={attr.code} classes={'pad'} />
                 </div>
               ))
               : section.practices.map((practice, i) => (

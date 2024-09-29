@@ -8,8 +8,8 @@ function Link() {
       <h1 className='fs-10 mgb-8'>HTML Link Tag</h1>
       
       <h2 className="fs-7 mgt-8 mgb-4">Basic Structure</h2>
-      <p className="fw-5 mgb-3 lh-3">The <InlineSyntaxHighlight code={"<link>"} /> tag is a self-closing tag, meaning it doesn’t have a closing tag like <InlineSyntaxHighlight code={"<link></link>"} />, It’s mostly placed within the <InlineSyntaxHighlight code={"<head>"} /> section of an HTML document.</p>
-      <InlineSyntaxHighlight code={'<link rel="stylesheet" href="styles.css">'} classes={'pad'}/>
+      <p className="fw-5 mgb-3 lh-3">The <InlineSyntaxHighlight lang={'html'} code={"<link>"} /> tag is a self-closing tag, meaning it doesn’t have a closing tag like <InlineSyntaxHighlight lang={'html'} code={"<link></link>"} />, It’s mostly placed within the <InlineSyntaxHighlight lang={'html'} code={"<head>"} /> section of an HTML document.</p>
+      <InlineSyntaxHighlight lang={'html'} code={'<link rel="stylesheet" href="styles.css">'} classes={'pad'}/>
       {
         <div>
           <h2 className="fs-7 mgt-8 mgb--4">{data.Attributes.title}</h2>
@@ -29,7 +29,7 @@ function Link() {
                     }
                   </>
                 }
-                <InlineSyntaxHighlight code={attr.InCode} classes={'mgl-6 mgb-8 pad'}/>
+                <InlineSyntaxHighlight lang={'html'} code={attr.InCode} classes={'mgl-6 mgb-8 pad'}/>
               </Fragment>
             ))
           }
@@ -43,7 +43,7 @@ function Link() {
               <div key={i}>
                 <h3 className='mgt-8'>{use.title}</h3>
                 <p className='fw-5 mgb-2 lh-1 mgt-3 mgl-4'>{use.desc}</p>
-                <InlineSyntaxHighlight code={use.InCode} classes={'mgl-4 pad'}/>
+                <InlineSyntaxHighlight lang={'html'} code={use.InCode} classes={'mgl-4 pad'}/>
               </div>
             ))
           }

@@ -17,7 +17,7 @@ function Validation({ data }) {
               ))
               : <p className='fw-5 mgb-2 lh-2 mgl-5' key={i}><code>{item.attr}</code>: {item.desc}</p>   
             }
-            <InlineSyntaxHighlight code={item.ex} classes={"mgl-6 pad"} />
+            <InlineSyntaxHighlight lang={'html'} code={item.ex} classes={"mgl-6 pad"} />
           </Fragment>
         ))
       }

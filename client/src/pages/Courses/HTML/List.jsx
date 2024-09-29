@@ -17,14 +17,14 @@ function Lists() {
             {
               item.tag 
               ? <> 
-                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>Tag: <InlineSyntaxHighlight code={item.tag} /></b></p> 
-                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>List item tag: <InlineSyntaxHighlight code={item.liTag} /></b></p>
+                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>Tag: <InlineSyntaxHighlight lang={'html'} code={item.tag} /></b></p> 
+                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>List item tag: <InlineSyntaxHighlight lang={'html'} code={item.liTag} /></b></p>
                   <CodePlayground code={item.tag === '<ul>' ? {html: List.uList} : {html: List.oList}} classes={"mgl-4"} langs={'HTML'} />
                 </>
               : <> 
-                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>Tag for List: <InlineSyntaxHighlight code={item.dTag} /></b></p>
-                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>Tag for Term: <InlineSyntaxHighlight code={item.dliTag} /></b></p>
-                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>Tag for Description: <InlineSyntaxHighlight code={item.dTagDesc} /></b></p>
+                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>Tag for List: <InlineSyntaxHighlight lang={'html'} code={item.dTag} /></b></p>
+                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>Tag for Term: <InlineSyntaxHighlight lang={'html'} code={item.dliTag} /></b></p>
+                  <p className='fw-5 mgb-1 lh-2 pdl-4'><b>Tag for Description: <InlineSyntaxHighlight lang={'html'} code={item.dTagDesc} /></b></p>
                   <CodePlayground code={{html: List.descList}} classes={"mgl-4"} langs={'HTML'} />
                 </>
             }

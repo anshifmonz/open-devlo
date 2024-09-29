@@ -26,7 +26,7 @@ function SEO() {
               method.code.includes('Sitemap') 
               ? <p className='fw-5 mgb-1 lh-2 mgl-2' dangerouslySetInnerHTML={{__html: method.code}}></p>
               : method.code.includes('<') 
-              ? <InlineSyntaxHighlight code={method.code} classes={'mgl-1 pad'}/>
+              ? <InlineSyntaxHighlight lang={'html'} code={method.code} classes={'mgl-1 pad'}/>
               : <CodePlayground code={{html: SEOCode[method.code]}} classes={'mgt-4'} restriction={'noEdit'} langs={'HTML'} />
             }
           </Fragment>

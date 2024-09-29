@@ -10,8 +10,8 @@ function Links() {
       <h1 className='fs-10 mgb-6'>HTML Links</h1> 
       <p className="fw-5 mgb-1 lh-2">HTML links are used to create hyperlinks that connect web pages or resources.</p>
 
-      <p id='attributes-of-anchor-tag' className='fw-5 mgb-1 lh-2 mgt-2'>The anchor tag <InlineSyntaxHighlight code={"<a>"} /> creates hyperlinks. The `href` attribute specifies the URL of the page or resource the link points to.</p>
-      <InlineSyntaxHighlight code={`<a href="https://www.example.com">Visit Example</a>`} classes={'pad'} />
+      <p id='attributes-of-anchor-tag' className='fw-5 mgb-1 lh-2 mgt-2'>The anchor tag <InlineSyntaxHighlight lang={'html'} code={"<a>"} /> creates hyperlinks. The `href` attribute specifies the URL of the page or resource the link points to.</p>
+      <InlineSyntaxHighlight lang={'html'} code={`<a href="https://www.example.com">Visit Example</a>`} classes={'pad'} />
     
       <h2 className='fs-7 mgt-8 mgb--4'>Attributes of Anchor Tag</h2>
       {
@@ -35,11 +35,11 @@ function Links() {
                     : <li key={index} style={{marginBottom: ".5rem"}}><b>{value.name}:</b> {value.desc}</li>
                   ))}
               </ul>
-              <InlineSyntaxHighlight code={item.code} classes={"mgl-6 pad"}/>
+              <InlineSyntaxHighlight lang={'html'} code={item.code} classes={"mgl-6 pad"}/>
             </Fragment>
           : <Fragment key={index}>
               <p className='fw-5 mgb-1 lh-2 mgt-8'>{index + 1}. <b><code>{item.attr}</code>:</b> {item.def}</p>
-              <InlineSyntaxHighlight code={item.code} classes={"mgl-6 pad"}/>
+              <InlineSyntaxHighlight lang={'html'} code={item.code} classes={"mgl-6 pad"}/>
             </Fragment>
         ))
       }
@@ -52,7 +52,7 @@ function Links() {
           <Fragment key={item.id}>
             <p className='fw-5 mgb-1 lh-2' style={item.id !== 0 ? {marginTop: "2rem"} : null}>{item.id + 1}. <b>{item.heading}</b></p>
             <p className='fw-5 mgb-1 lh-2 mgl-6'>{item.def}</p>
-            <InlineSyntaxHighlight code={item.code} classes={"mgl-6 pad"}/>
+            <InlineSyntaxHighlight lang={'html'} code={item.code} classes={"mgl-6 pad"}/>
           </Fragment>
         ))
       }

@@ -17,7 +17,7 @@ function HtmlText() {
             <Fragment key={i}>
               <h3 className='mgt-8 mgb-2'>{i + 1}. The {item.tag} tag</h3>
               <p className="fw-5 mgb-1 lh-2 mgl-6">{item.p}</p>
-              <InlineSyntaxHighlight code={item.code} classes={"mgl-6 pad"} />
+              <InlineSyntaxHighlight lang={'html'} code={item.code} classes={"mgl-6 pad"} />
             </Fragment>
           ))
         }
