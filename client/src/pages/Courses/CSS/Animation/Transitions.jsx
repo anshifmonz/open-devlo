@@ -1,5 +1,5 @@
 import data from '../data/transition.json';
-import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayGround from '../../../../components/syntaxHighlight/CodePlayground';
 import { transitionCode } from '../data/codes';
 
 function Transitions() {

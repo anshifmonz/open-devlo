@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CopyIcon, TickIcon } from './Icons';
-import { copyToClipboard } from '../../utils/codeBlockHelper';
+import { copyToClipboard } from '../../../utils/codeBlockHelper';
 
 function Copy({codeRef}) {
 

@@ -1,6 +1,6 @@
 import data from '../data/animation.json';
 import { animationCode } from '../data/codes'
-import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayGround from '../../../../components/syntaxHighlight/CodePlayground';
 function Animation() {
   return (
     <>

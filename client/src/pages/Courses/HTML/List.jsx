@@ -1,7 +1,7 @@
 import { List } from './data/html';
 import data from './data/List.json'
 import InlineSyntaxHighlight from '../../../components/syntaxHighlight/InlineSyntax';
-import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground'
+import CodePlayground from '../../../components/syntaxHighlight/CodePlayground'
 
 function Lists() {
   return (

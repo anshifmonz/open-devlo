@@ -1,7 +1,7 @@
 import data from './data/background.json';
 import { backgroundCode } from './data/codes';
 import InlineSyntaxHiglight from '../../../components/syntaxHighlight/InlineSyntax';
-import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayground from '../../../components/syntaxHighlight/CodePlayground';
 
 function Background() {
   return (

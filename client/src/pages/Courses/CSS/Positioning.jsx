@@ -1,6 +1,6 @@
 import data from './data/positioning.json';
 import { positionCode } from './data/codes';
-import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayground from '../../../components/syntaxHighlight/CodePlayground';
 
 function Positioning() {
   return (

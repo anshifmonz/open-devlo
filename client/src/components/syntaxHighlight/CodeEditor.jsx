@@ -1,67 +1,50 @@
 import React, { useEffect, useRef } from "react";
-import hljs from 'highlight.js/lib/core';
-import html from 'highlight.js/lib/languages/xml';
-import css from 'highlight.js/lib/languages/css';
-import javascript from "highlight.js/lib/languages/javascript";
+import { highlighter, codeChange, restoreCursorPosition } from "../../utils/codeBlockHelper";
 
-hljs.registerLanguage('html', html);
-hljs.registerLanguage('css', css);
-hljs.registerLanguage('javascript', javascript);
+function CodeEditor({ codeRef, edit, activeLang, setHtml, setCss, setJs, html, css, js }) {
+  const selectionRef = useRef(null)
 
-function CodeEditor({ codeRef, edit, setResultCode, code }) {
-  const selectionRef = useRef(null);
-
-  // Cursor point to the first line of code when edit button clicked
   useEffect(() => {
     if (edit && codeRef.current) {
       codeRef.current.focus();
-      
-      // aaplying previous selection if available
-      if (selectionRef.current) {
-        const sel = window.getSelection();
-        sel.removeAllRanges();
-        sel.addRange(selectionRef.current);
-      } else {
-
-        // default cursor to start
-        const range = document.createRange();
-        range.setStart(codeRef.current, 0);
-        range.collapse(true);
-        const sel = window.getSelection();
-        sel.removeAllRanges();
-        sel.addRange(range);
-      }
+      restoreCursorPosition(selectionRef, codeRef);
     }
   }, [edit]);
 
-  // Live update when code changes
-  const codeChange = (e) => {
-    setResultCode(e.target.innerText);
-
-    // save current selection range
-    const sel = window.getSelection();
-    if (sel.rangeCount > 0) {
-      selectionRef.current = sel.getRangeAt(0);
-    }
-  };
-
   useEffect(() => {
-    console.log('asd')
-    if (codeRef.current && codeRef.current.dataset.highlighted !== 'yes') {
-      hljs.highlightElement(codeRef.current);
+    if (codeRef.current) {
+      let highlightedCode;
+      switch (activeLang) {
+        case 'HTML':
+          highlightedCode = highlighter(html, 'html');
+          break;
+        case 'CSS':
+          highlightedCode = highlighter(css, 'css');
+          break;
+        case 'Javascript':
+          highlightedCode = highlighter(js, 'javascript');
+          break;
+        default:
+          highlightedCode = '';
+      }
+
+      codeRef.current.innerHTML = highlightedCode;
+      restoreCursorPosition(selectionRef, codeRef);
     }
-  }, [codeRef.current]);
+  }, [html, css, js, activeLang]);
 
   return (
-    <code
-      className="scroll-bar"
-      ref={codeRef}
-      contentEditable={edit}
-      onInput={codeChange}
-      suppressContentEditableWarning={true}
-    >
-      {code}
-    </code>
+    <pre>
+      <code
+        className="scroll-bar hljs"
+        ref={codeRef}
+        contentEditable={edit}
+        onInput={(e) => {
+          codeChange(e, setHtml, setCss, setJs, activeLang, selectionRef, codeRef)
+        }}
+        suppressContentEditableWarning={true}
+      />
+    </pre>
   );
 }
 

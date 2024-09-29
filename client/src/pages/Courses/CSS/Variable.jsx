@@ -1,6 +1,6 @@
 import data from './data/variable.json';
 import { variableCode } from './data/codes';
-import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayground from '../../../components/syntaxHighlight/CodePlayground';
 import InlineSyntaxHiglight from '../../../components/syntaxHighlight/InlineSyntax';
 import { Fragment } from 'react';
 

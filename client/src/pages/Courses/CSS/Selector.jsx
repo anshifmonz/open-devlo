@@ -1,6 +1,6 @@
 import data from './data/selector.json'
 import { selectorCode } from './data/codes';
-import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayground from '../../../components/syntaxHighlight/CodePlayground';
 
 function Selector() {
   return (

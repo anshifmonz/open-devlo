@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import CodePlayground from "../../../components/syntaxHighlight/Updates/CodePlayground"
+import CodePlayground from "../../../components/syntaxHighlight/CodePlayground"
 import InlineSyntaxHighlight from "../../../components/syntaxHighlight/InlineSyntax"
 import { Text } from "./data/html";
 import data from './data/Text.json';

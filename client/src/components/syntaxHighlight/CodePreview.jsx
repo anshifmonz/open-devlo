@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useTheme } from '../../../hooks/ThemeContext';
+import { useTheme } from '../../hooks/ThemeContext';
 
 function CodePreview({result, html, css, js}) {
   const [iframeHeight, setIframeHeight] = useState('');

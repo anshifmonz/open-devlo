@@ -1,6 +1,6 @@
 import React from 'react';
 import { Intro } from './data/html';
-import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayground from '../../../components/syntaxHighlight/CodePlayground';
 import InlineHighlight from '../../../components/syntaxHighlight/InlineSyntax';
 
 function Introduction() {

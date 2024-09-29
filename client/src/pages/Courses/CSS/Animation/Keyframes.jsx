@@ -1,6 +1,6 @@
 import data from '../data/keyframes.json';
 import { keyframesCode } from '../data/codes';
-import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayGround from '../../../../components/syntaxHighlight/CodePlayground';
 import InlineSyntaxHiglight from '../../../../components/syntaxHighlight/InlineSyntax';
 import { Fragment } from 'react';
 

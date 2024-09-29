@@ -1,7 +1,7 @@
 import data from './data/text.json';
 import { textCode } from './data/codes';
 import InlineSyntaxHighlight from '../../../components/syntaxHighlight/InlineSyntax';
-import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground'
+import CodePlayground from '../../../components/syntaxHighlight/CodePlayground'
 
 function Text() {
   return (

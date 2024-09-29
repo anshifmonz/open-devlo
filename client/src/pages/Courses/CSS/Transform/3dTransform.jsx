@@ -1,6 +1,6 @@
 import data from '../data/3d-Transform.json';
 import { threeDTransform } from '../data/codes';
-import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayGround from '../../../../components/syntaxHighlight/CodePlayground';
 
 
 function Transform() {

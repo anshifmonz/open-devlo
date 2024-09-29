@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import InlineSyntaxHighlight from "../../../../components/syntaxHighlight/InlineSyntax";
-import CodePlayground from "../../../../components/syntaxHighlight/Updates/CodePlayground";
+import CodePlayground from "../../../../components/syntaxHighlight/CodePlayground";
 
 function Elements({textInput, textAButton, FormCode}) {
   return (

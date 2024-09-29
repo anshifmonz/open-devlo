@@ -1,6 +1,6 @@
 import data from './data/flex-box.json';
 import { flexBoxCode } from './data/codes';
-import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayground from '../../../components/syntaxHighlight/CodePlayground';
 
 function FlexBox() {
   return (

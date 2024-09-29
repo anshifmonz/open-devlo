@@ -1,6 +1,6 @@
 import data from '../data/transform.json';
 import { transformCode } from '../data/codes';
-import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayGround from '../../../../components/syntaxHighlight/CodePlayground';
 
 function Transform() {
   return (

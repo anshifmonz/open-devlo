@@ -1,5 +1,5 @@
 import data from './data/responsive-design.json';
-import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayground from '../../../components/syntaxHighlight/CodePlayground';
 import InlineSyntax from '../../../components/syntaxHighlight/InlineSyntax';
 import { responsiveDesignCode } from './data/codes';
 

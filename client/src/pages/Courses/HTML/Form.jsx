@@ -1,4 +1,4 @@
-import CodePlayground from "../../../components/syntaxHighlight/Updates/CodePlayground";
+import CodePlayground from "../../../components/syntaxHighlight/CodePlayground";
 import InlineSyntaxHighlight from "../../../components/syntaxHighlight/InlineSyntax";
 import { FormCode } from "./data/html";
 import data from './data/Form.json';

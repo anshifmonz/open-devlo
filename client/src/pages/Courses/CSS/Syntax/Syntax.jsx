@@ -1,5 +1,5 @@
 import Example from "./Example";
-import CodePlayground from "../../../../components/syntaxHighlight/Updates/CodePlayground";
+import CodePlayground from "../../../../components/syntaxHighlight/CodePlayground";
 import InlineSyntaxHighlight from "../../../../components/syntaxHighlight/InlineSyntax";
 import { syntax } from "../data/codes";
 

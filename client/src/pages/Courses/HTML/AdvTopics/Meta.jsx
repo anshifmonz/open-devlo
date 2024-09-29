@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 import InlineSyntaxHighlight from "../../../../components/syntaxHighlight/InlineSyntax"
-import CodePlayground from "../../../../components/syntaxHighlight/Updates/CodePlayground";
+import CodePlayground from "../../../../components/syntaxHighlight/CodePlayground";
 import data from '../data/Meta.json';
 import { MetaTag } from '../data/html';
 

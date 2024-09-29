@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import CodePlayground from "../../../../components/syntaxHighlight/Updates/CodePlayground";
+import CodePlayground from "../../../../components/syntaxHighlight/CodePlayground";
 
 function Attribute({data, FormCode}) {
   return (

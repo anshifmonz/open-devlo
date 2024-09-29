@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import data from './data/Semantic.json'
 import { SemanticCode } from './data/html';
-import CodePlayground from "../../../components/syntaxHighlight/Updates/CodePlayground";
+import CodePlayground from "../../../components/syntaxHighlight/CodePlayground";
 import InlineSyntaxHighlight from "../../../components/syntaxHighlight/InlineSyntax";
 
 function Semantic() {

@@ -1,7 +1,7 @@
 import data from '../data/2d-Transform.json';
 import { twoDTransfrom } from '../data/codes';
 import InlineSyntaxHiglight from '../../../../components/syntaxHighlight/InlineSyntax';
-import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
+import CodePlayGround from '../../../../components/syntaxHighlight/CodePlayground';
 
 function Transform() {
   return (

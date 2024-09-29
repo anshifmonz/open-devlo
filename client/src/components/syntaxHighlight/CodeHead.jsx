@@ -1,7 +1,7 @@
 import { useRef } from 'react';
-import { calculateRightDivWidth, calculateTabButtonsWidth, tabActivater } from '../../../utils/codeBlockHelper';
-import { EditIcon, PlayButtonIcon } from '../Icons';
-import Copy from '../Copy';
+import { calculateRightDivWidth, calculateTabButtonsWidth, tabActivater } from '../../utils/codeBlockHelper';
+import { EditIcon, PlayButtonIcon } from './icons/Icons';
+import Copy from './icons/Copy';
 
 function CodeHead({ codeRef, langs, setActiveLang, restriction, editFunc, resultFunc, result }) {
 

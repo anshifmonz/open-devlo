@@ -2,9 +2,9 @@ import { useRef, useState } from 'react';
 import CodeHead from './CodeHead';
 import CodeEditor from './CodeEditor';
 import CodePreview from './CodePreview';
-import useCodeState from '../../../hooks/useCodeState';
+import useCodeState from '../../hooks/useCodeState';
 
-import '../../../styles/Courses/code.css';
+import '../../styles/Courses/code.css';
 
 function CodePlayground({ code, classes, restriction, langs }) {
   const { htmlCode, cssCode, jsCode, setHtmlCode, setCssCode, setJsCode } = useCodeState(code);
