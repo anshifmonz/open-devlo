@@ -1,28 +1,13 @@
 import { useState } from 'react';
 import { CopyIcon, TickIcon } from './Icons';
+import { copyToClipboard } from '../../utils/codeBlockHelper';
 
 function Copy({codeRef}) {
 
   const [isCopy, setCopy] = useState(false);
 
-  function copyToClipboard() {
-    if (codeRef.current) {
-      const textToCopy = codeRef.current.textContent;
-      navigator.clipboard.writeText(textToCopy)
-        .then(() => {
-          setCopy(true);
-          setTimeout(() => {
-            setCopy(false);
-          }, 3000);
-        })
-        .catch((err) => {
-          console.error('Failed to copy text: ', err);
-        });
-    }
-  };
-
   return (
-    <div className="copy-btn" onClick={copyToClipboard}>
+    <div className="copy-btn" onClick={() => copyToClipboard(codeRef, setCopy)}>
       {isCopy ? (
         <>
           <TickIcon /> Copied

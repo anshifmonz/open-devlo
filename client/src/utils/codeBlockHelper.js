@@ -113,4 +113,20 @@ const tabActivater = (e, setActiveLang, tabButtons, langs) => {
   }
 }
 
-export { highlighter, codeChange, restoreCursorPosition, calculateTabButtonsWidth, calculateRightDivWidth, tabActivater}
+const copyToClipboard = (codeRef, setCopy) => {
+  if (codeRef.current) {
+    const textToCopy = codeRef.current.textContent;
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        setCopy?.(true);
+        setTimeout(() => {
+          setCopy?.(false);
+        }, 3000);
+      })
+      .catch((err) => {
+        console.error('Failed to copy text: ', err);
+      });
+  }
+};
+
+export { highlighter, codeChange, restoreCursorPosition, calculateTabButtonsWidth, calculateRightDivWidth, tabActivater, copyToClipboard }
