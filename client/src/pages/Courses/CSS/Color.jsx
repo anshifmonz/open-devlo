@@ -1,4 +1,4 @@
-import InlineSyHiglight from './Higlight/InlineSyHiglight';
+import InlineSyntaxHiglight from '../../../components/syntaxHighlight/InlineSyntax';
 
 function Color() {
   return (
@@ -22,10 +22,10 @@ function Color() {
     
       <h2 className='fs-7 mgt-8 mgb-4'>Gradients</h2>
       <p className='fw-5 mgb-1 lh-2'><b>Linear Gradient: </b>Transition between colors in a straight line.</p>
-      <InlineSyHiglight code={'background: linear-gradient(to right, red, yellow);'} />      
+      <InlineSyntaxHiglight code={'background: linear-gradient(to right, red, yellow);'} lang={'css'} />
     
       <p className='fw-5 mgb-1 lh-2 mgt-5'><b>Radial Gradient: </b>Transition between colors radiating from a center point.</p>
-      <InlineSyHiglight code={'background: radial-gradient(circle, red, yellow);'} />
+      <InlineSyntaxHiglight code={'background: radial-gradient(circle, red, yellow);'} lang={'css'} />
     </>
   )
 }

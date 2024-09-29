@@ -1,7 +1,7 @@
 import data from '../data/keyframes.json';
 import { keyframesCode } from '../data/codes';
 import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
-import InlineSyHiglight from '../Higlight/InlineSyHiglight';
+import InlineSyntaxHiglight from '../../../../components/syntaxHighlight/InlineSyntax';
 import { Fragment } from 'react';
 
 function Keyframes() {
@@ -25,10 +25,10 @@ function Keyframes() {
                   item?.examples
                   ? item.examples.map((ex, i) => (
                     <Fragment key={i}>
-                      <p className='fw-5 mgb-1 lh-2 mgl-4'><InlineSyHiglight code={`${ex}`} /><br /></p>
+                      <p className='fw-5 mgb-1 lh-2 mgl-4'><InlineSyntaxHiglight lang={'css'} code={`${ex}`} /><br /></p>
                     </Fragment>
                     ))
-                  : <p className='fw-5 mgb-1 lh-2 mgl-4'><InlineSyHiglight code={item.example} /></p>
+                  : <p className='fw-5 mgb-1 lh-2 mgl-4'><InlineSyntaxHiglight lang={'css'} code={item.example} /></p>
                 }
               </Fragment>
               )) 

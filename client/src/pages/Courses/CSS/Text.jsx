@@ -1,6 +1,6 @@
 import data from './data/text.json';
 import { textCode } from './data/codes';
-import InlineSyntaxHighlight from './Higlight/InlineSyHiglight';
+import InlineSyntaxHighlight from '../../../components/syntaxHighlight/InlineSyntax';
 import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground'
 
 function Text() {
@@ -20,7 +20,7 @@ function Text() {
                   {
                     property.name === 'Media Queries'
                     ? <CodePlayground code={{css: textCode[property.code]}} langs={'CSS'} restriction={'noEdit noResult'} />
-                    : <InlineSyntaxHighlight code={property.code} />                  
+                    : <InlineSyntaxHighlight lang={'css'} code={property.code} />                  
                   }
                 </div>
               ))

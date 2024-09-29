@@ -1,6 +1,6 @@
 import data from './data/background.json';
 import { backgroundCode } from './data/codes';
-import InlineSyHiglight from './Higlight/InlineSyHiglight';
+import InlineSyntaxHiglight from '../../../components/syntaxHighlight/InlineSyntax';
 import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
 
 function Background() {
@@ -16,7 +16,7 @@ function Background() {
             <p className='fw-5 mgb-1 lh-2' dangerouslySetInnerHTML={{__html: property.desc}}></p>
             {
               property.code
-              ? <InlineSyHiglight code={property.code} />
+              ? <InlineSyntaxHiglight lang={'css'} code={property.code} />
               : property.SyCode
               && <CodePlayground code={{css: backgroundCode[property.SyCode]}} langs={'CSS'} restriction={'noEdit noResult'} classes={'mgt-5 mgb--2'} />
             }
@@ -35,7 +35,7 @@ function Background() {
               </>
             }
             {property.extraDesc && <p className='fw-5 mgb-1 lh-2 mgt-5' dangerouslySetInnerHTML={{__html: property.extraDesc}}></p> }
-            {property.extraCode && <InlineSyHiglight code={property.extraCode} /> }
+            {property.extraCode && <InlineSyntaxHiglight lang={'css'} code={property.extraCode} /> }
           </div>
         ))
       }

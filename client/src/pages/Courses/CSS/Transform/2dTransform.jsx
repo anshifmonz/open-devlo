@@ -1,6 +1,6 @@
 import data from '../data/2d-Transform.json';
 import { twoDTransfrom } from '../data/codes';
-import InlineSyHiglight from '../Higlight/InlineSyHiglight';
+import InlineSyntaxHiglight from '../../../../components/syntaxHighlight/InlineSyntax';
 import CodePlayGround from '../../../../components/syntaxHighlight/Updates/CodePlayground';
 
 function Transform() {
@@ -14,8 +14,13 @@ function Transform() {
           <div key={i}>
             <h2 className='fs-7 mgt-10 mgb-4'>{item.title}</h2>
             <p className='fw-5 mgb-1 lh-2' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-            <h3 className='mgt-6 mgb-2'>Syntax</h3>
-            <InlineSyHiglight code={item.syntax} />
+            { 
+              item?.syntax &&
+              <>
+                <h3 className='mgt-6 mgb-2'>Syntax</h3>
+                <InlineSyntaxHiglight lang={'css'} code={item.syntax} />
+              </>
+            }
             <div key={i} className='mgt-4 mgl-4'>
               {
                 item.params?.map((param, i) => (

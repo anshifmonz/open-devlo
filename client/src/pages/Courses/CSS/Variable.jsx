@@ -1,7 +1,7 @@
 import data from './data/variable.json';
 import { variableCode } from './data/codes';
 import CodePlayground from '../../../components/syntaxHighlight/Updates/CodePlayground';
-import InlineSyHiglight from './Higlight/InlineSyHiglight';
+import InlineSyntaxHiglight from '../../../components/syntaxHighlight/InlineSyntax';
 import { Fragment } from 'react';
 
 function Variable() {
@@ -23,7 +23,7 @@ function Variable() {
                   {
                     sub?.explains && sub.explains.map((explain, i) => (
                       typeof explain === 'object' && explain.syntax
-                      ? <InlineSyHiglight code={explain.syntax} />
+                      ? <InlineSyntaxHiglight lang={'css'} code={explain.syntax} />
                       : <p key={i} className='fw-5 mgb-5 lh-2 mgt-2' dangerouslySetInnerHTML={{ __html: explain }}></p>
                     )) 
                   }
@@ -44,7 +44,7 @@ function Variable() {
                 }
               </div>
             }
-            { item?.syntax && <InlineSyHiglight code={item.syntax} /> }
+            { item?.syntax && <InlineSyntaxHiglight lang={'css'} code={item.syntax} /> }
             { item?.example && <CodePlayground code={{css: variableCode[item.example]}} langs={'CSS'} /> }
             { item?.explain && <p className='fw-5 mgb-1 lh-2 mgt-6' dangerouslySetInnerHTML={{ __html: item.explain }}></p> }
           </div>

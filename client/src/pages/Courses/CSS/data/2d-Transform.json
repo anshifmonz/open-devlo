@@ -103,11 +103,11 @@
     "syntax": "transform-origin",
     "params": [
       {
-        "title": "x",
+        "name": "x",
         "desc": "Horizontal origin like <code>left</code>, <code>center</code>, <code>right</code> or percentage."
       },
       {
-        "title": "y",
+        "name": "y",
         "desc": "Vertical origin <code>top</code>, <code>center</code>, <code>bottom</code> or percentage."
       }
     ],
