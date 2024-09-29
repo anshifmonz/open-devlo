@@ -1,14 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import hljs from 'highlight.js';
+import React, { useRef } from 'react';
+import { highlighter } from '../../utils/codeBlockHelper';
 
-const InlineSyntaxHighlight = ({ code, classes }) => {
+const InlineSyntaxHighlight = ({ code, lang, classes }) => {
   const codeRef = useRef(null);
-
-  useEffect(() => {
-    if (codeRef.current && codeRef.current.dataset.highlighted !== 'yes') {
-      hljs.highlightElement(codeRef.current);
-    }
-  }, [code]);
+  const highlightedCode = highlighter(code, lang)
 
   function copyToClipboard() {
     if (codeRef.current) {
@@ -28,8 +23,12 @@ const InlineSyntaxHighlight = ({ code, classes }) => {
 
   return (
     <span>
-      <code ref={codeRef} className={ classes ? `language-html inline-code ${classes}` : "language-html inline-code"} onClick={copyToClipboard} title='Click to Copy'>
-        {code}
+      <code 
+          ref={codeRef} 
+          className={ classes ? `language-html inline-code ${classes}` : "language-html inline-code"} 
+          onClick={copyToClipboard} 
+          dangerouslySetInnerHTML={{ __html: highlightedCode }}
+          title='Click to Copy'>
       </code>
     </span>
   );
