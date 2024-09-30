@@ -1,4 +1,4 @@
-import { passwordHasher } from '../utils/passwordHandler.js';
+import { hasher } from '../utils/hashingUtils.js';
 import { getUserByEmail, createtUser } from '../services/userService.js';
 
 async function registerUser(req, res) {
@@ -11,7 +11,7 @@ async function registerUser(req, res) {
       return res.status(302).json({ success: false, message: 'User already exist' });
     }
 
-    const hashedPassword = await passwordHasher(password)
+    const hashedPassword = await hasher(password)
     if (hashedPassword === 'error') return res.status(500).json({ success: false, message: 'Server error' });
     
     const user = await createtUser(name, email, hashedPassword)

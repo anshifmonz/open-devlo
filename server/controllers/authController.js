@@ -1,4 +1,4 @@
-import { passwordComparer } from "../utils/passwordHandler.js";
+import { comparer } from "../utils/hashingUtils.js";
 import { getUserByEmail } from "../services/userService.js";
 
 async function authenticateUser(email, password, cb) {
@@ -12,7 +12,7 @@ async function authenticateUser(email, password, cb) {
 
     const hashPassword = user.password;
 
-    const isCorrectPassword =  await passwordComparer(password, hashPassword)
+    const isCorrectPassword =  await comparer(password, hashPassword)
     if (isCorrectPassword === 'error') return cb(null, false, {message: 'Server side error' });
     if (!isCorrectPassword) return cb(null, false, { message: 'Email or password is incorrect' });
     return cb(null, user);
