@@ -1,4 +1,4 @@
-import crypto from 'crypto-js';
+import cryptoTokenGenerator from "../utils/cryptoTokenGenerator.js";
 
 function csrfTokenGenerator(req, res, next) {
   const currentTime = Date.now();
@@ -18,7 +18,7 @@ function csrfTokenGenerator(req, res, next) {
   delete req.session.csrfToken;
   res.clearCookie('X-CSRF-TOKEN');
 
-  const csrfToken = crypto.lib.WordArray.random(32).toString();
+  const csrfToken = cryptoTokenGenerator(32);
   const expireTime = Date.now() + 1000 * 60 * 5; // 5 minute
 
   req.session.csrfToken = { token: csrfToken, expire: expireTime };
