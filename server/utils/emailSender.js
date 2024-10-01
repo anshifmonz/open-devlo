@@ -21,7 +21,7 @@ async function emailSender(to, subject, text) {
       text: text
     })
   } catch (err) {
-    return 'error'  
+    throw new Error('Server error');
   }
 }
 

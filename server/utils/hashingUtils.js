@@ -6,7 +6,7 @@ async function hasher(password) {
     return await bcrypt.hash(password, saltRounds)
   } catch (err) {
     console.error('Error hashing passwords:', err);
-    return 'error';
+    throw new Error('Server error');
   }
 }
 
@@ -16,7 +16,7 @@ async function comparer(password, hashPassword) {
     return isMatch 
   } catch (err) {
     console.error('Error comparing passwords:', err);
-    return 'error';
+    throw new Error('Server error');
   }
 }
 

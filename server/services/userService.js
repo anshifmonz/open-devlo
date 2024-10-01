@@ -1,6 +1,6 @@
 import { db } from "../config/dbConfig.js";
 
-async function createtUser(name, email, password) {
+async function createUser(name, email, password) {
   try {
     const result = await db.query(
       "INSERT INTO users (name, email, password) VALUES ($1, $2, $3) RETURNING *",
@@ -8,8 +8,7 @@ async function createtUser(name, email, password) {
     );
     return result.rows[0]
   } catch (err) {
-    console.log('insertUser', err);
-    return 'error'
+    throw new Error('Server error');    
   }
 }
 
@@ -22,8 +21,7 @@ async function getUserByEmail(email, need) {
     }
 
   } catch (err) {
-    console.log('getUserByEmail', err);
-    return 'error' 
+    throw new Error('Server error')
   }
 }
 
@@ -35,9 +33,8 @@ async function getUserById(id, need) {
       return res.rows.length > 0
     }
   } catch (err) {
-    console.log('getUserById', err);
-    return 'error'
+    throw new Error('Server error');
   }
 }
 
-export { createtUser, getUserByEmail, getUserById };
+export { createUser, getUserByEmail, getUserById };

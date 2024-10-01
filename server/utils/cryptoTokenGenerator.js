@@ -4,7 +4,7 @@ function cryptoTokenGenerator(num) {
   try {
     return crypto.lib.WordArray.random(num).toString();
   } catch (err) {
-    return 'error'
+    throw new Error('Server error');
   }
 }
 

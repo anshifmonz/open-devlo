@@ -5,21 +5,15 @@ async function authenticateUser(email, password, cb) {
   
   try {
     const user = await getUserByEmail(email, 'data');
-    if (!user) {
-      console.log('User does not exist')
-      return cb(null, false, { message: 'Email or password is incorrect'});
-    }
+    if (!user) return cb(null, false, { message: 'Email or password is incorrect'});
 
     const hashPassword = user.password;
-
     const isCorrectPassword =  await comparer(password, hashPassword)
-    if (isCorrectPassword === 'error') return cb(null, false, {message: 'Server side error' });
     if (!isCorrectPassword) return cb(null, false, { message: 'Email or password is incorrect' });
+    
     return cb(null, user);
-
   } catch (err) {
-    console.log('When loggingIn', err)
-    return cb(null, false, { message: 'Server side error' });
+    return cb(null, false, { message: err.message || 'Server side error' });
   }
 }
 

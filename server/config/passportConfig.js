@@ -10,15 +10,11 @@ function initializePassport(passport) {
   passport.deserializeUser(async (id, cb) => {
     try {
       const user = await getUserById(id, 'data')
-      if (user === 'error') return cb(null, false, { message: 'Server side error'})
-      if (!user) {
-        return cb(null, false);
-      }
+      if (!user) return cb(null, false);
+      
       return cb(null, user)
-
     } catch (err) {
-      console.log('Error in deserializeUser:', err);
-      return cb(null, false, { message: 'Server side error'});
+      return cb(null, false, { message: err.message || 'Server side error'});
     }
   });
 }

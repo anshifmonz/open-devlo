@@ -7,7 +7,7 @@ async function resetTokenStore(userId, hashUserId, token, expireTime) {
       [userId, hashUserId, token, expireTime]
     );
   } catch (err) {
-    return 'error';
+    throw new Error('Server error');
   }
 }
 
@@ -20,7 +20,7 @@ async function getMatchedRow(hashUserId) {
     )
     return res.rows[0] || false;
   } catch (err) {
-    return 'error';
+    throw new Error('Server error');
   }
 }
 
@@ -31,7 +31,7 @@ async function deleteResetToken(userId) {
       [userId]
     );
   } catch (err) {
-    return 'error'
+    throw new Error('Server error');
   }
 }
 
@@ -44,7 +44,7 @@ async function resetPasswd(userId, passwd, hashUserId) {
       [passwd, userId]
     );
   } catch (err) {
-    return 'error'
+    throw new Error('Server error');
   }
 }
 
