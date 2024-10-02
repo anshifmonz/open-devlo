@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useTheme } from '../../hooks/ThemeContext';
 
 function CodePreview({result, html, css, js}) {
-  const [iframeHeight, setIframeHeight] = useState('');
+  const iframRef = useRef(null)
   const { theme } = useTheme();
 
   useEffect(() => {
     if (result) {
-      const iframe = document.querySelector('iframe#preview.preview');
-
-      if (iframe) {
+      if (iframRef.current) {
+        const iframe = iframRef.current;
         const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
 
         if (iframeDocument) {
@@ -17,8 +16,8 @@ function CodePreview({result, html, css, js}) {
 
           const contentToDisplay = `
             <style>
-              * { margin: 0; padding: 0; box-sizing: border-box; color: ${ theme === 'dark' ? 'white' : 'black' }; margin-left: 20px; }
-              body { margin: 0; padding: 0; color: white; }
+              * { margin: 0; padding: 0; box-sizing: border-box; color: ${ theme === 'dark' ? 'white' : 'black' }; }
+              body { margin: 0; padding: 1rem 1rem 1rem 1rem; color: white; overflow: hidden; }
             </style>` 
             + 
             (js && css
@@ -30,15 +29,26 @@ function CodePreview({result, html, css, js}) {
           iframeDocument.write(contentToDisplay);
           iframeDocument.close();
 
-          iframe.onload = () => {
-            setIframeHeight(iframe.contentWindow.document.body.scrollHeight + 40 + 'px');
-          };
+          const adjustIframeHeight = () => {
+            const body = iframe.contentWindow.document.body;
+            const html = iframe.contentWindow.document.documentElement;
+
+            const bHeight = Math.max(body.scrollHeight, body.offsetHeight)
+            const hHeight = Math.max(html.scrollHeight, html.offsetHeight);
+
+            const height = Math.max(bHeight, hHeight);
+
+            iframe.height = Math.max(height) + 'px';
+          }
+          
+          adjustIframeHeight();
+          iframe.onload = adjustIframeHeight;
         }
       }
     }
   }, [result, html, css, js, theme]);
 
-  return result && <iframe id='preview' className="preview" style={{ height: iframeHeight }}></iframe>
+  return result && <iframe ref={iframRef} id='preview' className="preview"></iframe>
 }
 
 export default CodePreview;
