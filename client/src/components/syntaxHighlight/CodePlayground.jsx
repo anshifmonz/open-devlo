@@ -19,8 +19,8 @@ function CodePlayground({ code, classes, restriction, langs }) {
   const toggleEdit = () => setEdit(!edit);
   
   return (
-    <div className="code-block">
-      <div className={classes ? `code-container ${classes}` : "code-container"}>
+    <div className={classes ? `code-block ${classes}` : "code-block"}>
+      <div className="code-container">
         <CodeHead 
           codeRef={codeRef} langs={langs} setActiveLang={setActiveLang} restriction={restriction} 
           editFunc={toggleEdit} resultFunc={toggleResult} result={result}
