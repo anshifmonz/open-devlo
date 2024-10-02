@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { calculateRightDivWidth, calculateTabButtonsWidth, tabActivater } from '../../utils/codeBlockHelper';
+import { calculateRightDivWidth, calculateTabButtonsWidth, tabActivator } from '../../utils/codeBlockHelper';
 import { EditIcon, PlayButtonIcon } from './icons/Icons';
 import Copy from './icons/Copy';
 
@@ -15,7 +15,7 @@ function CodeHead({ codeRef, langs, setActiveLang, restriction, editFunc, result
           langs.map((item, i) => (
             <div 
               key={i} id={item} className={langs.length === 1 ? 'tab-button' : i === 0 ? 'tab-button active' : 'tab-button'} 
-              onClick={() => tabActivater(item, setActiveLang, tabButtons, langs)}>
+              onClick={() => tabActivator(item, setActiveLang, tabButtons, langs)}>
               <span>{item}</span>
             </div>
           ))

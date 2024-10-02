@@ -98,7 +98,7 @@ const calculateRightDivWidth = (restriction) => {
   return { width: "160px" };
 };
 
-const tabActivater = (e, setActiveLang, tabButtons, langs) => {
+const tabActivator = (selectedLang, setActiveLang, tabButtons, langs) => {
   if (langs.length === 1) return
   if (tabButtons.current) {
     const elements = tabButtons.current.querySelectorAll('.tab-button')
@@ -106,10 +106,12 @@ const tabActivater = (e, setActiveLang, tabButtons, langs) => {
       element.classList.remove('active');
     });
 
-    const activeElement = document.getElementById(e)
-    activeElement.classList.add('active');
+    const activeElement = Array.from(elements).find(el => el.textContent === selectedLang);
+    if (activeElement) {
+      activeElement.classList.add('active');
+    }
     
-    setActiveLang(e)
+    setActiveLang(selectedLang);
   }
 }
 
@@ -129,4 +131,4 @@ const copyToClipboard = (codeRef, setCopy) => {
   }
 };
 
-export { highlighter, codeChange, restoreCursorPosition, calculateTabButtonsWidth, calculateRightDivWidth, tabActivater, copyToClipboard }
+export { highlighter, codeChange, restoreCursorPosition, calculateTabButtonsWidth, calculateRightDivWidth, tabActivator, copyToClipboard }
