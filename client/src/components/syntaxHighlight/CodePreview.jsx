@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useTheme } from '../../hooks/ThemeContext';
 
-function CodePreview({result, html, css, js}) {
+function CodePreview({result, html, css, js, allowResize}) {
   const iframRef = useRef(null)
   const { theme } = useTheme();
 
@@ -48,7 +48,7 @@ function CodePreview({result, html, css, js}) {
     }
   }, [result, html, css, js, theme]);
 
-  return result && <iframe ref={iframRef} id='preview' className="preview"></iframe>
+  return result && <iframe ref={iframRef} id='preview' className="preview" style={allowResize && {resize: 'both'}}></iframe>
 }
 
 export default CodePreview;

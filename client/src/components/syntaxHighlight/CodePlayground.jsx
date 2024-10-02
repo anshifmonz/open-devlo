@@ -6,7 +6,7 @@ import useCodeState from '../../hooks/useCodeState';
 
 import '../../styles/Courses/code.css';
 
-function CodePlayground({ code, classes, restriction, langs }) {
+function CodePlayground({ code, classes, restriction, langs, allowResize }) {
   const { htmlCode, cssCode, jsCode, setHtmlCode, setCssCode, setJsCode } = useCodeState(code);
   const [ activeLang, setActiveLang ] = useState(langs.split(' ')[0]);
   const [ result, setResult ] = useState(false);
@@ -31,7 +31,7 @@ function CodePlayground({ code, classes, restriction, langs }) {
           html={htmlCode} css={cssCode} js={jsCode} 
         />
       </div>
-      <CodePreview result={result} html={htmlCode} css={cssCode} js={jsCode} />
+      <CodePreview result={result} html={htmlCode} css={cssCode} js={jsCode} allowResize={allowResize} />
     </div>
   )
 }
