@@ -28,6 +28,7 @@ function csrfTokenGenerator(req, res, next) {
     next();
     
   } catch (err) {
+    req.logger.error(err.message, err)
     res.status(500).json({ success: false, message: err.message || 'Server error' });
   }
 }

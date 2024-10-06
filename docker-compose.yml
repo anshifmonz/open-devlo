@@ -11,6 +11,8 @@ services:
       DATABASE_URL: ${DB_URL}
       SESSION_SECRET: ${SESSION_SECRET}
       PORT: ${PORT_B}
+      WEB_HOOK_URL: ${WEB_HOOK_URL}
+      ICON_URL: ${ICON_URL}
     depends_on:
       - postgresDb
     volumes:
