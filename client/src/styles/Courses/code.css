@@ -232,9 +232,7 @@ code{
   border-radius: 8px;
   color: var(--text);
   overflow: hidden;
-}
-#preview body{
-  overflow: hidden;
+  max-height: 400px;
 }
 p code, h3 code, li code{
   background-color: var(--highlight-text);

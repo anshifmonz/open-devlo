@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useTheme } from '../../hooks/ThemeContext';
 
-function CodePreview({result, html, css, js, allowResize}) {
+function CodePreview({result, html, css, js, allowResize, extraCss}) {
   const iframRef = useRef(null)
   const { theme } = useTheme();
 
@@ -18,6 +18,11 @@ function CodePreview({result, html, css, js, allowResize}) {
             <style>
               * { margin: 0; padding: 0; box-sizing: border-box; color: ${ theme === 'dark' ? 'white' : 'black' }; }
               body { margin: 0; padding: 1rem 1rem 1rem 1rem; color: white; overflow: hidden; }
+              body::-webkit-scrollbar { width: 4px; }
+              body::-webkit-scrollbar-track { background: #e0e0e0; }
+              body::-webkit-scrollbar-thumb { background-color: #6d6d6d; border-radius: 10px; }
+              body::-webkit-scrollbar-thumb:hover { background-color: #888; }
+              ${extraCss && extraCss}
             </style>` 
             + 
             (js && css
