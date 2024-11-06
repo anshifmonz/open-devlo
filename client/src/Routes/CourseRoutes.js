@@ -1,7 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-const Courses = lazy(() => import('../pages/Courses/Courses'));
 const Javascript = lazy(() => import('../pages/Courses/Javascript/Javascript'));
 const ReactCourse = lazy(() => import('../pages/Courses/React/React'));
 const Git = lazy(() => import('../pages/Courses/Git/Git'));
@@ -18,7 +17,6 @@ function CourseRoutes() {
   return (
     <Suspense fallback={<div style={{backgroundColor: "black", color: "white", height: "100dvh", width: "100dvw"}}>Loading...</div>}>
       <Routes>
-        <Route path="/" element={<Courses />} />
         <Route path="html/*" element={<HTMLRoutes />} />
         <Route path="css/*" element={<CSSRoutes />} />
         <Route path="javascript" element={<Javascript />} />
