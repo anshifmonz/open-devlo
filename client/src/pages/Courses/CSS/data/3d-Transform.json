@@ -101,7 +101,7 @@
   },
   {
     "title": "Backface Visibility",
-    "desc": "The <code>backface-visibility</code> property controls whether the back side of a 3D-transformed element is visible when it is rotated. By default, it is set to <code>visible<code>.",
+    "desc": "The <code>backface-visibility</code> property controls whether the back side of a 3D-transformed element is visible when it is rotated. By default, it is set to <code>visible</code>.",
     "example": "backfaceVisibility"
   },
   {

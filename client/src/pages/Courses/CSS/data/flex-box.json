@@ -175,7 +175,7 @@
     },
     {
       "prop": "flex",
-      "desc": "A shorthand for <code>flex-grow<code/>, <code>flex-shrink<code/>, and <code>flex-basis</code>. The default value is <code>0 1 auto<code>.",
+      "desc": "A shorthand for <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code>. The default value is <code>0 1 auto<code>.",
       "example": "flex"
     },
     {

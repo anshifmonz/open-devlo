@@ -19,7 +19,7 @@ function Variable() {
               item?.subHead && item.subHead.map((sub, i) => (
                 <div key={i}>
                   <h3 className={i === 0 ? 'mgt-4 mgb-2' : 'mgt-8 mgb-2'}>{sub.title}</h3>
-                  <CodePlayground code={{css: variableCode[sub.example]}} langs={'CSS'} classes={'mgt-4 mgb-6'} />
+                  <CodePlayground code={{css: variableCode[sub.example].css, html: variableCode[sub.example].html}} langs={'CSS HTML'} classes={'mgt-4 mgb-6'} />
                   {
                     sub?.explains && sub.explains.map((explain, i) => (
                       typeof explain === 'object' && explain.syntax
@@ -38,14 +38,14 @@ function Variable() {
                   item.points.map((point, i) => (
                     <Fragment key={i}>
                       <p className='fw-5 mgb-1 lh-2' dangerouslySetInnerHTML={{ __html: `<b>${point.title}</b>: ${point.desc}` }}></p>
-                      { point?.example && <CodePlayground code={{css: variableCode[point.example]}} langs={'CSS'} classes={'mgt-5'} /> }
+                      { point?.example && <CodePlayground code={{css: variableCode[point.example].css, html: variableCode[point.example].html}} langs={'CSS HTML'} classes={'mgt-5'} /> }
                     </Fragment>
                   ))
                 }
               </div>
             }
             { item?.syntax && <InlineSyntaxHiglight lang={'css'} code={item.syntax} /> }
-            { item?.example && <CodePlayground code={{css: variableCode[item.example]}} langs={'CSS'} /> }
+            { item?.example && <CodePlayground code={{css: variableCode[item.example].css, html: variableCode[item.example].html}} langs={'CSS HTML'} allowResize={true} /> }
             { item?.explain && <p className='fw-5 mgb-1 lh-2 mgt-6' dangerouslySetInnerHTML={{ __html: item.explain }}></p> }
           </div>
         ))

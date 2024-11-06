@@ -33,7 +33,14 @@ function Keyframes() {
               </Fragment>
               )) 
             }
-            { item.example && <CodePlayGround code={{css: keyframesCode[item.example]}} langs={'CSS'} /> }
+            { 
+              item.example === 'shortS'
+              ? <CodePlayGround code={{css: keyframesCode[item.example].css}} langs={'CSS'} restriction={'noEdit noResult noCopy'} />
+              : item.example && keyframesCode[item.example]?.html
+              ? <CodePlayGround code={{css: keyframesCode[item.example].css, html: keyframesCode[item.example].html}} langs={'CSS HTML'} />
+              : keyframesCode[item.example]?.css
+              && <CodePlayGround code={{css: keyframesCode[item.example].css}} langs={'CSS'} /> 
+            }
             { item.explain && <p className='fw-5 mgb-1 lh-2 mgt-5' dangerouslySetInnerHTML={{ __html: item.explain }}></p> }
             { item.explains && item.explains.map((item, i) =>  (
                 <p key={i} className='fw-5 mgb-1 lh-2'><code>{item.name}</code>: {item.desc}</p>

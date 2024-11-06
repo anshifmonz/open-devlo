@@ -13,7 +13,7 @@ function Animation() {
             <h2 className='fs-7 mgt-8 mgb-4'>{item.title}</h2>
             <p className='fw-5 mgb-1 lh-2' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
             <h3 className='mgt-6 mgb-2'>{item.sHead}</h3>
-            <CodePlayGround code={{css: animationCode[item.syntax]}} langs={'CSS'} classes={'mgb-5'} restriction={'noResult noEdit noCopy'} />
+            <CodePlayGround code={{css: animationCode[item.syntax].css}} langs={'CSS'} classes={'mgb-5'} restriction={'noResult noEdit noCopy'} />
             { item.values &&
               item.values.map((item, i) => (
                 <p key={i} className='fw-5 mgb-2 lh-2' dangerouslySetInnerHTML={{ __html: `<b>${item.title}</b>: ${item.desc}` }}></p>
@@ -21,7 +21,7 @@ function Animation() {
             }
             { item.desc1 && <p className='fw-5 mgb-1 lh-2'>{item.desc1}</p> }
             <h3 className='mgt-8 mgb-2'>Example:</h3>
-            <CodePlayGround code={{css: animationCode[item.example]}} langs={'CSS'} />
+            <CodePlayGround code={{css: animationCode[item.example].css, html: animationCode[item.example].html}} langs={'CSS HTML'} />
             <p className='fw-5 mgb-1 lh-2 mgt-5' dangerouslySetInnerHTML={{ __html: item.explain }}></p>
           </div>
         ))

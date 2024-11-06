@@ -13,7 +13,7 @@ function Transform() {
           <div key={i}>
             <h2 className='fs-7 mgt-8 mgb-4'>{item.title}</h2>
             <p className='fw-5 mgb-2 lh-2' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-            <CodePlayGround code={{css: transformCode[item.example]}} langs={'CSS'} />
+            <CodePlayGround code={{css: transformCode[item.example].css, html: transformCode[item.example].html}} langs={'CSS HTML'} />
             <p className='fw-5 mgt-6 lh-2'>For more detail about {item.title}, See <a href={item.link}>here</a></p>
           </div>
         ))

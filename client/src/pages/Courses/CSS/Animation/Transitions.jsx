@@ -30,7 +30,7 @@ function Transitions() {
                   ))}
                 </div>
             }
-            <CodePlayGround code={{css: transitionCode[item.example]}} langs={'CSS'} />
+            <CodePlayGround code={{css: transitionCode[item.example].css, html: transitionCode[item.example].html}} langs={'CSS HTML'} />
             {
               item?.bold1 && <div key={i} className='mgt-5 mgb-3'>
                 {item.bold1.map((item, i) => (

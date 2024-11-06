@@ -12,7 +12,7 @@
     },
     {
       "title": "Absolute Positioning",
-      "desc": "The element is removed from the normal document flow and positioned relative to the nearest ancestor with a position other than <code>static<code>. <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> can be used to move the element.",
+      "desc": "The element is removed from the normal document flow and positioned relative to the nearest ancestor with a position other than <code>static</code>. <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> can be used to move the element.",
       "example": "absolute"
     },
     {

@@ -12,7 +12,7 @@ function Transform() {
       {
         data.map((item, i) => (
           <div key={i}>
-            <h2 className='fs-7 mgt-8 mgb-4'>{item.title}</h2>
+            <h2 className='fs-7 mgt-10 mgb-4'>{item.title}</h2>
             { item.desc && <p className='fw-5 mgb-1 lh-2' dangerouslySetInnerHTML={{ __html: item.desc }}></p>}
             {
               item.params?.map((param, i) => (
@@ -29,7 +29,7 @@ function Transform() {
                       <p key={i} className='fw-5 mgb-1 lh-2' dangerouslySetInnerHTML={{ __html: desc }}></p>
                     ))
                   }
-                  <CodePlayGround code={{css: threeDTransform[func.example]}} langs={'CSS'} classes={'mgt-4'} />
+                  <CodePlayGround code={{css: threeDTransform[func.example].css, html: threeDTransform[func.example].html}} langs={'CSS HTML'} classes={'mgt-4'} />
                 </div>
               ))
             }
@@ -41,13 +41,13 @@ function Transform() {
                   item.props?.map((prop, i) => (
                     <div key={i}>
                       <p key={i} className={i === 0 ? 'fw-5 mgb-1 lh-2 mgt-4' : 'fw-5 mgb-1 lh-2' } dangerouslySetInnerHTML={{ __html: `${i+1}. <code>${prop.name}</code>: ${prop.desc}` }}></p>
-                      { prop.example &&  <CodePlayGround code={{css: threeDTransform[prop.example]}} langs={'CSS'} classes={'mgb-7'} /> }
+                      { prop.example &&  <CodePlayGround code={{css: threeDTransform[prop.example].css, html: threeDTransform[prop.example].html}} langs={'CSS HTML'} classes={'mgb-7'} /> }
                     </div>
                   ))
                 }
               </div>
             }
-            { item.example && <CodePlayGround code={{css: threeDTransform[item.example]}} langs={'CSS'} classes={'mgt-3'} /> }
+            { item.example && <CodePlayGround code={{css: threeDTransform[item.example].css, html: threeDTransform[item.example].html}} langs={'CSS HTML'} classes={'mgt-3'} /> }
             { item.explain && <p className='fw-5 mgt-6 lh-2'>{item.explain}</p> }
           </div>
         ))

@@ -20,12 +20,6 @@
     "example": "flexbox"
   },
   {
-    "title": "Mobile-First Approach",
-    "desc": "Mobile-first design means writing CSS for smaller screens first, then progressively implement media queries for larger screens.",
-    "example": "mobileFirst",
-    "extra": "This approach ensures the site performs well on different screen size"
-  },
-  {
     "title": "Viewport Meta Tag",
     "desc": "To make sure the website scales properly on mobile devices, add the viewport meta tag in the <code>&lt;head&gt;</code> of HTML",
     "syntax": "viewPort",

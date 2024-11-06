@@ -24,8 +24,8 @@ function ResponsiveDesign() {
                 } 
               </div>
             }
-            { item?.syntax && <InlineSyntax code={responsiveDesignCode[item.syntax]} /> }
-            { item?.example && <CodePlayground code={{css: responsiveDesignCode[item.example]}} langs={'CSS'} /> }
+            { item?.syntax && <InlineSyntax code={responsiveDesignCode[item.syntax]} lang={'css'} /> }
+            { item?.example && <CodePlayground code={{css: responsiveDesignCode[item.example].css, html: responsiveDesignCode[item.example].html}} langs={'CSS HTML'} allowResize={true} /> }
             { item?.extra && <p className='fw-5 mgb-1 lh-2 mgt-7' dangerouslySetInnerHTML={{ __html: item.extra }}></p> }
           </div>
         ))

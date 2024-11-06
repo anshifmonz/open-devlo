@@ -15,7 +15,7 @@ function FlexBox() {
             <div key={i} className={item.title.toLocaleLowerCase().replace(' ', '-')}>
               <h3 className='mgt-8 mgb-2'>{i+1}. {item.title}</h3>
               <p className='fw-5 mgb-1 lh-2' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-              { item.example && <CodePlayground code={{css: flexBoxCode[item.example]}} langs={'CSS'} restriction={'noEdit noResult'} />}
+              { item.example && <CodePlayground code={{css: flexBoxCode[item.example].css, html: flexBoxCode[item.example].html}} langs={'CSS HTML'} allowResize={true} />}
             </div>
           ))
         }
@@ -43,7 +43,7 @@ function FlexBox() {
               </div>
               {
                 item.example &&
-                <CodePlayground code={{css: flexBoxCode[item.example]}} langs={'CSS'} classes={'mgl-7 mgt-5'} restriction={'noResult noEdit'} />
+                <CodePlayground code={{css: flexBoxCode[item.example].css, html: flexBoxCode[item.example].html}} langs={'CSS HTML'} classes={'mgl-7 mgt-5'} allowResize={true} />
               }
             </div>
           ))
@@ -57,7 +57,7 @@ function FlexBox() {
             <div key={i}>
               <h3 className='mgt-6 mgb-2'>{i+1}. The <code>{item.prop}</code> property</h3>
               <p className='fw-5 mgb-1 lh-2 mgl-5' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-              <CodePlayground code={{css: flexBoxCode[item.example]}} langs={'CSS'} restriction={'noResult noEdit'} classes={'mgl-5'} />
+              <CodePlayground code={{css: flexBoxCode[item.example].css, html: flexBoxCode[item.example].html}} langs={'CSS HTML'} classes={'mgl-5'} allowResize={true} />
             </div>
           ))
         }

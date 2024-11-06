@@ -19,7 +19,7 @@ function Text() {
                   <p className='fw-5 mgb-1 lh-2 mgt-6'><strong><code>{property.name}</code>: </strong>{property.desc}</p>
                   {
                     property.name === 'Media Queries'
-                    ? <CodePlayground code={{css: textCode[property.code]}} langs={'CSS'} restriction={'noEdit noResult'} />
+                    ? <CodePlayground code={{css: textCode[property.code].css, html: textCode[property.code].html }} langs={'CSS HTML'} />
                     : <InlineSyntaxHighlight lang={'css'} code={property.code} />                  
                   }
                 </div>

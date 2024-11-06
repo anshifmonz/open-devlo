@@ -18,7 +18,7 @@ function Background() {
               property.code
               ? <InlineSyntaxHiglight lang={'css'} code={property.code} />
               : property.SyCode
-              && <CodePlayground code={{css: backgroundCode[property.SyCode]}} langs={'CSS'} restriction={'noEdit noResult'} classes={'mgt-5 mgb--2'} />
+              && <CodePlayground code={{css: backgroundCode[property.SyCode].css, html: backgroundCode[property.SyCode].html }} langs={'CSS HTML'} classes={'mgt-5 mgb--2'} />
             }
             {
               property.values &&

@@ -16,7 +16,11 @@ function Selector() {
               && <h3 className='fs-6 mgt-8 mgb-4' dangerouslySetInnerHTML={{__html: selector.title}}></h3>
             }
             <p className={selector.code.includes('1') ? 'fw-5 mgb-1 lh-2 mgt-6' : 'fw-5 mgb-1 lh-2' }>{selector.desc}</p>
-            <CodePlayground code={{css: selectorCode[selector.code]}} langs={'CSS'} restriction={'noEdit noResult'} />
+            {
+              selectorCode[selector.code].css
+              ? <CodePlayground code={{css: selectorCode[selector.code].css, html: selectorCode[selector.code].html}} langs={'CSS HTML'} />
+              : <CodePlayground code={{css: selectorCode[selector.code]}} langs={'CSS'} restriction={'noEdit noResult'} />
+            }
           </div>
         ))
       }

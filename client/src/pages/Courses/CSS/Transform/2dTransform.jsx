@@ -28,7 +28,7 @@ function Transform() {
                 ))
               }
             </div>
-            <CodePlayGround code={{css: twoDTransfrom[item.example]}} langs={'CSS'} classes={'mgt-6'} />
+            <CodePlayGround code={{css: twoDTransfrom[item.example].css, html: twoDTransfrom[item.example].html }} langs={'CSS HTML'} classes={'mgt-6'} />
           </div>
         ))
       }

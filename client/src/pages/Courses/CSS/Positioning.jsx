@@ -13,7 +13,7 @@ function Positioning() {
           <div className={item.title.toLocaleLowerCase().replace(' ', '-') + ' mgt-8'}>
             <h2 className='fs-7 mgb-4'>{item.title}</h2>
             <p className='fw-5 mgb-2 lh-2' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-            <CodePlayground code={{css: positionCode[item.example]}} langs={'CSS'} restriction={'noResult noEdit'} />
+            <CodePlayground code={{css: positionCode[item.example].css, html: positionCode[item.example].html}} langs={'CSS HTML'} extraCss={item.example === 'sticky' && 'body {height: 200vh !important; overflow-y: scroll !important}'} />
           </div>
         ))
       }

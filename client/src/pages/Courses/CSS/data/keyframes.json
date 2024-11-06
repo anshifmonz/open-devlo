@@ -35,7 +35,7 @@
       {
         "name": "animation-duration",
         "desc": "Define the duration of animation it will take in one cycle.",
-        "example": "animation-duration: 2s; /* 2 seconds */"
+        "example": "animation-duration: 2s;"
       },
       {
         "name": "animation-timing-function",
@@ -45,14 +45,14 @@
       {
         "name": "animation-delay",
         "desc": "Specifies a delay before the animation starts.",
-        "example": "animation-delay: 1s; /* 1-second delay */"
+        "example": "animation-delay: 1s;"
       },
       {
         "name": "animation-iteration-count",
         "desc": "Defines how many times the animation should repeat.",
         "examples": [
-          "animation-iteration-count: 3; /* Repeats 3 times */",
-          "animation-iteration-count: infinite; /* Repeats forever */"
+          "animation-iteration-count: 3;",
+          "animation-iteration-count: infinite;"
         ]
       },
       {
