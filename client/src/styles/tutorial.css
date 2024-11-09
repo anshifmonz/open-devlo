@@ -18,10 +18,54 @@ main#main{
   flex-grow: 1;
   color: var(--text);
 }
+main#main.full {
+  padding-left: 40px;
+}
+main > .open-btn {
+  top: 70px;
+  left: 10px;
+  transform: rotate(180deg);
+  width: 20px;
+  height: 20px;
+}
+main > .open-btn.show {
+  display: block !important;
+}
+
 section.tutorial{
   width: 100%;
+  padding-right: 80px;
+}
+.tutorial hr {
+  width: 100vw;
 }
 .num-indent{
   margin-left: 1.5em;
   text-indent: -1.6em;
+}
+
+@media (max-width: 1024px) {
+  section.tutorial{
+    padding-right: 50px;
+  }
+}
+@media (max-width: 940px) {
+  section.tutorial{
+    padding-right: 30px;
+  }
+}
+@media (max-width: 880px) {
+  section.tutorial{
+    padding-right: 20px;
+  }
+}
+@media (max-width: 820px) {
+  section.tutorial{
+    padding-right: 10px;
+  }
+}
+@media (max-width: 930px) {
+  main > .open-btn {
+    display: none;
+  }
 }
