@@ -36,9 +36,6 @@ section.tutorial{
   width: 100%;
   padding-right: 80px;
 }
-.tutorial hr {
-  width: 100vw;
-}
 .num-indent{
   margin-left: 1.5em;
   text-indent: -1.6em;
@@ -59,6 +56,11 @@ section.tutorial{
     padding-right: 20px;
   }
 }
+@media (max-width: 832px) {
+  .tutorial hr {
+    margin-right: 15px;
+  }
+}
 @media (max-width: 820px) {
   section.tutorial{
     padding-right: 10px;
@@ -67,5 +69,27 @@ section.tutorial{
 @media (max-width: 930px) {
   main > .open-btn {
     display: none;
+  }
+}
+@media (max-width: 666px) {
+  main#main {
+    padding-left: 20px;
+  }
+  main#main.full {
+    padding-left: 20px;
+  }
+  section.tutorial{
+    padding-right: 0px;
+  }
+  .tutorial hr {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  main#main {
+    padding: 35px 10px 0;
+  }
+  main#main.full {
+    padding-left: 10px;
   }
 }
