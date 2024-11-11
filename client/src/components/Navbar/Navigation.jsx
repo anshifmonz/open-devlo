@@ -17,9 +17,8 @@ function Navigation() {
   return (
     <>
       <Link className='anchor' to="/">Home</Link>
-      <Link className='anchor' to="#courses">Courses</Link>
-      <Link className='anchor' to="/about">About</Link>
-      <Link className='anchor' to="/contact">Contact</Link>
+      <Link className='anchor' to="/tutorial">Tutorials</Link>
+      <Link className='anchor' to="/play-ground">Play Ground</Link>
     </>
   );
 }
