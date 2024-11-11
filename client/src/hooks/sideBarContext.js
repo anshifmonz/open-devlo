@@ -1,8 +1,21 @@
-import React, { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext, useEffect } from 'react';
 
 const SideBarContext = createContext();
 function SideBarProvider({ children }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(() => window.innerWidth >= 832);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 832 && isOpen) {
+        setIsOpen(false);
+      } else if (window.innerWidth >= 832 && !isOpen) {
+        setIsOpen(true);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [isOpen]);
 
   function toggleSideBar() {
     setIsOpen(!isOpen);
