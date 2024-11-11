@@ -24,9 +24,11 @@ function NavBar() {
             <Navigations />
           </div>
           <div className="icons">
-            <img src={`/assets/nav/${theme === 'dark' ? 'dark' : 'light'}.png`} alt="Theme" onClick={toggleTheme} />
+            <img src='/assets/nav/dark.png' alt="Theme" onClick={toggleTheme} style={{ display: theme === 'dark' ? 'block' : 'none' }} />
+            <img src='/assets/nav/light.png' alt="Theme" onClick={toggleTheme} style={{ display: theme === 'dark' ? 'none' : 'block' }} />
             <a href="/user">
-              <img src={theme == 'dark' ? "/assets/nav/userLight.png" : "/assets/nav/userDark.png"} alt="User icon" width={30} height={30} />
+              <img src='/assets/nav/userLight.png' alt="User icon" width={30} height={30} style={{ display: theme === 'dark' ? 'block' : 'none' }} />
+              <img src='/assets/nav/userDark.png' alt="User icon" width={30} height={30} style={{ display: theme === 'dark' ? 'none' : 'block' }} />
             </a>
             {
               isOpen
